@@ -1,0 +1,376 @@
+//* ==================== Переменные =================== *//
+
+//? ==================== Цвета =================== //
+$col_0: transparent;
+$col_1: #ffffff;
+$col_2: #000000;
+$col_3: #aaaaab;
+$col_4: #fab81b;
+$col_5: #ced0ce;
+$col_6: #1c1c1e;
+$col_7: #b8b8a2;
+$col_8: rgba(39, 39, 43, 0.93);
+$col_9: #fffbed;
+$col_10: #3c2f12;
+$col_11: #f25322;
+$col_12: #f9f5e1;
+$col_13: rgba(39, 39, 43, 0.99);
+$col-lg_14: linear-gradient(to bottom, $col_4 0%, #ff7e00 100%);
+$col_15: #ff7e00;
+$col-lg_16: linear-gradient(to bottom, #ff7e00 0%, #c2530a 100%);
+$col-lg_17: linear-gradient(to bottom, $col_4 0%, #ef4511 100%);
+$col-lg_18: linear-gradient(to bottom, #f60 0%, #a6230e 100%);
+$col-lg_19: linear-gradient(to right, rgba(188, 37, 21, 0.2) 0%, transparent 62%, transparent 100%);
+$col-lg_20: linear-gradient(to left, #000 50%, #29292b 50%);
+$col_21: #282828;
+$col_22: #474747;
+$col_23: #dad7d6;
+$col_24: #b8b397;
+$col_25: #ffdd99;
+$col_26: rgba(14, 14, 15, 0.5);
+$col_27: #a29e87;
+$col_28: #e9e2bf;
+$col_29: rgba(255, 251, 237, 0.16);
+$col_30: rgba(0, 0, 0, 0.8);
+$col_31: #e5e5e5;
+$col_32: #971a39;
+$col_33: #ee1d52;
+$col_34: rgba(244, 115, 28, 0.4);
+$col_35: rgba(244, 115, 28, 1);
+$col_36: rgba(65, 93, 156, 0.4);
+$col_37: rgba(65, 93, 156, 1);
+$col_38: rgba(91, 137, 179, 0.25);
+$col_39: rgba(91, 137, 179, 1);
+$col-lg_40: linear-gradient(to right, #111112 40%, rgba(0, 0, 0, 0) 100%);
+$col_41: #111112;
+$col_42: #415d9c;
+$col_43: #6492bb;
+$col_44: #cb171e;
+$col_45: #ffb400;
+$col_46: #151515;
+$col_47: #27272b;
+$col_48: #333335;
+$col_49: #302f2d;
+$col_50: #909090;
+$col_51: rgba(249, 245, 225, 0.3);
+$col_52: rgba(0, 0, 0, 0.6);
+$col_53: #1c1b16;
+$col_54: rgba(17, 17, 18, 0.85);
+$col-lg_55: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.2) 35%, rgba(0, 0, 0, 0.77) 100%);
+$col_56: rgba(255, 255, 255, 0.08);
+$col_57: #dcdcdc;
+$col_58: #0e0e0f;
+$col_59: rgba(233, 226, 191, 0.15);
+$col-lg_60: linear-gradient(to bottom, transparent 50%, #0e0e0f 100%);
+$col_61: rgba(255, 255, 255, 0.9);
+$col-lg_62: linear-gradient(to bottom, transparent 0, #0e0e0f 100%);
+$col-lg_63: linear-gradient(128deg, rgba(28, 28, 30, 0.75) 0%, rgba(28, 28, 30, 0.5) 50%, transparent 100%);
+$col_64: #bc2515;
+$col_65: #8c8c7c;
+$col_66: rgba(17, 17, 18, 0.3);
+$col_67: rgba(0, 0, 0, 0.05);
+$col-lg_68: linear-gradient(to right, #0e0e0f 41.6%, transparent 100%);
+$col_69: #ffd200;
+$col_70: #18d26e;
+$col_71: #2b39ff;
+$col_72: #676c6f;
+$col_73: #eecc85;
+$col_74: #ff7432;
+$col_75: #a73404;
+$col_76: #ab542a;
+$col_77: #babcbf;
+$col_78: #8f9091;
+$col_79: rgba(0, 0, 0, 0.75);
+$col_80: #fdfdfd;
+$col_81: rgba(71, 71, 71, 0.5);
+$col_82: rgba(0, 0, 0, 0.95);
+$col_83: rgba(47, 47, 47, 0.7);
+$col_84: #2f2f2f;
+$col_85: rgba(255, 251, 237, 0.14);
+$col_86: #393836;
+$col_87: #cbac77;
+$col_88: linear-gradient(135deg, $col_81 50%, $col_22 50%);
+$col_89: #454540;
+$col_90: #676760;
+$col-lg_91: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 50%, #474747 50%);
+$col-lg_92: linear-gradient(to right, #111112 50%, rgba(0, 0, 0, 0) 100%);
+
+//? ==================== Размеры шрифтов (font-size) =================== //
+$fs_0: 0.75rem;
+$fs_1: 0.875rem;
+$fs_2: 3.438rem;
+$fs_3: 1.5rem;
+$fs_4: 2.75rem;
+$fs_5: 1.125rem;
+$fs_7: 7.5rem;
+$fs_8: 1rem;
+$fs_9: 1.625rem;
+$fs_10: 0.9375rem;
+$fs_11: 1.25rem;
+$fs_12: 0.6875rem;
+$fs_13: 1.75rem;
+$fs_14: 0.8125rem;
+$fs_15: 1.375rem;
+$fs_16: 1.063rem;
+$fs_17: 1.313rem;
+$fs_18: 2rem;
+$fs_19: 2.375rem;
+$fs_20: 5.5rem;
+$fs_21: 4.5rem;
+$fs_22: 2.5rem;
+$fs_23: 2.2rem;
+
+//? ==================== Межстрочный интервал (line-height) =================== //
+$lh_base: 1.25rem;
+$lh_0: 1;
+$lh_1: 4.188rem;
+$lh_2: 1.125rem;
+$lh_3: 2.875rem;
+$lh_4: 1.5rem;
+$lh_5: 1.2;
+$lh_6: 1.4;
+$lh_7: 2.563rem;
+$lh_8: 2rem;
+$lh_9: 0.9375rem;
+$lh_10: 1.75rem;
+$lh_11: 1.22;
+$lh_12: 1.313rem;
+$lh_13: 2.125rem;
+$lh_14: 133%;
+$lh_15: 1.375rem;
+$lh_16: 2.875rem;
+$lh_17: 9rem;
+$lh_18: 7.313rem;
+$lh_19: 1.063rem;
+$lh_20: 1.24;
+$lh_21: 0.8125rem;
+$lh_22: 1rem;
+$lh_23: 1.438rem;
+$lh_24: 1.625rem;
+$lh_25: 0.875rem;
+$lh_26: 1.563rem;
+$lh_27: 1.25rem;
+$lh_28: 2.813rem;
+$lh_29: 2.625rem;
+$lh_30: 1.5;
+$lh_31: 1.3;
+$lh_32: 1.688rem;
+$lh_33: 3.063rem;
+$lh_34: 0.6875rem;
+$lh_35: 1.938;
+
+//? ==================== Межбуквенный интервал(letter-spacing) =================== //
+$ls_1: -0.125rem;
+
+//? ==================== Тени (box-shadow, text-shadow) =================== //
+$bs_btn: inset 0 0 8px rgba(255, 210, 0, 0.1), inset 0 1px 0 $col_4, inset 0 -1px 0 #ff7e00;
+$bs_btn-big: 0 1px 0 #661000, inset 0 0 8px rgba(255, 210, 0, 0.1), inset 0 1px 0 $col_4, inset 0 -1px 0 #ef4511;
+$bs_vitrine: 0 0 0 0.125rem $col_69 inset;
+$bs_btn-old: 0 0 1.563rem rgba(255, 18, 0, 0.3);
+$bs_input-serch: inset 0 0.0625rem 0.125rem 0 $col_79;
+$ts_btn: 0 -0.0625rem rgba(71, 0, 0, 0.3);
+$ts_btn-old: 0 -0.0625rem 0 #000;
+$ts_btn-create: 0 0.0625rem 0 $col_2;
+
+
+//? ==================== Шаблоны шрифтов =================== //
+
+%ff_RobotoCondensed-Regular {
+	font-family: 'Roboto Condensed', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 400;
+}
+
+%ff_RobotoCondensed-Bold {
+	font-family: 'Roboto Condensed', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 700;
+}
+
+%ff_Roboto-Regular {
+	font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 400;
+}
+
+%ff_Roboto-Bold {
+	font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 700;
+}
+
+%ff_WarHeliosCond-Regular {
+	font-family: 'WarHeliosCondC', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 400;
+}
+
+%ff_WarHeliosCond-Bold {
+	font-family: 'WarHeliosCondCBold', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 700;
+}
+
+%ff_Arial-Regular {
+	font-family: Arial, 'Helvetica CY', Helvetica, sans-serif;
+}
+
+//? ==================== Шаблоны компоновки блоков =================== //
+
+%width-height-full {
+	width: 100%;
+	height: 100%;
+}
+%absolute-full {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+%absolute-top0-left0 {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+%absolute-cent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+%flex-cent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+%flex-colum-cent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+%grid-cent {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+%grid-item-cent {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+}
+%img-full-parent {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+//? ==================== Прочие шаблоны =================== //
+
+%frame-film {
+	position: relative;
+	overflow: hidden;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 1.875rem;
+		background: $col_2 $col-lg_20 repeat-x 50% 50%;
+		background-size: 1rem 0.625rem;
+		z-index: 2;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		bottom: 0;
+	}
+}
+
+%frame-film-anim {
+	&::before,
+	&::after {
+		width: 200%;
+		height: 0.75rem;
+		background-size: 0.5rem 0.25rem;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		bottom: 0;
+	}
+	&:hover {
+		&::before,
+		&::after {
+			animation: frame 5s infinite linear;
+		}
+	}
+}
+
+%frame-focus {
+	position: relative;
+	overflow: hidden;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: calc(100% / 10 - 1.5%);
+		height: 100%;
+		background-color: $col_30;
+		pointer-events: none;
+		z-index: 2;
+		@media (max-width: 639px) {
+			width: 2.5%;
+			background-color: $col_2;
+		}
+	}
+	&::before {
+		left: 0;
+	}
+	&::after {
+		right: 0;
+	}
+}
+
+
+%link_icon-blank {
+	@extend %ff_Arial-Regular;
+	color: $col_11;
+	transition: color 0.15s ease-out;
+	&:hover {
+		color: $col_15;
+	}
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 0.625rem;
+		height: 0.625rem;
+		margin-left: 0.1875rem;
+	}
+}
+
+%sliders_startBullet {
+	position: absolute;
+	@extend %flex-cent;
+	width: 10rem;
+	height: 2rem;
+	left: 1.563rem;
+	bottom: 0.5rem;
+	z-index: 2;
+	& .swiper-pagination-bullet {
+		display: inline-block;
+		width: 0.5rem;
+		height: 0.5rem;
+		background: $col_28;
+		border-radius: 0;
+		opacity: 0.4;
+		margin: 0.3rem;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	& .swiper-pagination-bullet-active {
+		background: $col_11;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,689 @@
+//*=============================== Стили компонента-страницы "Турниры" ===============================*//
+
+@import 'styles/variables';
+@import 'styles/mixins/mixin-media';
+@import 'styles/mixins/mixin-buttons';
+
+.tourney {
+	position: relative;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		@extend %width-height-full;
+		z-index: -1;
+	}
+	&::before {
+		left: 0;
+	}
+	&::after {
+		right: 0;
+	}
+	.main {
+		width: 100%;
+	}
+	// ============================ Секция "Витрина" ====================== //
+	.vitrine {
+		text-align: center;
+		transform: translate3d(0, 0, 0);
+		padding-top: 8.25rem;
+		margin-bottom: 3.438rem;
+		@media (max-width: 320px) {
+			padding-top: 3.25rem;
+			margin-bottom: 1.438rem;
+		}
+		&::before {
+			content: '';
+			@extend %absolute-full;
+			background-image: $col-lg_55;
+			z-index: -1;
+		}
+		&__subtitle,
+		&__text,
+		&__title {
+			color: $col_12;
+		}
+		&__subtitle,
+		&__title {
+			font: {
+				weight: 700;
+				size: $fs_4;
+			}
+			line-height: $lh_16;
+		}
+		&__title {
+			text-transform: uppercase;
+		}
+		&__subtitle {
+			display: block;
+			margin-bottom: 0.8125rem;
+		}
+
+		&__text {
+			font-size: $fs_11;
+			line-height: $lh_24;
+			margin-bottom: 2.375rem;
+			@media (max-width: 320px) {
+				margin-bottom: 1rem;
+			}
+		}
+
+		&__btn {
+			@extend %btn_size_medium;
+			@extend %btn_white;
+			background: none;
+			box-shadow: none;
+			&::before,
+			&::after {
+				content: none;
+			}
+		}
+		.vitrine-row {
+			&:first-child {
+				padding: 2.688rem 0 1.5rem;
+			}
+			&:last-child {
+				display: block;
+				padding-bottom: 1.25rem;
+				.vitrine {
+					&__title {
+						text-align: left;
+					}
+				}
+			}
+		}
+	}
+
+	// ========================== Секция "Актуальные" ===================== //
+	.current {
+		margin-bottom: 4.5rem;
+		@media (max-width: 320px) {
+			margin-bottom: 1.5rem;
+		}
+		&__title,
+		&__link {
+			font-weight: 700;
+		}
+		&__title {
+			display: inline-block;
+			font-size: $fs_5;
+			line-height: $lh_23;
+			text-transform: uppercase;
+			color: $col_28;
+			padding: 0 1.125rem 1.5rem 0;
+		}
+		&__link {
+			font-size: $fs_1;
+			line-height: $fs_5;
+			text-transform: uppercase;
+			color: $col_11;
+			transition: color 0.15s ease-out;
+			&:hover {
+				color: $col_15;
+				& .icon {
+					fill: $col_15;
+				}
+			}
+			& .icon {
+				width: 0.5rem;
+				height: 0.5rem;
+				fill: $col_11;
+				transition: fill 0.15s ease-out;
+				margin-left: 0.3rem;
+			}
+		}
+		&__cols {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+			column-gap: 3rem;
+			@media (max-width: 320px) {
+				grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+			}
+		}
+		&__col {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			min-height: 11rem;
+			border: 0.0625rem solid transparent;
+			border-top: 0.0625rem solid $col_48;
+			transition: border-left 0.3s ease-in-out;
+			padding: 1.7rem 0;
+			z-index: 1;
+			@media (max-width: 320px) {
+				padding: 2.3rem 0 1.3rem;
+			}
+			&:hover {
+				background: $col_13;
+				border: {
+					right: 0.0625rem solid $col_48;
+					left: 0.0625rem solid $col_48;
+				}
+				z-index: 2;
+				& .features-current {
+					opacity: 1;
+					left: 0;
+				}
+				&.importante {
+					&::after {
+						content: none;
+					}
+					&::before {
+						content: '';
+						position: absolute;
+						top: 0;
+						bottom: auto;
+						left: -0.0625rem;
+						width: 0.0625rem;
+						height: 100%;
+						background: {
+							image: none;
+							color: $col_48;
+						}
+					}
+					border-left: 0.125rem solid transparent;
+				}
+				@media (max-width: 859px) {
+					& ~ .current {
+						&__col {
+							&.importante {
+								&::after {
+									content: none;
+								}
+								&::before {
+									content: '';
+									position: absolute;
+									top: 0;
+									bottom: auto;
+									left: -0.0625rem;
+									width: 0.0625rem;
+									height: 100%;
+									background: {
+										image: none;
+										color: $col_48;
+									}
+								}
+								border-left: 0.125rem solid transparent;
+							}
+						}
+					}
+				}
+			}
+			&:nth-last-child(-n + 2) {
+				border-bottom: 0.0625rem solid $col_48;
+			}
+			&.importante {
+				border-left: 0.125rem solid $col_64;
+				&::before,
+				&::after {
+					content: '';
+					position: absolute;
+				}
+				&::before {
+					top: -0.0625rem;
+					bottom: -0.0625rem;
+					left: 0;
+					width: 100%;
+					background-image: $col-lg_19;
+					z-index: -1;
+				}
+				&::after {
+					width: 12.81rem;
+					height: 100%;
+					bottom: 0;
+					top: 0;
+					right: auto;
+					left: 30%;
+					overflow: hidden;
+					z-index: -1;
+				}
+			}
+		}
+		&__label {
+			font: {
+				weight: 700;
+				size: $fs_12;
+			}
+			line-height: $lh_12;
+			text-transform: uppercase;
+			@extend %absolute-top0-left0;
+			background-color: $col_64;
+			color: $col_9;
+			padding: 0 0.375rem;
+			z-index: 1;
+		}
+		.image-current {
+			flex: 0 1 20%;
+			@media (max-width: 320px) {
+				flex: 0 1 34%;
+			}
+			&__link {
+				@extend %flex-cent;
+				& .img {
+					width: 4.875rem;
+					height: 4.875rem;
+				}
+			}
+		}
+		.info-current {
+			flex: 0 1 80%;
+			display: flex;
+			margin-bottom: 1.2rem;
+			@media (max-width: 859px) {
+				justify-content: space-between;
+			}
+			@media (max-width: 320px) {
+				flex: 0 1 66%;
+				flex-direction: column;
+				margin-bottom: 0;
+			}
+
+			&__link {
+				display: block;
+				flex: 0 1 60%;
+				max-width: 14rem;
+				margin-right: 2rem;
+				@media (max-width: 320px) {
+					margin: 0 0 1rem 0;
+				}
+			}
+			&__title {
+				font: {
+					weight: 700;
+					size: $fs_5;
+				}
+				line-height: $lh_26;
+				color: $col_9;
+				margin: 0 0 0.25rem;
+			}
+			&__period {
+				display: block;
+				font-size: $fs_1;
+				line-height: $lh_2;
+				color: $col_28;
+				margin: 0 0 0.625rem;
+			}
+			&__features,
+			&__feature {
+				display: flex;
+				align-items: center;
+			}
+			&__feature {
+				color: $col_65;
+				&:first-child {
+					margin-right: 1rem;
+				}
+				& .icon {
+					width: 1.313rem;
+					height: 1.125rem;
+					margin-right: 0.3rem;
+				}
+				& .text {
+					display: block;
+					font: {
+						weight: 700;
+						size: $fs_1;
+					}
+					line-height: $lh_2;
+				}
+			}
+			&__countdown,
+			&__countdown-over {
+				flex: 0 1 45%;
+				@media (max-width: 859px) {
+					flex: 0 1 25%;
+				}
+				@media (max-width: 639px) {
+					flex: 0 1 45%;
+				}
+
+				& > .text {
+					font-size: $fs_12;
+					line-height: $lh_25;
+					text-transform: uppercase;
+					color: $col_65;
+					padding-right: 0.3125rem;
+					margin-bottom: 0.5rem;
+					& > p {
+						font-weight: 700;
+						line-height: $lh_2;
+						padding: 0.125rem 0 0.0625rem;
+					}
+				}
+			}
+			&__countdown {
+				& > .text {
+					& > p {
+						font-size: $fs_14;
+						text-transform: none;
+						color: $col_4;
+					}
+				}
+				& > .link {
+					@extend %btn-bg;
+					@extend %btn_size_small;
+					@extend %btn-bg_orange_1;
+				}
+			}
+			&__countdown-over {
+				& > .text {
+					& > p {
+						font-size: $fs_0;
+						text-transform: uppercase;
+						color: $col_28;
+					}
+				}
+			}
+		}
+		.features-current {
+			flex: 0 1 100%;
+			position: absolute;
+			top: 100%;
+			left: -624.9rem;
+			width: 100%;
+			background: $col_13;
+			padding: 2rem 0rem 2rem 7rem;
+			border: 0.0625rem solid $col_48;
+			transition: opacity 0.15s ease-out;
+			opacity: 0;
+			z-index: 2;
+			@media (max-width: 639px) {
+				padding: 2rem 0rem 2rem 3rem;
+			}
+			@media (max-width: 320px) {
+				padding: 1rem 0.7rem;
+			}
+
+			&__list {
+				display: flex;
+				flex-wrap: wrap;
+				margin-bottom: 1.5rem;
+				@media (max-width: 320px) {
+					margin-bottom: 0rem;
+				}
+			}
+			&__list-item {
+				flex: 0 1 55%;
+				display: flex;
+				color: $col_65;
+				margin-bottom: 1rem;
+				@media (max-width: 320px) {
+					flex: 0 1 50%;
+				}
+				&:nth-child(even) {
+					flex: 0 1 40%;
+					@media (max-width: 320px) {
+						flex: 0 1 50%;
+					}
+				}
+				& .icon {
+					width: 1.2rem;
+					height: 1.2rem;
+					margin-right: 1.3rem;
+					@media (max-width: 320px) {
+						margin-right: 0.5rem;
+					}
+				}
+				&:nth-last-child(-n + 2) {
+					& .icon {
+						width: 1.6rem;
+						height: 1.6rem;
+						margin-right: 1rem;
+					}
+				}
+				& .text,
+				& .link {
+					text-transform: uppercase;
+				}
+				& .text {
+					font-size: $fs_0;
+					line-height: $lh_22;
+					& p {
+						font: {
+							weight: 700;
+							size: $fs_1;
+						}
+						line-height: $lh_2;
+						color: $col_28;
+						margin-top: 0.375rem;
+					}
+				}
+			}
+			& .link {
+				display: block;
+				text-transform: uppercase;
+				font: {
+					weight: 700;
+					size: $fs_1;
+				}
+				line-height: $lh_2;
+				color: $col_11;
+				transition: color 0.15s ease-out;
+				float: right;
+				margin-right: 5.5rem;
+				z-index: 0;
+				&:hover {
+					color: $col_15;
+				}
+				& > .icon {
+					width: 0.6rem;
+					height: 0.6rem;
+					margin-left: 0.3rem;
+					transition: fill 0.15s ease-out;
+				}
+				@media (max-width: 639px) {
+					margin-right: 1.5rem;
+				}
+			}
+		}
+	}
+
+	// ============================ Секция "Последние новости" ========================= //
+	.latest-news {
+		&__title,
+		&__link {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		&__title {
+			display: inline-block;
+			font-size: $fs_5;
+			line-height: $lh_12;
+			color: $col_28;
+			margin: 0rem 1.563rem 1.313rem 0rem;
+		}
+
+		&__link {
+			font-size: $fs_1;
+			line-height: $lh_2;
+			color: $col_11;
+			transition: color 0.15s ease-out;
+			&:hover {
+				color: $col_15;
+				& .icon {
+					fill: $col_15;
+				}
+			}
+			& .icon {
+				width: 0.55rem;
+				height: 0.55rem;
+				fill: $col_11;
+				transition: fill 0.15s ease-out;
+				margin-left: 0.3rem;
+			}
+		}
+		&__cols {
+			position: relative;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(15.38rem, 1fr));
+			gap: 2rem;
+			padding-bottom: 3.188rem;
+			z-index: 1;
+			@media (max-width: 1099px) {
+				grid-template-columns: repeat(auto-fill, minmax(20.38rem, 1fr));
+			}
+			@media (max-width: 320px) {
+				grid-template-columns: repeat(auto-fill, minmax(19.38rem, 1fr));
+				gap: 1rem;
+				padding-bottom: 1rem;
+			}
+		}
+		&__col {
+			.image {
+				&__link {
+					&::before {
+						background-color: $col_66;
+					}
+					&::after {
+						content: none;
+					}
+				}
+				&:hover {
+					.image {
+						&__img {
+							transform: scale(1);
+						}
+					}
+				}
+			}
+			.info {
+				padding-left: 0;
+				&__link {
+					padding-top: 0.625rem;
+				}
+				&__title {
+					font-weight: 400;
+					line-height: $lh_4;
+					white-space: normal;
+					margin: 0 0 0.4375rem;
+				}
+				.list-group {
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+
+	// ============================== Секция "Связаться с нами" ========================= //
+	.contact-us {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		padding: 5.6rem 0;
+		@media (max-width: 320px) {
+			padding: 1.6rem 0;
+		}
+		&::before {
+			content: '';
+			@extend %absolute-full;
+			background-color: $col_67;
+		}
+		&__box {
+			max-width: 42rem;
+			margin: 0 auto;
+		}
+
+		&__logo-partner {
+			width: 7.5rem;
+			height: 3.281rem;
+			margin-bottom: 2.5rem;
+			@media (max-width: 320px) {
+				margin-bottom: 0.5rem;
+			}
+		}
+		&__title,
+		&__subtitle {
+			margin-bottom: 0.625rem;
+		}
+
+		&__title {
+			font: {
+				weight: 700;
+				size: $fs_4;
+			}
+			line-height: $lh_28;
+			color: $col_12;
+		}
+
+		&__subtitle {
+			font-size: $fs_11;
+			line-height: $lh_4;
+			color: $col_28;
+		}
+
+		&__text {
+			font-size: $fs_1;
+			line-height: $lh_27;
+			color: $col_12;
+		}
+	}
+
+	// ============================== Секция "Нижний колонтитул" ========================= //
+	.footer {
+		&__info {
+			display: none;
+		}
+		.lang-panel {
+			@media (max-width: 639px) {
+				bottom: 29%;
+			}
+			@media (max-width: 320px) {
+				bottom: 32%;
+			}
+		}
+	}
+}
+
+.webp {
+	.tourney {
+		&::before {
+			background: url(/assets/img/tourney-page/tournay_left-stripes_bg.webp) 0 0 repeat-y;
+		}
+		&::after {
+			background: url(/assets/img/tourney-page/tournay_right-stripes_bg.webp) 100% 0 repeat-y;
+		}
+		.vitrine {
+			background: url(/assets/img/tourney-page/vitrine/tournay_vitrine_bg.webp) 50% 45% / cover no-repeat;
+		}
+		.current {
+			&__col {
+				&.importante {
+					&::after {
+						background: url(/assets/img/tourney-page/vitrine/tournay_current_bg.webp) center/cover no-repeat;
+					}
+				}
+			}
+		}
+		.contact-us {
+			background: url(/assets/img/tourney-page/contact-us/tournay_contact-us_bg_920x600.webp) center/cover no-repeat;
+		}
+	}
+}
+
+.no-webp {
+	.tourney {
+		&::before {
+			background: url(/assets/img/tourney-page/tournay_left-stripes_bg.png) 0 0 repeat-y;
+		}
+		&::after {
+			background: url(/assets/img/tourney-page/tournay_right-stripes_bg.png) 100% 0 repeat-y;
+		}
+		.vitrine {
+			background: url(/assets/img/tourney-page/vitrine/tournay_vitrine_bg.jpg) 50% 45% / cover no-repeat;
+		}
+		.current {
+			&__col {
+				&.importante {
+					&::after {
+						background: url(/assets/img/tourney-page/vitrine/tournay_current_bg.png) center/cover no-repeat;
+					}
+				}
+			}
+		}
+		.contact-us {
+			background: url(/assets/img/tourney-page/contact-us/tournay_contact-us_bg_920x600.jpg) center/cover no-repeat;
+		}
+	}
+}

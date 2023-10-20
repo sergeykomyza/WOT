@@ -1,0 +1,78 @@
+//*=============================== Стили компонента "элемент Аккордеона" ===============================*//
+
+@import '../../styles/variables';
+@import '../../styles/mixins/mixin-media';
+
+.accordion {
+	padding-left: 3rem;
+	@media (max-width: 639px) {
+		padding-left: 2.4rem;
+	}
+	&__header {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	&__content {
+		overflow-y: hidden;
+		overflow-x: auto;
+		transition: max-height 0.6s ease;
+	}
+}
+.header-accordion {
+	& .btn {
+		width: 2rem;
+		height: 2rem;
+		@extend %flex-cent;
+		position: absolute;
+		top: 0;
+		left: -2rem;
+		& > .icon {
+			width: 1rem;
+			height: 1rem;
+			fill: $col_28;
+			opacity: 0.4;
+			transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+		}
+		&:hover {
+			& > .icon {
+				opacity: 1;
+			}
+		}
+		&.active {
+			& > .icon {
+				transform: rotate(90deg);
+			}
+		}
+	}
+	&__title {
+		font-size: $fs_8;
+		padding: 0.375rem 0rem;
+		& .link {
+			opacity: 0.6;
+			color: $col_28;
+			transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+		}
+		&:hover {
+			& .link {
+				opacity: 1;
+				color: $col_9;
+			}
+		}
+	}
+}
+.guide-links {
+	&__link {
+		display: block;
+		font-size: $fs_8;
+		line-height: $lh_base;
+		color: $col_28;
+		padding: 0.4375rem 0.9375rem 0.4375rem 1.25rem;
+		opacity: 0.6;
+		transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+		&:hover {
+			opacity: 1;
+			color: $col_9;
+		}
+	}
+}

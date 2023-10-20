@@ -1,0 +1,247 @@
+//*=============================== Стили компонента "Нижний колонтитул" ===============================*//
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/_mixin-media.scss';
+
+.footer {
+	position: relative;
+	width: 100%;
+	background-color: $col_2;
+	@extend %flex-cent;
+	z-index: 1;
+	.wrap {
+		width: 76.94rem;
+		display: flex;
+		flex-wrap: wrap;
+		padding-top: 1.313rem;
+		@media (max-width: 1099px) {
+			width: 63rem;
+		}
+		@media (max-width: 859px) {
+			width: 50rem;
+		}
+		@include media-max(639) {
+			width: 35rem;
+			padding-top: 0;
+		}
+		@include media-max(320) {
+			width: 20rem;
+		}
+	}
+	&__info,
+	&__social-contact {
+		flex: 0 1 100%;
+	}
+
+	&__info {
+		flex: 0 1 100%;
+		text-align: center;
+		padding: 1.875rem 15% 2.688rem;
+		@media (max-width: 859px) {
+			padding: 1.875rem 17% 2.688rem;
+		}
+		@media (max-width: 639px) {
+			padding: 1.875rem 15% 1.688rem;
+		}
+		@media (max-width: 320px) {
+			padding: 1rem 1rem 0.688rem;
+		}
+		& > .title {
+			font-weight: 700;
+			margin-bottom: 0.4375rem;
+			font-size: $fs_4;
+			line-height: $lh_16;
+			margin-bottom: 1.25rem;
+		}
+		& > .text {
+			font-size: $fs_5;
+			line-height: $lh_15;
+		}
+	}
+	&__social-contact {
+		border-bottom: 0.0625rem solid $col_21;
+		padding-bottom: 1.563rem;
+		margin-bottom: 1.313rem;
+		@media (max-width: 639px) {
+			padding-bottom: 0;
+			padding-top: 0.563rem;
+		}
+		@media (max-width: 320px) {
+			padding-bottom: 0.563rem;
+		}
+
+		& .social-contact {
+			&__item {
+				color: $col_23;
+				transition: color 0.5s;
+				&:hover {
+					color: $col_9;
+				}
+				&:nth-child(2) {
+					& .icon {
+						fill: $col_1;
+						color: $col_42;
+					}
+				}
+				&:nth-child(3) {
+					& .icon {
+						fill: $col_43;
+					}
+				}
+				&:nth-child(4) {
+					& .icon {
+						color: $col_44;
+					}
+				}
+			}
+		}
+		& .title {
+			max-width: 11rem;
+		}
+	}
+	.logo {
+		flex: 0 1 21%;
+		display: flex;
+		@media (max-width: 859px) {
+			flex: 0 1 20%;
+		}
+		@media (max-width: 639px) {
+			flex: 0 1 100%;
+			justify-content: center;
+			margin-bottom: 2rem;
+		}
+	}
+	.link-logo {
+		width: 6.313rem;
+		height: 3.375rem;
+		@media (max-width: 859px) {
+			width: 8.313rem;
+			height: 4.375rem;
+		}
+	}
+	.nav-footer {
+		flex: 0 1 50%;
+		white-space: nowrap;
+		@media (max-width: 859px) {
+			flex: 0 1 53%;
+		}
+		@media (max-width: 639px) {
+			flex: 0 1 100%;
+			margin-bottom: 2rem;
+		}
+		@media (max-width: 320px) {
+			white-space: normal;
+		}
+		& .nav__list {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr));
+			grid-row-gap: 0.3rem;
+			align-items: center;
+			@media (max-width: 859px) {
+				grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+			}
+			@media (max-width: 639px) {
+				text-align: center;
+			}
+			@media (max-width: 320px) {
+				grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+				grid-row-gap: 0.5rem;
+			}
+		}
+		& .nav__link {
+			&:hover {
+				color: $col_9;
+			}
+			&:after {
+				content: none;
+			}
+		}
+		& li {
+			line-height: $lh_base;
+		}
+	}
+	.lang {
+		flex: 0 1 26%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		@media (max-width: 859px) {
+			justify-content: center;
+		}
+		@media (max-width: 639px) {
+			flex: 0 1 100%;
+		}
+		&__btn {
+			margin: 0 0.75rem;
+			@media (max-width: 859px) {
+				white-space: normal;
+			}
+			&:hover {
+				.icon {
+					fill: $col_9;
+				}
+				& .text {
+					color: $col_9;
+				}
+			}
+			.icon {
+				fill: $col_23;
+				transition: fill 0.3s ease-in-out;
+			}
+			.icon:first-child {
+				width: 0.75rem;
+				height: 0.75rem;
+			}
+			.icon:last-child {
+				width: 0.5rem;
+				height: 0.5rem;
+				transform: rotate(90deg);
+				transition: transform 0.3s ease-in-out;
+				&.active {
+					transform: rotate(270deg);
+				}
+			}
+			.text {
+				color: $col_23;
+				transition: color 0.3s ease-in-out;
+				margin: 0 0.4rem;
+			}
+			&.active {
+				.icon:last-child {
+					transform: rotate(270deg);
+				}
+			}
+		}
+	}
+	.copyright {
+		flex: 0 1 100%;
+		line-height: $lh_2;
+		color: $col_22;
+		text-align: center;
+		border-top: 0.0625rem solid $col_21;
+		padding: 1.344rem 0rem;
+		text-transform: none;
+		margin-top: 0.8125rem;
+		transition: color 0.15s ease-out;
+		&__link {
+			color: $col_23;
+			transition: color 0.3s ease-out;
+			&:last-child {
+				span,
+				sup {
+					transition: color 0.3s ease-out;
+				}
+			}
+			&:hover {
+				color: $col_9;
+				&:last-child {
+					color: $col_70;
+					span,
+					sup {
+						color: $col_71;
+					}
+				}
+			}
+		}
+	}
+}

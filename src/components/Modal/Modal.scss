@@ -1,0 +1,61 @@
+//*======================================= Стили компонента "Модальное окно" ========================================*//
+
+@import 'styles/_variables.scss';
+
+.modal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	@extend %flex-cent;
+	width: 100vw;
+	height: 100vh;
+	background-color: $col_82;
+	backdrop-filter: blur(0.3125rem);
+	z-index: 200;
+	opacity: 0;
+	transition: opacity 0.15s ease;
+	overflow: hidden;
+	overflow-y: auto;
+	visibility: hidden;
+	cursor: pointer;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: center;
+		padding: 2.25rem;
+		border-radius: 2rem;
+		background-color: $col_1;
+		transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+		transform: scale(0.9);
+		will-change: transform;
+		opacity: 0;
+		cursor: default;
+	}
+	&__btn-close {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		@extend %flex-cent;
+		background-color: transparent;
+		outline: none;
+		transition: all 0.3s ease-in-out;
+		z-index: 201;
+		border: 0.0625rem solid $col_82;
+		& .icon {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+	}
+	&.active {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+	}
+	&.active .modal__content {
+		transform: scale(1);
+		opacity: 1;
+	}
+}

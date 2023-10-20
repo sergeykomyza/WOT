@@ -1,0 +1,66 @@
+//*=============================== Стили компонента "Видео" ===============================*//
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/mixin-media';
+
+.video-box {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	@media (max-width: 839px) {
+		height: 115vh;
+	}
+	@media (max-width: 320px) {
+		height: 100vh;
+	}
+}
+.videо {
+	@extend %absolute-top0-left0;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	pointer-events: none;
+}
+@media (min-aspect-ratio: 16/9) {
+	.video {
+		height: 300%;
+		top: -100%;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	.video {
+		width: 300%;
+		left: -100%;
+	}
+}
+@supports (object-fit: cover) {
+	.video {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		@media (max-width: 639px) {
+			display: none;
+		}
+
+	}
+}
+
+.webp {
+	.video-box {
+		background: url(/assets/img/game-page/release/trailer-video_bg.webp) center / cover no-repeat;
+	}
+}
+.no-webp {
+	.video-box {
+		background: url(/assets/img/game-page/release/trailer-video_bg.jpg) center / cover no-repeat;
+	}
+}

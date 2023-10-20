@@ -1,0 +1,11 @@
+//* =============== SCSS Миксин "Шрифты" =============== //
+
+@mixin font($font_name, $file_name, $font_weight, $font_style, $font_display) {
+	@font-face {
+		font-family: "#{$font_name}";
+		src: local("#{$font_name}"), url("/assets/fonts/#{$file_name}.woff2") format("woff2"), url("/assets/fonts/#{$file_name}.woff") format("woff"), url("/assets/fonts/#{$file_name}.ttf") format("truetype");
+		font-weight: $font_weight;
+		font-style: $font_style;
+		font-display: $font_display;
+	}
+}

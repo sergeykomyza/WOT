@@ -1,0 +1,616 @@
+//* ==================== Основной CSS  =================== //
+
+@import './_reset';
+@import './_variables';
+@import './_animation';
+@import './mixins/mixin-media';
+@import './mixins/mixin-buttons';
+@import './mixins/mixin-fonts';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@include font(WarHeliosCondCBold, WarHeliosCondCBold, bold, normal, swap);
+@include font(WarHeliosCondC, WarHeliosCondC, normal, normal, swap);
+
+html,
+body {
+	@media (max-width: 1099px) {
+		font-size: 1.4765vw;
+	}
+	@media (max-width: 859px) {
+		font-size: 1.8765vw;
+	}
+	@media (max-width: 639px) {
+		font-size: 2.6765vw;
+	}
+	@media (max-width: 320px) {
+		font-size: 4.6765vw;
+	}
+}
+
+body {
+	@extend %ff_RobotoCondensed-Regular;
+	line-height: $lh_base;
+	vertical-align: baseline;
+	font-size: $fs_0;
+	background: url(/assets/img/transparent.png) $col_6 no-repeat;
+	color: $col_7;
+	height: 100%;
+}
+
+// Страница
+.page {
+	@extend %width-height-full;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+// Основной контент
+.main {
+	@extend %width-height-full;
+}
+
+// Стандартная кнопка
+.btn {
+	@extend %btn;
+}
+
+// Секция
+section {
+	@extend %width-height-full;
+}
+
+// Обвертка
+.wrap {
+	width: 78rem;
+	height: 100%;
+	margin: 0 auto;
+	@include media-max(1099) {
+		width: 63rem;
+	}
+	@include media-max(859) {
+		width: 50rem;
+	}
+	@include media-max(639) {
+		width: 35rem;
+	}
+	@include media-max(320) {
+		width: 20.03rem;
+	}
+}
+
+// Иконка
+.icon {
+	fill-rule: evenodd;
+	fill: currentColor;
+}
+
+// Псевдоэлементы и изображения
+::after,
+::before,
+img {
+	pointer-events: none;
+}
+
+// Логотип
+.logo {
+	overflow: hidden;
+}
+.link-logo,
+.icon-logo,
+.img-logo {
+	@extend %width-height-full;
+}
+.link-logo {
+	display: block;
+	&:hover {
+		.icon-logo {
+			fill: $col_1;
+			transition: fill 0.3s ease-in-out;
+		}
+	}
+	.icon-logo {
+		fill: $col_5;
+		transition: fill 0.3s ease-in;
+	}
+}
+
+//
+.modal-open,
+.lock {
+	overflow: hidden;
+}
+
+// Социальные ссылки
+.social-contact {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 859px) {
+			flex-wrap: wrap;
+		}
+	}
+	&__item {
+		flex: 0 1 25%;
+		@media (max-width: 859px) {
+			flex: 0 1 50%;
+			margin-bottom: 0.3rem;
+		}
+		@media (max-width: 320px) {
+			flex: 0 1 25%;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		min-height: 3.5rem;
+		@media (max-width: 859px) {
+			padding-left: 3rem;
+		}
+		@media (max-width: 639px) {
+			padding-left: 1.5rem;
+		}
+		@media (max-width: 320px) {
+			padding-left: 0;
+			min-height: 0;
+			justify-content: center;
+		}
+		& > .icon {
+			width: 2rem;
+			height: 2rem;
+			fill: $col_1;
+			margin-right: 1rem;
+			@media (max-width: 320px) {
+				margin-right: 0rem;
+			}
+		}
+	}
+	&__info {
+		font-size: $fs_1;
+		line-height: $lh_2;
+		@media (max-width: 320px) {
+			display: none;
+		}
+		& .title {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+	}
+}
+
+// Бургер меню
+.btn-burger {
+	position: absolute;
+	top: 0rem;
+	left: 0.5rem;
+	padding: 0.7rem 0.2rem;
+	display: none;
+	z-index: 0;
+	@include media-max(859) {
+		display: block;
+		top: 37%;
+		left: 0rem;
+		padding: 0;
+	}
+	&__line {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 23px;
+		height: 3px;
+		background: $col_23;
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 23px;
+			height: 3px;
+			background: $col_23;
+		}
+		&::before {
+			top: -7px;
+		}
+		&::after {
+			bottom: -7px;
+		}
+	}
+}
+
+// Навигация слайдеров
+.nav-slider {
+	display: flex;
+	justify-content: space-between;
+	@extend %absolute-cent;
+	width: 100%;
+	max-width: 79rem;
+	z-index: 3;
+	@media (max-width: 1099px) {
+		max-width: 62rem;
+	}
+	@media (max-width: 859px) {
+		max-width: 51.5rem;
+	}
+	@media (max-width: 639px) {
+		max-width: 36.5rem;
+	}
+	.btn {
+		@extend %flex-cent;
+		@extend %btn-black-fill;
+		width: 2.75rem;
+		height: 2.75rem;
+		& > .icon {
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+}
+
+// Кнопка прокрутки страницы вверх
+.btn-up {
+	position: fixed;
+	right: 3.5rem;
+	bottom: 0rem;
+	width: 2.75rem;
+	height: 2.75rem;
+	@extend %btn-grey-fill;
+	@extend %flex-cent;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 10;
+	@media (max-width: 859px) {
+		right: 1.5rem;
+	}
+	@media (max-width: 639px) {
+		width: 2rem;
+		height: 2rem;
+	}
+	@media (max-width: 320px) {
+		right: 0.7rem;
+		width: 2.2rem;
+		height: 2.2rem;
+	}
+	&.show {
+		visibility: visible;
+		opacity: 1;
+		bottom: 6rem;
+		@media (max-width: 859px) {
+			bottom: 5rem;
+		}
+		@media (max-width: 639px) {
+			bottom: 0.5rem;
+			right: 0.5rem;
+		}
+		@media (max-width: 320px) {
+			bottom: 7rem;
+		}
+	}
+	.icon {
+		width: 0.625rem;
+		height: 0.75rem;
+		fill: $col_12;
+	}
+}
+
+// Модальное окно
+.modal-wot {
+	background-color: $col_82;
+	backdrop-filter: none;
+	&__content {
+		padding: 0rem;
+		border-radius: 0;
+		background-color: $col_0;
+	}
+	&__btn-close {
+		position: absolute;
+		top: -1.7rem;
+		right: -10.5rem;
+		@extend %btn-grey-fill;
+		border: none;
+		@media (max-width: 1099px) {
+			top: -0.7rem;
+			right: -6.5rem;
+		}
+		@media (max-width: 859px) {
+			top: -1.6rem;
+			right: 0.29rem;
+		}
+		@media (max-width: 639px) {
+			top: 0;
+		}
+		@media (max-width: 320px) {
+			top: -11.8rem;
+		}
+		& .icon {
+			width: 0.75rem;
+			height: 0.75rem;
+			fill: $col_24;
+			margin: 0.938rem;
+		}
+	}
+}
+
+// Секции
+.home,
+.game,
+.community,
+.guide,
+.clans,
+.error {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+}
+.game {
+	&::before {
+		z-index: 1;
+	}
+}
+
+.webp .community,
+.webp .guide {
+	&::before {
+		background: url(/assets/img/sparkles-page_bg.webp) 50% 0;
+	}
+}
+
+.no-webp .community,
+.no-webp .guide {
+	&::before {
+		background: url(/assets/img/sparkles-page_bg.png) 50% 0;
+	}
+}
+
+.concept,
+.invite {
+	position: relative;
+	&:before {
+		content: '';
+		@extend %absolute-full;
+		pointer-events: none;
+		z-index: 1;
+	}
+}
+
+// Секция "Приглашение"
+.invite {
+	text-align: center;
+	z-index: 1;
+	&__info {
+		text-transform: none;
+		padding: 6.875rem 1rem 5rem;
+		@media (max-width: 639px) {
+			padding: 2rem 1rem 2rem;
+		}
+	}
+	& .link-logo {
+		width: 16.88rem;
+		height: auto;
+		margin: 0 auto;
+	}
+	&__title {
+		font-size: $fs_4;
+		font-weight: 700;
+		line-height: $lh_3;
+		margin: 0.4rem 0rem 1rem;
+	}
+	&__text {
+		font-size: $fs_5;
+		line-height: $lh_4;
+		margin: 0 auto 1.5rem;
+	}
+}
+
+// Изображение
+.image {
+	flex: 0 1 45%;
+	position: relative;
+	overflow: hidden;
+	&::before,
+	&::after {
+		content: '';
+		@extend %absolute-full;
+	}
+	&::before {
+		background-color: $col_26;
+		opacity: 0;
+		transition: opacity 0.5s;
+		z-index: 1;
+	}
+	&::after {
+		background-image: $col-lg_62;
+	}
+	&__img {
+		@extend %img-full-parent;
+		transition: transform 0.5s ease-in-out;
+		backface-visibility: hidden;
+		will-change: transform;
+	}
+	&:hover {
+		&::before {
+			opacity: 1;
+		}
+		.image {
+			&__img {
+				transform: scale(1.1);
+			}
+		}
+		& ~ .info {
+			& .title {
+				color: $col_9;
+			}
+		}
+	}
+}
+
+// Изображение-ссылка
+.image-link {
+	flex: 0 1 45%;
+	position: relative;
+	overflow: hidden;
+	@media (max-width: 320px) {
+		margin-bottom: 0.5rem;
+	}
+	&__link {
+		display: block;
+		position: relative;
+		@extend %width-height-full;
+		&::before,
+		&::after {
+			content: '';
+			@extend %absolute-full;
+		}
+		&::before {
+			background-color: $col_26;
+			opacity: 0;
+			transition: opacity 0.5s;
+			z-index: 1;
+		}
+		&::after {
+			background-image: $col-lg_60;
+		}
+	}
+	&__img {
+		@extend %img-full-parent;
+		transition: transform 0.5s ease-in-out;
+		backface-visibility: hidden;
+		will-change: transform;
+	}
+	&:hover {
+		.image-link {
+			&__link {
+				&::before {
+					opacity: 1;
+				}
+			}
+			&__img {
+				transform: scale(1.1);
+			}
+		}
+		& ~ .info {
+			& .title {
+				color: $col_9;
+			}
+		}
+	}
+}
+
+// Блок Инфо
+.info {
+	color: $col_28;
+	padding-left: 1.25rem;
+	flex: 0 1 55%;
+	@media (max-width: 320px) {
+		padding-left: 0;
+	}
+	&__link,
+	&__title {
+		&:hover {
+			color: $col_9;
+		}
+	}
+	&__link {
+		display: block;
+		transition: color 0.3s ease-in-out;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: $fs_5;
+		line-height: $lh_15;
+		transition: color 0.3s ease-in-out;
+	}
+	&__text {
+		@extend %ff_Roboto-Regular;
+		font-size: $fs_14;
+		line-height: $lh_22;
+		color: $col_27;
+		margin: 0.6875rem 0 0.625rem;
+	}
+	&__category,
+	&__discuss {
+		margin-right: 0.2rem;
+	}
+	&__category {
+		font-weight: 700;
+		transition: color 0.3s ease-in-out;
+		&:hover {
+			color: $col_9;
+		}
+	}
+	&__date,
+	&__discuss {
+		color: $col_27;
+	}
+	&__discuss {
+		display: flex;
+		align-items: center;
+		transition: color 0.3s ease-in-out;
+		&:hover {
+			color: $col_9;
+		}
+		.icon {
+			width: 0.875rem;
+			height: 0.8125rem;
+			margin-right: 0.25rem;
+			fill: $col_28;
+		}
+	}
+	.list-group {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: $fs_12;
+		line-height: $lh_9;
+		text-transform: uppercase;
+		flex-wrap: wrap;
+		.list-group-item {
+			&:first-child {
+				margin: 0rem 1rem 0.3rem 0rem;
+			}
+		}
+	}
+}
+
+// Хлебные крошки
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.25rem;
+	&__item {
+		color: $col_7;
+		text-transform: uppercase;
+	}
+	&__link {
+		font-size: $fs_0;
+		line-height: $lh_22;
+		transition: color 0.15s ease-out;
+		&:hover {
+			color: $col_9;
+		}
+	}
+	&__icon {
+		width: 0.5rem;
+		height: 0.5rem;
+		fill: $col_7;
+	}
+	&__icon,
+	&__text {
+		margin-left: 0.4rem;
+	}
+}
+
+// Секция "Витрина"
+.vitrine {
+	position: relative;
+	text-align: center;
+	&::before {
+		content: '';
+		@extend %absolute-full;
+		z-index: -1;
+	}
+}

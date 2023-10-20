@@ -1,0 +1,27 @@
+//*=============================== Стили компонента "Видео YouTube" ===============================*//
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/mixin-media';
+
+.video-youtube {
+  position: relative;
+	width: 63.94rem;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+	@media (max-width: 1099px) {
+		width: 51rem;
+	}
+	@media (max-width: 859px) {
+		width: 53.94rem;
+	}
+	@media (max-width: 639px) {
+		width: 38rem;
+	}
+	@media (max-width: 320px) {
+		width: 22rem;
+	}
+	& iframe {
+		@extend %absolute-top0-left0;
+		@extend %width-height-full;
+	}
+}

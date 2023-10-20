@@ -1,0 +1,166 @@
+//*=============================== Стили компонента "Мобильное меню" ===============================*//
+
+@import '../../styles/_variables.scss';
+@import '../../styles/mixins/_mixin-media.scss';
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.3s 0.3s ease-in-out, visibility 1.4s 0.3s ease-in-out;
+	display: none;
+	@include media-max(859) {
+		display: block;
+	}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	&__cover {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: $col_2;
+		opacity: 0;
+		visibility: hidden;
+		cursor: pointer;
+		z-index: 10;
+		transition: opacity 1s 0.5s ease-in-out, visibility 1s 0.3s ease-in-out;
+		&.active {
+			opacity: 0.9;
+			visibility: visible;
+		}
+	}
+	&__content {
+		font-size: $fs_11;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 20rem;
+		height: 100%;
+		background-color: $col_6;
+		transition: left 1.2s 0.7s ease-in-out;
+		overflow-y: auto;
+		overflow-x: hidden;
+		z-index: 11;
+		@media (max-width: 639px) {
+			width: 16rem;
+		}
+		&.active {
+			left: 0;
+			transition: left 1.1s 0.7s ease-in-out;
+		}
+	}
+	&__btn-back,
+	&__btn-close {
+		& > .icon {
+			fill: $col_2;
+		}
+	}
+	&__btn-back {
+		@extend %flex-cent;
+		padding: 1rem 1rem 1rem 0rem;
+		& > .icon {
+			width: 0.9rem;
+			height: 0.9rem;
+			margin-right: 0.2rem;
+			transform: rotate(180deg);
+		}
+	}
+
+}
+.content-mobile-menu {
+	&__header,
+	&__nav {
+		width: 100%;
+	}
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-transform: uppercase;
+		background-color: $col_45;
+		padding-left: 1.5rem;
+		& .text {
+			color: $col_2;
+		}
+	}
+	&__nav {
+		display: flex;
+		transition: all 0.3s ease-in-out;
+		& > ul {
+			min-width: 100%;
+		}
+	}
+}
+.nav-content-mobile-menu__btn,
+.mobile-menu__btn-close {
+	padding: 1.5rem 1rem;
+	& > .icon {
+		width: 0.75rem;
+		height: 0.75rem;
+	}
+}
+.nav-content-mobile-menu {
+	&__list {
+		& > li {
+			background-color: $col_46;
+			&:hover {
+				background-color: $col_41;
+			}
+		}
+	}
+	&__list:first-child {
+		text-transform: uppercase;
+		& > li {
+			background-color: $col_47;
+			transition: color 0.3s ease-in-out;
+			&:hover {
+				color: $col_4;
+				transition: color 0.3s ease-in-out;
+			}
+		}
+	}
+	// &__list,
+	&__link {
+		width: 100%;
+	}
+	&__item {
+		font-weight: 400;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: $col_3;
+		border-top: 0.0625rem solid $col_6;
+		border-bottom: 0.0625rem solid $col_48;
+	}
+	&__link {
+		padding: 1.5rem;
+		&.active {
+			color: $col_9;
+			border-left: 0.1875rem solid $col_4;
+		}
+		&.active,
+		&.active + .nav-content-mobile-menu__btn {
+			background-color: $col_49;
+		}
+	}
+
+	&__btn {
+		& > .icon {
+			fill: $col_50;
+			transition: fill 0.3s ease-in-out;
+			transform: rotate(270deg);
+		}
+		&:hover > .icon {
+			fill: $col_4;
+			transition: fill 0.3s ease-in-out;
+		}
+	}
+}

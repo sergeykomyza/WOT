@@ -1,0 +1,41 @@
+{
+	// здесь все настройки, связанные с компилятором
+	"compilerOptions": {
+		// Версия стандарта ECMAScript, в которую будет скомпилирован код. Здесь большой выбор: ES3, ES5, ES6 (он же ES2015), ES2016, ES2017, ES2018, ES2019, ES2020, ESNext.
+		"target": "es5",
+		// Итерация нижнего уровня. Включает поддержку новых концепций в старых средах выполнения JavaScript.
+		"downlevelIteration": true,
+		// В зависимости от того какой target установлен в конфиге, TypeScript подключает тайпинги (*.d.ts-файлы) для поддержки соответствующих спецификаций
+		"lib": ["dom", "dom.iterable", "esnext"],
+		// Указываем компилятору обрабатывать не только ts файлы, но и js
+		"allowJs": true,
+		// Позволяет создавать свои файлы объявлений TypeScript(например: .d.ts )
+		// "declaration": true,
+		// Пропускать проверку типа всех файлов .d.ts. Вместо того, чтобы выполнять полную проверку всех d.ts файлов, TypeScript выполнит проверку кода, на который вы конкретно ссылаетесь в исходном коде вашего приложения.
+		"skipLibCheck": true,
+		// За счёт добавления болерплейта в выходной код, позволяет импортировать CommonJS пакеты как ES6
+		"esModuleInterop": true,
+		// Если какая-либо библиотека не имеет default import, лоадеры вроде ts-loader или babel-loader автоматически создают их
+		"allowSyntheticDefaultImports": true,
+		//  Автоматически активирует абсолютно все флаги секции Strict Checks
+		"strict": true,
+		// Флаг чувствительности к регистру (case-sensitive) для импорта файлов
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		// Модульная система, которую будет использовать ваше собранное приложение. На выбор: None, CommonJS, AMD, System, UMD, ES6, ES2015, ES2020 или ESNext
+		"module": "esnext",
+		// Стратегия, которая будет использоваться для импорта модулей. Две опции: node и classic
+		"moduleResolution": "node",
+		// Флаг позволяет включить возможность импортировать *.json файлы
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		// Флаг включения поддержки jsx
+		"jsx": "react-jsx",
+		"baseUrl": "src"
+	},
+	// Если опция files не указана, то TypeScript будет использовать эти директивы для поиска компилируемых файлов
+	"include": ["src/**/*", "./types/**/*.d.ts", "server.js"],
+	// Исключать некоторые лишние пути или файлы, которые включились опцией include
+	"exclude": ["node_modules/**/*", "**/*.spec.ts", ".vscode/**/*", "staticfiles/**/*", "frontend/dist/**/*"]
+}

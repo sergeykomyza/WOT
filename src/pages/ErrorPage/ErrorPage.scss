@@ -1,0 +1,181 @@
+//*=============================== Стили компонента страница "Не найдена" ===============================*//
+
+@import 'styles/variables';
+@import 'styles/mixins/mixin-media';
+
+.error {
+	// ================================== Секция "Витрина" ========================= //
+	.vitrine {
+		text-align: center;
+		transform: translate3d(0, 0, 0);
+		padding-top: 17.2rem;
+		margin-bottom: 3.438rem;
+		@media (max-width: 320px) {
+			margin-bottom: 0rem;
+		}
+		&::before {
+			content: none;
+		}
+		&__text,
+		&__title {
+			color: $col_12;
+		}
+		&__title {
+			font: {
+				weight: 700;
+				size: $fs_4;
+			}
+			line-height: $lh_6;
+			margin-bottom: 0.8125rem;
+		}
+		&__text {
+			font-size: $fs_5;
+			line-height: $lh_24;
+			color: $col_27;
+			margin-bottom: 2.375rem;
+			& .link-orange,
+			& .btn {
+				color: $col_11;
+				transition: color 0.15s ease-out;
+				&:hover {
+					color: $col_15;
+				}
+			}
+			& .btn {
+				text-transform: unset;
+			}
+		}
+	}
+
+	// ====================== Секция "Последние новости" ===================== //
+	.latest-news {
+		&__title,
+		&__link {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		&__title {
+			display: inline-block;
+			font-size: $fs_5;
+			line-height: $lh_12;
+			color: $col_28;
+			margin: 0rem 1.563rem 1.313rem 0rem;
+			@media (max-width: 320px) {
+				margin: 0rem 1rem 0rem 0rem;
+			}
+		}
+		&__link {
+			font-size: $fs_1;
+			line-height: $lh_2;
+			color: $col_11;
+			transition: color 0.15s ease-out;
+			&:hover {
+				color: $col_15;
+				& .icon {
+					fill: $col_15;
+				}
+			}
+			& .icon {
+				width: 0.55rem;
+				height: 0.55rem;
+				fill: $col_11;
+				transition: fill 0.15s ease-out;
+				margin-left: 0.3rem;
+			}
+		}
+		&__cols {
+			position: relative;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(15.38rem, 1fr));
+			gap: 2rem;
+			padding-bottom: 3.188rem;
+			z-index: 1;
+			@media (max-width: 1099px) {
+				grid-template-columns: repeat(auto-fill, minmax(20.38rem, 1fr));
+			}
+			@media (max-width: 639px) {
+				gap: 1rem;
+				padding-top: 1rem;
+				padding-bottom: 1.188rem;
+			}
+			@media (max-width: 320px) {
+				grid-template-columns: repeat(auto-fill, minmax(19.38rem, 1fr));
+			}
+		}
+		&__col {
+			&:first-child,
+			&:last-child {
+				.info {
+					&__title {
+						margin-right: 2rem;
+					}
+				}
+			}
+			.image {
+				&__link {
+					&::before {
+						background-color: $col_66;
+					}
+					&::after {
+						content: none;
+					}
+				}
+				&:hover {
+					.image {
+						&__img {
+							transform: scale(1);
+						}
+					}
+				}
+			}
+			.info {
+				padding-left: 0;
+				&__link {
+					padding-top: 0.625rem;
+				}
+				&__title {
+					font-weight: 400;
+					line-height: $lh_4;
+					margin: 0 0 0.4375rem;
+					white-space: normal;
+				}
+				.list-group {
+					justify-content: flex-start;
+					align-items: flex-start;
+				}
+			}
+		}
+	}
+
+	// ====================== "Нижний колонтитул" ===================== //
+	.footer {
+		&__info {
+			display: none;
+		}
+		.lang-panel {
+			@media (max-width: 639px) {
+				bottom: 29%;
+			}
+		}
+	}
+}
+
+// ========================= WebP ========================= //
+.webp {
+	.error {
+		background: url(/assets/img/error-page/error_bg.webp) center top no-repeat;
+		&::before {
+			background: url(../../assets/img/sparkles-page_bg.webp) 50% 0;
+		}
+	}
+}
+
+// ========================= No WebP ========================= //
+.no-webp {
+	.error {
+		background: url(/assets/img/error-page/error_bg.jpg) center top no-repeat;
+		&::before {
+			background: url(../../assets/img/sparkles-page_bg.png) 50% 0;
+		}
+	}
+}

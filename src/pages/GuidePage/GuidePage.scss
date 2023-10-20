@@ -1,0 +1,239 @@
+//*=============================== Стили компонента-страницы "Руководства" ===============================*//
+
+@import 'styles/variables';
+@import 'styles/mixins/mixin-media';
+
+.guide {
+	position: relative;
+	// ====================== "Основной контент" ===================== //
+	.main {
+		display: flex;
+		justify-content: space-around;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	// ====================== "Секция витрина" ===================== //
+	.vitrine {
+		text-align: left;
+		text-transform: uppercase;
+		padding: 8.25rem 3.5rem 2rem;
+		margin-bottom: 3.438rem;
+		z-index: 0;
+		@media (max-width: 639px) {
+			padding: 6.25rem 3rem 1rem;
+			margin-bottom: 1.5rem;
+		}
+		@media (max-width: 320px) {
+			padding: 5.25rem 0.7rem 0rem;
+			margin-bottom: 1rem;
+		}
+		&::before {
+			background-image: $col-lg_55;
+		}
+	}
+	&__title {
+		font-size: $fs_4;
+		font-weight: 700;
+		line-height: $lh_16;
+		color: $col_12;
+		margin-bottom: 1.563rem;
+	}
+
+	// ====================== Блок "Список руководств" ===================== //
+	.list-guide,
+	.nav-guide {
+		flex: 0 1 63%;
+		@media (max-width: 859px) {
+			flex: 0 1 94%;
+			order: 1;
+		}
+	}
+	.list-guide {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+		gap: 1.5rem;
+		padding: 3.6rem;
+		@media (max-width: 1099px) {
+			padding: 0;
+		}
+		@media (max-width: 639px) {
+			grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+		}
+		@media (max-width: 320px) {
+			gap: 1rem;
+		}
+		&__item {
+			position: relative;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border: 0.0625rem solid $col_2;
+			opacity: 0.95;
+			min-height: 8.438rem;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0.0625rem;
+				left: 0.0625rem;
+				right: 0.0625rem;
+				bottom: 0.0625rem;
+				background: url(/assets/img/guide-page/guide-item_overlay.png) -62.5rem -62.5rem no-repeat;
+				background-position: 0 0;
+				background-repeat: repeat;
+				border: 0.0625rem solid $col_56;
+				opacity: 0;
+				transition: opacity 0.3s ease-in-out;
+				z-index: 0;
+			}
+			&:hover {
+				opacity: 1;
+				& .list-guide__title,
+				& .list-guide__text {
+					color: $col_1;
+				}
+				&::after {
+					opacity: 1;
+				}
+			}
+		}
+		&__link {
+			display: block;
+			@extend %absolute-full;
+			padding: 1.7rem 2rem;
+			z-index: 1;
+		}
+		&__title,
+		&__text {
+			color: $col_57;
+			transition: color 0.3s ease-in-out;
+		}
+		&__title {
+			display: block;
+			font-size: 1.25rem;
+			text-transform: uppercase;
+			margin: 0 0 0.625rem 0;
+			& img {
+				margin-left: 0.3rem;
+			}
+		}
+		&__text {
+			@extend %ff_Roboto-Regular;
+			font-size: $fs_0;
+			line-height: $lh_22;
+		}
+	}
+
+	// ====================== Блок "Боковой сайтбар" ===================== //
+	&__sidebar {
+		flex: 0 1 23%;
+		position: relative;
+		top: 0rem;
+		right: 0rem;
+		background-color: $col_21;
+		padding: 0.625rem 0.8125rem 1.875rem;
+		margin-bottom: 2rem;
+		@media (max-width: 859px) {
+			flex: 0 1 94%;
+		}
+		@media (max-width: 639px) {
+			margin-bottom: 1.5rem;
+		}
+		@media (max-width: 320px) {
+			margin-bottom: 1rem;
+		}
+
+	}
+	.sidebar-guide {
+		&__title {
+			font-size: $fs_5;
+			font-weight: 700;
+			line-height: $lh_12;
+			text-transform: uppercase;
+			display: inline-block;
+			position: relative;
+			color: $col_28;
+			margin: 0.875rem 1.875rem 0.8125rem 1.875rem;
+			transition: color 0.3s ease-in-out;
+			@media (max-width: 639px) {
+				margin: 0.875rem 1.875rem 0.8125rem 1.2rem;
+			}
+			&:hover {
+				color: $col_1;
+			}
+		}
+	}
+
+	// ====================== Блок "Навигация" ===================== //
+	.nav-guide {
+		font-size: $fs_8;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+		background-color: $col_21;
+		padding: 1.125rem 1.25rem;
+		margin: 2.75rem 25rem 3.125rem 0;
+		@media (max-width: 1099px) {
+			grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+			margin: 2.75rem 0 3.125rem 0;
+		}
+		@media (max-width: 859px) {
+			margin: 1.75rem 0 1.175rem 0;
+		}
+		@media (max-width: 639px) {
+			grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+		}
+		@media (max-width: 320px) {
+			grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+			padding: 0.6rem 0.6rem;
+			margin: 1rem 0;
+		}
+		&__title {
+			grid-column: 2/3;
+			line-height: $lh_base;
+			text-transform: uppercase;
+			text-align: center;
+			color: $col_27;
+			@media (max-width: 320px) {
+				display: none;
+			}
+		}
+		& .link {
+			grid-column: 3/4;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			text-transform: inherit;
+			color: $col_11;
+			transition: color 0.3s ease-in-out;
+			@media (max-width: 320px) {
+				justify-content: center;
+				grid-column: 1/4;
+			}
+			& .icon {
+				width: 0.5rem;
+				height: 0.5rem;
+				margin-left: 0.3125rem;
+				transition: fill 0.3s ease-in-out;
+			}
+			&:hover {
+				color: $col_15;
+			}
+		}
+	}
+}
+
+.webp {
+	.guide {
+		.vitrine {
+			background: url(/assets/img/guide-page/guide_bg.jpg) 50% 45% / cover no-repeat;
+		}
+	}
+}
+
+.no-webp {
+	.guide {
+		.vitrine {
+			background: url(/assets/img/guide-page/guide_bg.webp) 50% 45% / cover no-repeat;
+		}
+	}
+}

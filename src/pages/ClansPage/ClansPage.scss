@@ -1,0 +1,979 @@
+//*=============================== Стили компонента-страницы "Кланы" ===============================*//
+
+@import 'styles/variables';
+@import 'styles/mixins/mixin-media';
+@import 'styles/mixins/mixin-buttons';
+
+.clans {
+	position: relative;
+	.wrap {
+		width: 59.38rem;
+		@media (max-width: 1099px) {
+			width: 63rem;
+		}
+		@media (max-width: 859px) {
+			width: 49rem;
+		}
+		@media (max-width: 639px) {
+			width: 35rem;
+		}
+		@media (max-width: 320px) {
+			width: 20.5rem;
+		}
+	}
+
+	// ================= Верхний колонтитул ================ //
+	.header {
+		.wrap {
+			justify-content: flex-start;
+			@media (max-width: 859px) {
+				width: 49rem;
+				justify-content: center;
+			}
+			@media (max-width: 639px) {
+				width: 35rem;
+			}
+			@media (max-width: 320px) {
+				width: 20.5rem;
+			}
+		}
+		&__btn {
+			display: none;
+		}
+	}
+
+	// ================= Секция "Витрина" ================ //
+	.vitrine {
+		height: 85rem;
+		@media (max-width: 639px) {
+			height: 68rem;
+		}
+		@media (max-width: 320px) {
+			height: 62rem;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 37.5%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 56rem;
+			height: 43.5rem;
+			z-index: 0;
+			@media (max-width: 859px) {
+				width: 47rem;
+				height: 36.3rem;
+			}
+			@media (max-width: 639px) {
+				top: 27.5%;
+				width: 35rem;
+				height: 27.3rem;
+			}
+			@media (max-width: 320px) {
+				top: 24%;
+				width: 21.3rem;
+				height: 21rem;
+			}
+		}
+		.wrap,
+		.link-logo {
+			z-index: 1;
+		}
+		.wrap {
+			@extend %ff_Arial-Regular;
+			font-size: $fs_0;
+			line-height: $lh_14;
+			word-break: keep-all;
+			width: 62.5rem;
+			margin: 0 auto;
+			color: $col_3;
+			@media (max-width: 859px) {
+				width: 49rem;
+			}
+			@media (max-width: 639px) {
+				width: 35rem;
+			}
+			@media (max-width: 320px) {
+				width: 20.5rem;
+			}
+		}
+		.link-logo {
+			position: relative;
+			top: 3rem;
+			left: -0.7rem;
+			width: 19.81rem;
+			height: 11.88rem;
+			@media (max-width: 639px) {
+				display: none;
+			}
+		}
+		&__row {
+			position: relative;
+			padding-top: 15.7rem;
+			z-index: 1;
+			@media (max-width: 639px) {
+				padding-top: 16.3rem;
+			}
+			@media (max-width: 320px) {
+				padding-top: 12.3rem;
+			}
+		}
+		&__title,
+		&__subtitle {
+			@extend %ff_WarHeliosCond-Regular;
+		}
+		&__title {
+			font-size: $fs_19;
+			line-height: $lh_33;
+			text: {
+				transform: uppercase;
+				shadow: $ts_btn-create;
+			}
+			color: $col_9;
+			margin: 0.25rem 0 0.625rem;
+			@media (max-width: 320px) {
+				margin: 0;
+			}
+		}
+		&__subtitle {
+			font-size: $fs_17;
+			line-height: $lh_32;
+			color: $col_3;
+			margin-bottom: 0.625rem;
+			@media (max-width: 639px) {
+				padding: 0 4rem;
+			}
+			@media (max-width: 320px) {
+				padding: 0;
+			}
+		}
+		&__btns {
+			@extend %flex-cent;
+			margin-bottom: 0.9rem;
+		}
+		&__btn-pickup {
+			@extend %btn-old;
+			margin-right: 0.5rem;
+			z-index: 1;
+		}
+		&__btn-create {
+			@extend %ff_WarHeliosCond-Bold;
+			font-size: $fs_16;
+			line-height: $lh_0;
+			color: $col_11;
+			text-shadow: $ts_btn-create;
+			border: 0.0625rem solid $col_75;
+			border-radius: 0.1875rem;
+			padding: 0.785rem 1.36rem;
+			&:hover {
+				color: $col_74;
+				border-color: $col_76;
+				box-shadow: none;
+			}
+		}
+		.divider {
+			width: 28rem;
+			height: 1rem;
+			margin: 0 auto;
+			@media (max-width: 320px) {
+				width: 100%;
+			}
+		}
+		&__link {
+			@extend %link_icon-blank;
+			display: inline-block;
+			font-size: $fs_1;
+			line-height: $lh_31;
+			text-align: center;
+			padding: 0.75rem 0 1.9375rem;
+			@media (max-width: 320px) {
+				padding: 0.75rem 0 1rem;
+			}
+		}
+		.form-search {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			width: 13.8rem;
+			margin: 0 auto;
+			@media (max-width: 320px) {
+				transform: scale(1.15);
+			}
+			&__icon-clear {
+				position: absolute;
+				top: 0.45rem;
+				right: 2.2rem;
+				width: 0.7rem;
+				height: 0.7rem;
+				fill: $col_26;
+				transition: fill 0.15s ease-in-out;
+				cursor: pointer;
+				&:hover {
+					fill: $col_44;
+				}
+			}
+			&__autocomplete {
+				@extend %absolute-top0-left0;
+				width: 12.2rem;
+				background-color: $col_1;
+				border: 0.0625rem solid $col_2;
+				padding: 0.2rem;
+				z-index: -1;
+				@media (max-width: 859px) {
+					width: 12.1rem;
+					left: 0.05rem;
+				}
+				@media (max-width: 639px) {
+					width: 11.65rem;
+					left: 0.3rem;
+				}
+				@media (max-width: 320px) {
+					width: 11.43rem;
+					left: 0.4rem;
+				}
+			}
+			&__autocomplete-item {
+				position: relative;
+				@extend %ff_RobotoCondensed-Regular;
+				font-size: $fs_0;
+				line-height: $lh_27;
+				text-align: left;
+				color: $col_2;
+				padding: 0.15rem 0.5rem;
+				transition: all 0.15s ease-in-out;
+				z-index: 3;
+				&:hover {
+					background: $col_78;
+					color: $col_1;
+				}
+				&:first-child {
+					margin-top: 1.5rem;
+				}
+				.link {
+					width: 100%;
+					display: block;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+				}
+			}
+			&__btn {
+				display: inline-block;
+				vertical-align: middle;
+				width: 1.563rem;
+				height: 1.5rem;
+				border: 0;
+				padding: 0;
+				border: 0.0625rem solid $col_2;
+				&:hover {
+					background-position: 50% -1.5rem;
+				}
+			}
+		}
+		.fofm-controls-box {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.form-controls {
+			@extend %ff_Arial-Regular;
+			font: {
+				weight: 700;
+				size: $fs_0;
+			}
+			line-height: $lh_34;
+			height: 1.063rem;
+			color: $col_47;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			box: {
+				shadow: $bs_input-serch;
+				sizing: content-box;
+			}
+			border: 0.0625rem solid $col_2;
+			padding: 0.1875rem 1.313rem 0.125rem 0.4375rem;
+			&:focus {
+				background-color: $col_80;
+			}
+			&::placeholder {
+				font-weight: 400;
+				color: $col_81;
+			}
+		}
+	}
+
+	// ================= Секция "Ресурсы" ================ //
+	.resources {
+		position: relative;
+		margin: -38.5rem 0 6rem;
+		@media (max-width: 639px) {
+			margin: -33.5rem 0 0;
+		}
+
+		z-index: 0;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -6rem;
+			width: 100%;
+			height: 3.688rem;
+			@media (max-width: 639px) {
+				bottom: -5.3rem;
+			}
+			@media (max-width: 320px) {
+				bottom: -1.3rem;
+			}
+		}
+		&__cols {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			position: relative;
+			padding-top: 1rem;
+			overflow: hidden;
+			@media (max-width: 639px) {
+				padding-top: 1.5rem;
+			}
+			@media (max-width: 320px) {
+				flex-direction: column;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				width: 0.2rem;
+				height: 13.13rem;
+				@media (max-width: 639px) {
+					content: none;
+				}
+			}
+		}
+		&__col {
+			&:first-child {
+				.resources {
+					&__image {
+						.link {
+							top: -1rem;
+							left: 3.9rem;
+							transform: rotate(15deg);
+							@media (max-width: 859px) {
+								left: 6.9rem;
+							}
+							@media (max-width: 639px) {
+								left: 3.5rem;
+							}
+							@media (max-width: 320px) {
+								left: 2rem;
+							}
+						}
+						.img {
+							margin: 0rem -4rem 0.7rem 0rem;
+							@media (max-width: 859px) {
+								margin: 0rem -3rem 0rem 2rem;
+							}
+							@media (max-width: 639px) {
+								margin-left: 1rem;
+							}
+							@media (max-width: 320px) {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+			}
+			&:last-child {
+				.resources {
+					&__image {
+						.link {
+							top: 1rem;
+							left: -0.5rem;
+							transform: rotate(195deg);
+							@media (max-width: 320px) {
+								left: 2.5rem;
+							}
+						}
+						.img {
+							margin-left: -4rem;
+							@media (max-width: 859px) {
+								margin-left: -3rem;
+							}
+							@media (max-width: 639px) {
+								margin-left: -2.5rem;
+							}
+							@media (max-width: 320px) {
+								margin-left: 0rem;
+							}
+						}
+					}
+				}
+			}
+		}
+		&__image {
+			position: relative;
+			.link {
+				width: 26.19rem;
+				height: 21.25rem;
+				@extend %absolute-top0-left0;
+				border-radius: 80% 0 0 0;
+				z-index: 2;
+				@media (max-width: 859px) {
+					width: 17.19rem;
+					height: 17.25rem;
+				}
+				@media (max-width: 639px) {
+					width: 13.19rem;
+					height: 12.25rem;
+				}
+				@media (max-width: 320px) {
+					width: 16.19rem;
+					height: 13.25rem;
+				}
+
+				&:hover + picture {
+					& .img {
+						top: -1.875rem;
+						opacity: 1;
+					}
+				}
+			}
+			.img {
+				position: relative;
+				top: 0;
+				opacity: 0.8;
+				transition: all 0.3s ease-out 0.2s;
+				@media (max-width: 859px) {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+
+		&__view {
+			padding: 0 3.75rem 0 3rem;
+			margin-bottom: 2.5rem;
+			min-height: 11.2rem;
+			@media (max-width: 639px) {
+				padding: 2rem 0rem 0 1.5rem;
+			}
+			@media (max-width: 320px) {
+				padding: 0rem 0rem 0 1.5rem;
+				min-height: 0;
+			}
+		}
+		&__title {
+			@extend %ff_WarHeliosCond-Regular;
+			font-size: $fs_18;
+			line-height: $lh_29;
+			color: $col_1;
+			margin: 0 0 0.5625rem;
+		}
+		&__features {
+			margin-bottom: 0.5rem;
+		}
+		&__features-item,
+		&__view-link {
+			@extend %ff_Arial-Regular;
+			font-size: $fs_10;
+			line-height: $lh_30;
+		}
+
+		&__features-item {
+			position: relative;
+			word-break: keep-all;
+			color: $col_3;
+			padding: 0 0 0.125rem 0.5625rem;
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0.5625rem;
+				width: 0.25rem;
+				height: 0.25rem;
+				background: $col_77;
+				border-radius: 50%;
+			}
+		}
+		&__view-link {
+			font-size: $fs_10;
+			line-height: $lh_23;
+			color: $col_11;
+			&:hover {
+				color: $col_15;
+			}
+		}
+		&__box-link {
+			float: right;
+			width: 27.63rem;
+			height: 3.938rem;
+			text-align: right;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			margin: -19.2rem 1.125rem 0 0;
+			padding-right: 1.25rem;
+			@media (max-width: 639px) {
+				margin-top: -20rem;
+			}
+			@media (max-width: 320px) {
+				width: 29.63rem;
+				margin-top: -18rem;
+			}
+		}
+		&__link {
+			@extend %link_icon-blank;
+			font-size: $fs_10;
+			z-index: 0;
+		}
+	}
+
+	// ================= Секция "Лучшие кланы" ================ //
+	.best-clans {
+		margin: 3.25rem 0 2.5rem 0;
+		@media (max-width: 639px) {
+			margin: 3.25rem 0 1.5rem 0;
+		}
+		@media (max-width: 320px) {
+			margin: 0rem 0 1.5rem 0;
+			padding: 0 0.5rem;
+		}
+
+		&__title {
+			@extend %ff_WarHeliosCond-Regular;
+			font-size: $fs_18;
+			line-height: $lh_7;
+			color: $col_1;
+			margin: 0 0 2.063rem;
+			overflow: hidden;
+			@media (max-width: 639px) {
+				margin: 0 0 0.5rem;
+			}
+		}
+		&__cols {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 3rem;
+			@media (max-width: 859px) {
+				gap: 1rem;
+			}
+			@media (max-width: 639px) {
+				column-gap: 2rem;
+			}
+		}
+		&__col {
+			flex: calc((100% - 6rem) / 3);
+			width: 16.25rem;
+			@media (max-width: 639px) {
+				flex: 0 1 100%;
+			}
+
+			&:last-child {
+				.title-col {
+					&__icon {
+						margin-top: 0.4rem;
+					}
+				}
+			}
+		}
+		&__list {
+			position: relative;
+			padding: 0 0 0.9375rem;
+			counter-reset: li-counter;
+			overflow: hidden;
+			@media (max-width: 320px) {
+				font-size: $fs_14;
+			}
+		}
+		&__item {
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			padding: 1.125rem 0 1.188rem 1.25rem;
+			border-bottom: 0.0625rem dotted $col_48;
+			&::before {
+				content: counter(li-counter);
+				counter-increment: li-counter;
+				position: absolute;
+				left: 0;
+				top: 1rem;
+				font-size: $fs_10;
+				color: $col_72;
+			}
+			&:nth-child(2n) {
+				& .best-clans {
+					&__acronum {
+						color: $col_71;
+					}
+				}
+			}
+			&:nth-child(4n + 1) {
+				& .best-clans {
+					&__acronum {
+						color: $col_70;
+					}
+				}
+			}
+			&.reset {
+				color: $col_3;
+				&::before {
+					content: none;
+				}
+			}
+		}
+		&__name {
+			width: 100%;
+			line-height: $lh_22;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			color: $col_73;
+			overflow: hidden;
+		}
+		&__acronum,
+		&__value {
+			@extend %ff_Arial-Regular;
+			line-height: $lh_31;
+		}
+		&__acronum {
+			color: $col_69;
+		}
+		&__value {
+			white-space: nowrap;
+			color: $col_3;
+			margin-left: 0.625rem;
+		}
+		&__link {
+			@extend %link_icon-blank;
+			line-height: $lh_22;
+			@media (max-width: 320px) {
+				font-size: $fs_14;
+			}
+		}
+		.title-col {
+			display: flex;
+			align-items: center;
+			height: 2rem;
+			margin-bottom: 1.5rem;
+			@media (max-width: 639px) {
+				margin-bottom: 0;
+			}
+
+			&__text {
+				@extend %ff_WarHeliosCond-Regular;
+				font-size: $fs_5;
+				line-height: $lh_15;
+				color: $col_3;
+				margin: 0.3rem 0 0 0.625rem;
+			}
+		}
+	}
+
+	// ================= Секция "Приглашаем" ================ //
+	.invite {
+		padding-bottom: 7rem;
+		@media (max-width: 639px) {
+			padding-bottom: 2rem;
+		}
+
+		&::after {
+			content: '';
+			@extend %absolute-full;
+		}
+		&__text {
+			@extend %ff_WarHeliosCond-Regular;
+			font-size: $fs_17;
+			line-height: $lh_0;
+			word-break: keep-all;
+			color: $col_3;
+			padding-top: 2.875rem;
+			margin-bottom: 0.625rem;
+			@media (max-width: 639px) {
+				padding-top: 1.875rem;
+			}
+		}
+		&__btn {
+			@extend %btn-old;
+			z-index: 1;
+		}
+	}
+
+	// ================= Нижний колонтитул ================ //
+	.footer {
+		.wrap {
+			width: 62.5rem;
+			@media (max-width: 859px) {
+				width: 49rem;
+			}
+			@media (max-width: 639px) {
+				width: 35rem;
+			}
+			@media (max-width: 320px) {
+				width: 20rem;
+			}
+		}
+		.lang-panel {
+			@media (max-width: 320px) {
+				bottom: 21%;
+			}
+		}
+	}
+}
+
+// ========================= WebP ========================= //
+.webp {
+	.clans {
+		&::before {
+			background: url(/assets/img/sparkles-page_bg.webp) 50% 0;
+		}
+		.vitrine {
+			background: url(/assets/img/clans-page/vitrine/clans_vitrine_bg.webp) 50% 0 no-repeat;
+			&::before {
+				background: url(/assets/img/clans-page/vitrine/clans_vitrine_commanders.webp) center/cover no-repeat;
+			}
+			&__btn-pickup {
+				background: url(/assets/img/clans-page/button-sprite.webp) no-repeat;
+				&::after {
+					background: url(/assets/img/clans-page/button-sprite.webp) 100% -2.875rem no-repeat;
+					@media (max-width: 1099px) {
+						background-position: 100% -2.84rem;
+					}
+					@media (max-width: 859px) {
+						background-position: 100% -2.84rem;
+					}
+					@media (max-width: 639px) {
+						background-position: 100% -2.7rem;
+					}
+					@media (max-width: 320px) {
+						background-position: 100% -3.07rem;
+					}
+				}
+				&:hover {
+					background-position: 0 -5.74rem;
+					@media (max-width: 1099px) {
+						background-position: 0 -5.66rem;
+					}
+					@media (max-width: 859px) {
+						background-position: 0 -5.7rem;
+					}
+					@media (max-width: 639px) {
+						background-position: 0 -5.37rem;
+					}
+					@media (max-width: 320px) {
+						background-position: 0 -6.15rem;
+					}
+
+					&::after {
+						background-position: 100% -8.62rem;
+						@media (max-width: 1099px) {
+							background-position: 100% -8.5rem;
+						}
+						@media (max-width: 859px) {
+							background-position: 100% -8.55rem;
+						}
+						@media (max-width: 639px) {
+							background-position: 100% -8.07rem;
+						}
+						@media (max-width: 320px) {
+							background-position: 100% -9.22rem;
+						}
+					}
+				}
+			}
+			.divider {
+				background: url(/assets/img/clans-page/vitrine/clans_vitrine_divider.webp);
+				@media (max-width: 320px) {
+					background-size: contain;
+				}
+			}
+			.form-search {
+				&__btn {
+					background: url(/assets/img/clans-page/vitrine/clans_vitrine_btn-search.webp) 50% 0 no-repeat;
+				}
+			}
+			.form-controls {
+				background: url(/assets/img/clans-page/vitrine/clans_vitrine_input_bg.webp) $col_3 repeat-x;
+				&:focus {
+					background-position: 0 -2.375rem;
+				}
+			}
+		}
+		.vitrine,
+		.resources,
+		.best-clans {
+			&__link {
+				&::after {
+					background: url(/assets/img/clans-page/blank-link.webp) no-repeat;
+				}
+				&:hover {
+					&::after {
+						background-position: 0 100%;
+					}
+				}
+			}
+		}
+		.resources {
+			&::after {
+				background: url(/assets/img/clans-page/resources/resources_decor-shadow.webp) 100% no-repeat;
+				@media (max-width: 859px) {
+					background-size: contain;
+				}
+			}
+			&__cols {
+				&::after {
+					background: url(/assets/img/clans-page/resources/bg-columns-center.webp) 50% 0 repeat-y;
+				}
+			}
+			&__box-link {
+				background: url(/assets/img/clans-page/resources/resources_link-global-map_bg.webp) no-repeat;
+			}
+		}
+		.invite {
+			&::before {
+				background: url(/assets/img/clans-page/invite/clan-insert-bg.webp) 50% 0 no-repeat;
+			}
+			&::after {
+				background: url(/assets/img/clans-page/invite/clan-insert-bg.webp) 50% 0 no-repeat;
+			}
+			&__btn {
+				background: url(/assets/img/clans-page/button-sprite.webp) no-repeat;
+				&::after {
+					background: url(/assets/img/clans-page/button-sprite.webp) 100% -2.875rem no-repeat;
+					@media (max-width: 1099px) {
+						background-position: 100% -2.84rem;
+					}
+					@media (max-width: 859px) {
+						background-position: 100% -2.84rem;
+					}
+					@media (max-width: 639px) {
+						background-position: 100% -2.7rem;
+					}
+					@media (max-width: 320px) {
+						background-position: 100% -3.07rem;
+					}
+				}
+				&:hover {
+					background-position: 0 -5.74rem;
+					@media (max-width: 1099px) {
+						background-position: 0 -5.66rem;
+					}
+					@media (max-width: 859px) {
+						background-position: 0 -5.7rem;
+					}
+					@media (max-width: 639px) {
+						background-position: 0 -5.37rem;
+					}
+					@media (max-width: 320px) {
+						background-position: 0 -6.15rem;
+					}
+					&::after {
+						background-position: 100% -8.62rem;
+						@media (max-width: 1099px) {
+							background-position: 100% -8.5rem;
+						}
+						@media (max-width: 859px) {
+							background-position: 100% -8.55rem;
+						}
+						@media (max-width: 639px) {
+							background-position: 100% -8.07rem;
+						}
+						@media (max-width: 320px) {
+							background-position: 100% -9.22rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// ========================= No WebP ========================= //
+.no-webp {
+	.clans {
+		&::before {
+			background: url(/assets/img/sparkles-page_bg.png) 50% 0;
+		}
+		.vitrine {
+			background: url(/assets/img/clans-page/vitrine/clans_vitrine_bg.jpg) 50% 0 no-repeat;
+			&::before {
+				background: url(/assets/img/clans-page/vitrine/clans_vitrine_commanders.png) center/cover no-repeat;
+			}
+			&__btn-pickup {
+				background: url(/assets/img/clans-page/button-sprite.png) no-repeat;
+				&::after {
+					background: url(/assets/img/clans-page/button-sprite.png) 100% -2.875rem no-repeat;
+				}
+				&:hover {
+					background-position: 0 -5.75rem;
+					&::after {
+						background-position: 100% -8.625rem;
+					}
+				}
+			}
+			.divider {
+				background: url(/assets/img/clans-page/vitrine/clans_vitrine_divider.png);
+				@media (max-width: 320px) {
+					background-size: contain;
+				}
+			}
+			.form-search {
+				&__btn {
+					background: url(/assets/img/clans-page/vitrine/clans_vitrine_btn-search.png) 50% 0 no-repeat;
+				}
+			}
+			.form-controls {
+				background: url(/assets/img/clans-page/vitrine/clans_vitrine_input_bg.png) $col_3 repeat-x;
+				&:focus {
+					background-position: 0 -2.375rem;
+				}
+			}
+		}
+		.vitrine,
+		.resources,
+		.best-clans {
+			&__link {
+				&::after {
+					background: url(/assets/img/clans-page/blank-link.png) no-repeat;
+				}
+				&:hover {
+					&::after {
+						background-position: 0 100%;
+					}
+				}
+			}
+		}
+		.resources {
+			&::after {
+				background: url(/assets/img/clans-page/resources/resources_decor-shadow.png) 100% no-repeat;
+				@media (max-width: 859px) {
+					background-size: contain;
+				}
+			}
+			&__cols {
+				&::after {
+					background: url(/assets/img/clans-page/resources/bg-columns-center.png) 50% 0 repeat-y;
+				}
+			}
+			&__box-link {
+				background: url(/assets/img/clans-page/resources/resources_link-global-map_bg.png) no-repeat;
+			}
+		}
+		.invite {
+			&::before {
+				background: url(/assets/img/clans-page/invite/clan-insert-bg.png) 50% 0 no-repeat;
+			}
+			&__btn {
+				background: url(/assets/img/clans-page/button-sprite.png) no-repeat;
+				&::after {
+					background: url(/assets/img/clans-page/button-sprite.png) 100% -2.875rem no-repeat;
+				}
+				&:hover {
+					background-position: 0 -5.75rem;
+					&::after {
+						background-position: 100% -8.625rem;
+					}
+				}
+			}
+		}
+	}
+}

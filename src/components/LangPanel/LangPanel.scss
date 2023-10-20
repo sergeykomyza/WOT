@@ -1,0 +1,220 @@
+//*=============================== Стили компонента "Языковая панель" ===============================*//
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/_mixin-media.scss';
+
+// Языковая панель
+.lang-panel {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 100%;
+	background-color: $col_6;
+	opacity: 0;
+	visibility: hidden;
+	transition: max-height 0.5s ease-in-out, visibility 0.3s, opacity 0.7s 0.3s ease, transform 0.3s;
+	will-change: transform;
+	overflow: hidden;
+	z-index: 3;
+	@media (max-width: 639px) {
+		bottom: 20%;
+	}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		border-top: 0.0625rem solid $col_85;
+	}
+	.wrap {
+		display: block;
+		padding-top: 0rem;
+	}
+	& .btn-close {
+		position: absolute;
+		right: 2rem;
+		top: 2rem;
+		width: 1.875rem;
+		height: 1.875rem;
+		transition: background-color 0.15s ease-out;
+		z-index: 1;
+		@media (max-width: 320px) {
+			right: 0.5rem;
+			top: 0.5rem;
+		}
+		&:hover {
+			background-color: $col_86;
+		}
+		& .icon {
+			@extend %absolute-full;
+			width: 0.75rem;
+			height: 0.75rem;
+			fill: $col_24;
+			margin: auto;
+		}
+	}
+	&__info {
+		display: flex;
+		margin-bottom: 2.75rem;
+		@media (max-width: 320px) {
+			margin-bottom: 1.75rem;
+		}
+	}
+	&__text {
+		flex: 0;
+		white-space: nowrap;
+		padding-top: 2.75rem;
+		@media (max-width: 320px) {
+			flex: 0 100%;
+			white-space: normal;
+			padding-top: 0;
+		}
+	}
+	&__title {
+		font-weight: 700;
+		font-size: $fs_13;
+		line-height: $lh_35;
+		color: $col_1;
+		margin-bottom: 0.4375rem;
+	}
+	&__subtitle {
+		font-size: $fs_8;
+		line-height: $lh_27;
+		color: $col_72;
+	}
+	.underline {
+		display: inline-block;
+		flex: 1;
+		border-bottom: 0.0625rem solid $col_1;
+		margin-left: 2.5rem;
+		opacity: 0.2;
+		@media (max-width: 639px) {
+			display: none;
+		}
+	}
+	&__cols {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-bottom: 1.25rem;
+		@media (max-width: 320px) {
+			padding-bottom: 0;
+		}
+	}
+	&__col {
+		flex: 20%;
+		&:nth-child(-n + 2) {
+			flex: 40%;
+			@media (max-width: 639px) {
+				margin-bottom: 1rem;
+			}
+			@media (max-width: 320px) {
+				flex: 0 100%;
+				margin-bottom: 0.5rem;
+			}
+		}
+		&:nth-child(2) {
+			.list-lang {
+				&__item {
+					flex: 100%;
+					padding: 0.5625rem 0;
+					flex-grow: 0;
+					@media (max-width: 320px) {
+						flex: 0 27%;
+					}
+				}
+			}
+		}
+		&:last-child {
+			.list-lang {
+				&__item {
+					flex: 0 1 49%;
+					flex-grow: 0;
+					@media (max-width: 639px) {
+						flex: 0 1 12%;
+					}
+					@media (max-width: 320px) {
+						flex: 0 1 33%;
+					}
+				}
+			}
+		}
+	}
+	&__continent {
+		position: relative;
+		font-weight: 700;
+		font-size: $fs_11;
+		line-height: $lh_27;
+		color: $col_28;
+		margin-bottom: 1.75rem;
+		@media (max-width: 639px) {
+			margin-bottom: 0.75rem;
+		}
+		@media (max-width: 320px) {
+			margin-bottom: 0.5rem;
+		}
+	}
+	.list-lang {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		&__item {
+			flex: 0 1 26%;
+			padding: 0.5625rem 0.5rem 0.5625rem 0;
+			flex-grow: 0;
+			@media (max-width: 639px) {
+				flex: 0 1 31%;
+			}
+		}
+		&__btn {
+			display: inline-block;
+			&:hover {
+				color: $col_1;
+			}
+			&::before {
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
+				position: relative;
+				width: 0.27rem;
+				height: 0.27rem;
+				background: $col_28;
+				border-radius: 50%;
+				border: 0.03125rem solid $col_28;
+				margin: 0rem 0.5rem 0.1875rem 0rem;
+				transition: all 0.3s ease-in-out;
+			}
+			&.active {
+				cursor: default;
+				.text {
+					display: inline-block;
+					font-weight: 600;
+					color: $col_87;
+					padding-left: 0.5rem;
+					transform: skew(-10deg);
+					transition: transform 0.1s ease-in-out, color 0.1s ease-in-out, padding-left 0.2s ease-in-out;
+				}
+				&:hover {
+					color: $col_87;
+				}
+				&::before {
+					background: $col_0;
+					border-color: $col_87;
+					transform: scale(1.8);
+					transition: all 0.3s ease-in-out;
+				}
+			}
+			&.disabled {
+				opacity: .3;
+				cursor: auto;
+				&:hover {
+					color: $col_27;
+				}
+			}
+			.text {
+				font-size: $fs_0;
+				line-height: $lh_19;
+				color: $col_27;
+				transition: transform 0.1s ease-in-out, color 0.1s ease-in-out, padding-left 0.2s ease-in-out;
+			}
+		}
+	}
+}

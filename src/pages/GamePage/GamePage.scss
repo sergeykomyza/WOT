@@ -1,0 +1,1363 @@
+//*=============================== Стили компонента-страницы "Игра" ===============================*//
+
+@import 'styles/variables';
+@import 'styles/mixins/mixin-media';
+@import 'styles/mixins/mixin-buttons';
+
+.game {
+	position: relative;
+	min-height: 100vh;
+	color: $col_12;
+	&::before {
+		z-index: 1;
+	}
+	&::after {
+		content: '';
+		@extend %absolute-full;
+		background-color: $col_53;
+	}
+	// ======================== Верхний колонтитул ========================= //
+	.header {
+		position: fixed;
+	}
+	// ========================= Секция "Релиз" ========================= //
+	.release {
+		text-transform: uppercase;
+		.video-trailer {
+			z-index: 1;
+			@include media-min(860) {
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					height: 100vh;
+					z-index: 1;
+				}
+			}
+			&::before {
+				content: '';
+				@extend %absolute-full;
+				background-color: $col_6;
+				opacity: 0.65;
+			}
+		}
+		.breadcrumbs {
+			position: absolute;
+			top: 6.95rem;
+			left: 3.5rem;
+			z-index: 2;
+			@media (max-width: 859px) {
+				left: 1.2rem;
+			}
+			@media (max-width: 639px) {
+				top: 4.95rem;
+				left: 0.5rem;
+			}
+			&__link {
+				&:hover {
+					.breadcrumbs {
+						&__icon {
+							fill: $col_9;
+							opacity: 1;
+						}
+					}
+				}
+			}
+			&__icon {
+				width: 0.55rem;
+				height: 0.55rem;
+				fill: $col_28;
+				transition: fill 0.15s ease-out, opacity 0.15s;
+				opacity: 0.8;
+				transform: rotate(180deg);
+			}
+			&__icon,
+			&__text {
+				margin-left: 0.2rem;
+			}
+		}
+		&__info {
+			position: absolute;
+			top: 58%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			@extend %flex-colum-cent;
+			text-align: center;
+			z-index: 2;
+			@media (max-width: 1099px) {
+				top: 57%;
+			}
+			@media (max-width: 639px) {
+				top: 54%;
+			}
+			.link-logo {
+				width: 13.75rem;
+				height: auto;
+				margin-bottom: 1rem;
+				@media (max-width: 320px) {
+					width: 12.75rem;
+				}
+			}
+		}
+		&__title {
+			@extend %ff_RobotoCondensed-Bold;
+			font-size: $fs_2;
+			line-height: normal;
+			margin: 0rem 4rem 1.25rem;
+			@media (max-width: 859px) {
+				margin: 0 0 1.25rem;
+			}
+			@media (max-width: 639px) {
+				min-width: 30rem;
+				margin: 0 0 1rem;
+			}
+			@media (max-width: 320px) {
+				min-width: 0rem;
+				font-size: $fs_4;
+			}
+		}
+		.list-group {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			margin-bottom: 2rem;
+			@media (max-width: 1099px) {
+				margin-bottom: 0rem;
+			}
+			@media (max-width: 320px) {
+				flex-wrap: wrap;
+			}
+			.list-group-item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				order: 3;
+				.frame {
+					@extend %frame-film;
+					@extend %frame-film-anim;
+					width: 12.5rem;
+					height: 7.156rem;
+					padding: 0.1rem 0;
+					margin-bottom: 0.9375rem;
+					cursor: pointer;
+					@media (max-width: 639px) {
+						display: none;
+					}
+					.image {
+						width: 12.5rem;
+						height: 7.156rem;
+						&__icon {
+							width: 4.125rem;
+							height: 4.125rem;
+							@extend %absolute-cent;
+							z-index: 1;
+						}
+					}
+				}
+				.title-image {
+					font-size: $fs_0;
+					line-height: $lh_6;
+					color: $col_12;
+					transition: color 0.15s ease-in-out;
+					@media (max-width: 1099px) {
+						display: none;
+					}
+					@media (max-width: 639px) {
+						position: relative;
+						display: inline-block;
+						font-size: $fs_1;
+						font-weight: 700;
+						text-transform: uppercase;
+						color: $col_11;
+						&::before {
+							content: '';
+							position: absolute;
+							left: -1.438rem;
+							top: 0.125rem;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 0.4375rem 0 0.4375rem 0.8125rem;
+							border-color: transparent transparent transparent currentColor;
+						}
+					}
+				}
+				&:first-child {
+					order: 0;
+					@media (max-width: 320px) {
+						order: 3;
+					}
+				}
+				&:last-child {
+					order: 1;
+					& .release__btn {
+						@extend %btn-bg-glare;
+						@extend %btn_size_big;
+						@extend %btn-bg_orange_1;
+						margin: 0 6.25rem 0.9375rem;
+						@media (max-width: 1099px) {
+							margin: 0 3.25rem 0.9375rem;
+						}
+						@media (max-width: 859px) {
+							margin: 0 2.25rem 0.9375rem;
+						}
+						@media (max-width: 639px) {
+							margin: 0 0 0.9375rem;
+						}
+					}
+				}
+				.os-icons {
+					&__icon {
+						width: 1.75rem;
+						height: 1.75rem;
+						fill: $col_12;
+						margin: 0 0.5625rem;
+						opacity: 0.4;
+						transition: transform 0.3s ease-in-out;
+						&:hover {
+							transform: scale(1.2);
+						}
+					}
+				}
+			}
+		}
+		.btn-scroll {
+			@extend %flex-colum-cent;
+			color: $col_27;
+			transition: color 0.15s ease-out;
+			@media (max-width: 639px) {
+				display: none;
+			}
+			&:hover {
+				color: $col_12;
+			}
+			&__text {
+				margin-bottom: 0.5rem;
+			}
+			&__arrow {
+				width: 2.188rem;
+				height: 0.5625rem;
+				margin-top: -0.125rem;
+				animation: fade 2s infinite;
+				&:nth-child(2) {
+					animation-delay: 0s;
+				}
+				&:nth-child(3) {
+					animation-delay: 0.2s;
+				}
+				&:nth-child(4) {
+					animation-delay: 0.4s;
+				}
+			}
+		}
+		@media (max-width: 639px) {
+			&__col {
+				white-space: nowrap;
+				&:first-child,
+				&:nth-child(2) {
+					top: 1.7rem;
+					@media (max-width: 320px) {
+						top: 1rem;
+					}
+				}
+				&:first-child {
+					left: 4.7rem;
+					@media (max-width: 320px) {
+						left: 1.7rem;
+					}
+				}
+				&:nth-child(2) {
+					left: -2.5rem;
+					@media (max-width: 320px) {
+						left: -0.5rem;
+					}
+				}
+			}
+		}
+	}
+
+	// ========================= Секция "Концепция" ========================= //
+	.concept {
+		text-align: center;
+		z-index: 1;
+		&::before,
+		&::after {
+			pointer-events: none;
+		}
+		&::before {
+			z-index: -1;
+		}
+		&::after {
+			content: '';
+			@extend %absolute-full;
+			top: 1.35rem;
+			@media (max-width: 1099px) {
+				top: 5rem;
+			}
+			@media (max-width: 859px) {
+				display: none;
+			}
+		}
+		&__info {
+			padding: 8.563rem 0 5.75rem 0;
+			@media (max-width: 859px) {
+				padding: 3.563rem 0 5.75rem 0;
+			}
+			@media (max-width: 639px) {
+				padding: 2.563rem 0 1.75rem;
+			}
+			@media (max-width: 320px) {
+				padding: 2.563rem 0 0.75rem;
+			}
+		}
+		&__title {
+			font-weight: 700;
+			font-size: $fs_7;
+			line-height: $lh_5;
+			letter-spacing: $ls_1;
+			padding-bottom: 18rem;
+			text-transform: uppercase;
+			padding-bottom: 8rem;
+			text-transform: uppercase;
+			max-width: 62rem;
+			min-height: 26rem;
+			margin: 0 auto;
+			@media (max-width: 859px) {
+				font-size: $fs_2;
+				min-height: 18rem;
+			}
+			@media (max-width: 639px) {
+				min-height: 0rem;
+				padding-bottom: 8rem;
+			}
+			@media (max-width: 320px) {
+				font-size: $fs_22;
+				line-height: $lh_29;
+				max-width: 15rem;
+				padding-bottom: 6rem;
+			}
+		}
+		&__slider {
+			position: relative;
+			height: 11.13rem;
+			margin: -0.375rem 0 0.75rem;
+			z-index: 1;
+			&::after {
+				content: '';
+				position: absolute;
+				top: -3rem;
+				left: 0;
+				right: 0;
+				height: 7.25rem;
+				pointer-events: none;
+				@media (max-width: 320px) {
+					height: 6.7rem;
+				}
+			}
+		}
+		&__text {
+			font-size: $fs_3;
+			line-height: $lh_8;
+			text-transform: none;
+			max-width: 59.06rem;
+			margin: 0 auto;
+			padding-top: 3rem;
+			@media (max-width: 859px) {
+				max-width: 50.1rem;
+			}
+			@media (max-width: 639px) {
+				font-size: $fs_5;
+				max-width: 36rem;
+				color: $col_7;
+				padding-top: 0rem;
+			}
+			@media (max-width: 320px) {
+				font-size: $fs_8;
+				line-height: normal;
+				max-width: 20rem;
+			}
+		}
+		.slider-concept-slide {
+			@extend %flex-cent;
+		}
+		.slider-concept {
+			position: relative;
+			max-width: 70rem;
+			@media (max-width: 320px) {
+				max-width: 22rem;
+			}
+			&__content {
+				@extend %flex-cent;
+				position: relative;
+				padding: 2rem 0;
+				&::after,
+				&::before {
+					content: '';
+					position: relative;
+					top: 0;
+					left: 0;
+					width: 4rem;
+					height: 7rem;
+					opacity: 0.4;
+				}
+				@media (max-width: 320px) {
+					padding: 3rem 0;
+					&::after,
+					&::before {
+						position: absolute;
+						top: 50%;
+					}
+					&::before {
+						transform: translate(10%, -50%);
+					}
+					&::after {
+						transform: translate(390%, -50%);
+					}
+				}
+			}
+			&__info {
+				max-width: 24rem;
+				@media (max-width: 320px) {
+					max-width: 20rem;
+				}
+			}
+			&__title {
+				font-weight: 700;
+				font-size: $fs_3;
+				line-height: normal;
+				text-transform: uppercase;
+				margin-bottom: 1rem;
+				@media (max-width: 320px) {
+					font-size: $fs_11;
+				}
+			}
+			&__text {
+				font-size: $fs_8;
+				color: $col_25;
+			}
+		}
+	}
+
+	// ======================= Секция "Галерея" ========================= //
+	.gallery {
+		@extend %frame-film;
+		text-align: center;
+		background-color: $col_2;
+		padding: 1.875rem 0 2.5rem;
+		z-index: 1;
+		@media (max-width: 320px) {
+			padding: 1.875rem 0 1.7rem;
+		}
+		&__title {
+			font-weight: 700;
+			line-height: $lh_11;
+			color: $col_12;
+			font-size: $fs_4;
+			margin: 2.5rem 0rem 1.438rem 0rem;
+			@media (max-width: 639px) {
+				margin: 0rem;
+			}
+			@media (max-width: 320px) {
+				margin-bottom: 0.5rem;
+			}
+		}
+		&__text {
+			@extend %ff_Roboto-Regular;
+			font-size: $fs_5;
+			line-height: $lh_10;
+			color: $col_28;
+			margin-bottom: 2rem;
+			@media (max-width: 639px) {
+				margin: 0 1rem 1rem;
+			}
+			@media (max-width: 320px) {
+				font-size: $fs_10;
+				line-height: $lh_27;
+			}
+		}
+		.slider-gallery {
+			margin-bottom: 3rem;
+			cursor: pointer;
+			@extend %frame-focus;
+			@media (max-width: 639px) {
+				margin-bottom: 0.5rem;
+			}
+		}
+		.content-slider-gallery {
+			&__img {
+				width: 100%;
+				height: 56.25%;
+			}
+		}
+		.nav-slider {
+			.btn {
+				@extend %btn-grey-fill;
+				@media (max-width: 639px) {
+					background: $col-lg_91;
+					background-size: 300%;
+					transition: all 0.5s;
+					&:hover {
+						background-position: 100% 0;
+						transition: all 0.5s ease-in-out;
+					}
+				}
+			}
+		}
+
+		// Превью-слайдер галлереи
+		.slider-gallery-thumbs {
+			width: calc(100% - 3%);
+			padding: 0.2rem;
+			@media (max-width: 320px) {
+				display: none;
+			}
+		}
+		.slide-frame {
+			width: calc(97% / 10 - 0.6%);
+			height: calc(100vw / 10 - 5.3vw);
+			position: absolute;
+			left: 0.25rem;
+			top: 0.25rem;
+			outline: 0.13rem solid $col_12;
+			transition-duration: 0.8s;
+			transition: transform 0.5s ease-out;
+			z-index: 1;
+			@media (max-width: 1099px) {
+				width: calc(97% / 10 - 0.7%);
+			}
+			@media (max-width: 859px) {
+				width: calc(97% / 10 - 0.9%);
+			}
+			@media (max-width: 639px) {
+				width: calc(97% / 10 - 1.5%);
+				height: calc(100vw / 10 - 5.8vw);
+			}
+		}
+		.slider-gallery-thumbs-slide {
+			cursor: pointer;
+			&.swiper-slide-thumb-active,
+			&:hover {
+				& .img {
+					opacity: 1;
+				}
+			}
+			& .img {
+				display: block;
+				@extend %width-height-full;
+				object-fit: cover;
+				opacity: 0.7;
+				transition: 0.75s;
+			}
+		}
+	}
+	// Общие стили Секций "Техника" и "Нации"
+	.technic,
+	.nation {
+		text-align: center;
+		z-index: 1;
+		& .wrap {
+			width: 100%;
+			position: relative;
+		}
+		&__title {
+			font-size: $fs_4;
+			font-weight: 700;
+			line-height: $lh_11;
+			margin-bottom: 1.438rem;
+			@media (max-width: 639px) {
+				margin-bottom: 0;
+			}
+			@media (max-width: 320px) {
+				font-size: $fs_18;
+				line-height: $lh_0;
+				margin-bottom: 0.7rem;
+			}
+		}
+		&__text {
+			@extend %ff_Roboto-Regular;
+			font-size: $fs_5;
+			line-height: $lh_10;
+			max-width: 62.5rem;
+			margin: 0 auto;
+			color: $col_28;
+			@media (max-width: 859px) {
+				max-width: 50.5rem;
+			}
+			@media (max-width: 639px) {
+				max-width: 35rem;
+			}
+			@media (max-width: 320px) {
+				max-width: 20rem;
+				line-height: $lh_27;
+			}
+		}
+		// Общие стили слайдеров "Техника" и "Нации"
+		.slider-technic,
+		.slider-nation {
+			.representation {
+				position: relative;
+				padding-bottom: 6.438rem;
+				z-index: 1;
+				@media (max-width: 859px) {
+					padding-bottom: 2.438rem;
+					margin: 0 2rem;
+				}
+				@media (max-width: 639px) {
+					padding-bottom: 1.438rem;
+					margin: 0;
+				}
+				@media (max-width: 320px) {
+					& .wrap {
+						width: 93%;
+					}
+				}
+				& .text {
+					font-weight: 700;
+				}
+				&__quantity {
+					font-size: $fs_7;
+					line-height: $lh_18;
+					margin-bottom: 0.1875rem;
+					@media (max-width: 639px) {
+						font-size: $fs_21;
+						margin: 0;
+					}
+					@media (max-width: 320px) {
+						font-size: $fs_22;
+						line-height: $lh_33;
+					}
+				}
+				&__type {
+					font-size: $fs_1;
+					line-height: $lh_19;
+					text-transform: uppercase;
+					margin-bottom: 1.125rem;
+				}
+				&__technic {
+					font-size: $fs_13;
+					line-height: $lh_20;
+					@media (max-width: 320px) {
+						font-size: $fs_3;
+					}
+				}
+			}
+			.pagin-slider {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				z-index: 2;
+				@media (max-width: 639px) {
+					justify-content: center;
+					width: 100%;
+					height: 2rem;
+					bottom: 1.5rem;
+				}
+				& .swiper-pagination-bullet {
+					width: auto;
+					height: auto;
+					display: block;
+					border-radius: 0;
+					background: none;
+					opacity: 1;
+					margin: 0;
+					@media (max-width: 859px) {
+						margin: 0 0.3rem;
+					}
+				}
+				.swiper-pagination-bullet {
+					width: 6rem;
+					@media (max-width: 639px) {
+						display: inline-block;
+						width: 0.5rem;
+						height: 0.5rem;
+						background: $col_28;
+						border-radius: 0;
+						opacity: 0.4;
+						margin: 0.3rem;
+						&:hover {
+							opacity: 0.8;
+						}
+					}
+					&::after {
+						content: '';
+						position: absolute;
+						background-color: $col_51;
+						cursor: none;
+						@media (max-width: 639px) {
+							content: none;
+						}
+					}
+					&:last-child {
+						&::after {
+							content: none;
+						}
+					}
+					&:hover {
+						.swiper-pagination-bullet {
+							&__title,
+							&__quantity {
+								transform: scale(0);
+							}
+						}
+					}
+					&__title,
+					&__quantity {
+						text-transform: uppercase;
+						transition: transform 0.5s ease-in-out;
+						@media (max-width: 639px) {
+							display: none;
+						}
+					}
+					&__title {
+						font-size: $fs_12;
+						color: $col_27;
+					}
+					&__img {
+						transition: transform 0.5s ease-in-out;
+						will-change: transform;
+						@media (max-width: 639px) {
+							display: none;
+						}
+					}
+				}
+				& .swiper-pagination-bullet-active {
+					@media (max-width: 639px) {
+						background: $col_28;
+						opacity: 1;
+					}
+					&:hover {
+						cursor: auto;
+					}
+					.swiper-pagination-bullet {
+						&__title,
+						&__quantity {
+							transform: scale(0);
+							transition: transform 0.3s ease-in-out;
+						}
+					}
+					&__img {
+						transition: transform 0.5s ease-in-out;
+						will-change: transform;
+					}
+				}
+			}
+		}
+		.nav-slider {
+			@media (max-width: 639px) {
+				top: 57%;
+			}
+			@media (max-width: 320px) {
+				top: 40%;
+			}
+		}
+	}
+
+	// =========================== Секция "Техника" ========================= //
+	.technic {
+		margin-bottom: 2rem;
+		@media (max-width: 639px) {
+			margin-bottom: 0;
+		}
+		&__info {
+			position: absolute;
+			top: 15%;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -50%);
+			z-index: 2;
+			@media (max-width: 639px) {
+				top: 14%;
+			}
+			@media (max-width: 320px) {
+				top: 12%;
+			}
+		}
+		.slider-technic {
+			.class-technic {
+				display: flex;
+				align-items: flex-start;
+				flex-wrap: wrap;
+				padding: 13.4rem 4.5rem 5rem;
+				background-position: center 0;
+				background-size: 90rem auto;
+				background-repeat: no-repeat;
+				@media (max-width: 859px) {
+					background: no-repeat center 0;
+					background-size: auto 515px;
+				}
+				@media (max-width: 639px) {
+					padding: 12.4rem 1rem 3rem;
+				}
+				@media (max-width: 320px) {
+					padding: 10.4rem 1rem 3rem;
+				}
+				&__img-layer {
+					position: absolute;
+					top: 5rem;
+					left: 0.4375rem;
+					z-index: 2;
+					@media (max-width: 1099px) {
+						transform: scale(1.02);
+						top: 5.15rem;
+						left: -7.3rem;
+					}
+					@media (max-width: 859px) {
+						display: none;
+					}
+				}
+				&__title {
+					font-size: $fs_7;
+					font-weight: 700;
+					line-height: $lh_17;
+					text-transform: uppercase;
+					flex: 0 1 100%;
+					margin-bottom: 10.5rem;
+					@media (max-width: 859px) {
+						font-size: $fs_20;
+						line-height: $lh_3;
+						margin-bottom: 2.5rem;
+					}
+					@media (max-width: 639px) {
+						font-size: $fs_21;
+						margin-bottom: 1.5rem;
+						line-height: $lh_1;
+					}
+					@media (max-width: 320px) {
+						font-size: $fs_22;
+						margin-bottom: 3.5rem;
+					}
+				}
+				&__description,
+				.properties {
+					flex: 0 1 30%;
+					@media (max-width: 859px) {
+						flex: 0 1 100%;
+					}
+				}
+				&__description {
+					@extend %ff_Roboto-Regular;
+					font-size: $fs_10;
+					text-align: left;
+					@media (max-width: 859px) {
+						text-align: center;
+					}
+					@media (max-width: 320px) {
+						color: $col_7;
+						order: 1;
+					}
+				}
+				.representation {
+					flex: 0 1 40%;
+					@media (max-width: 859px) {
+						flex: 0 1 100%;
+					}
+				}
+			}
+			.properties {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				z-index: 0;
+				@media (max-width: 859px) {
+					justify-content: center;
+					margin-bottom: 1rem;
+				}
+				&__item {
+					@extend %flex-colum-cent;
+					width: 5.5rem;
+					@media (max-width: 859px) {
+						width: 7.5rem;
+					}
+					@media (max-width: 320px) {
+						width: 6.5rem;
+					}
+				}
+				&__img {
+					@extend %flex-cent;
+					width: 4.625rem;
+					height: 4.625rem;
+					background-color: $col_52;
+					margin-bottom: 0.6875rem;
+				}
+				&__name {
+					display: block;
+					font-size: $fs_12;
+					line-height: $lh_21;
+					text-transform: uppercase;
+					color: $col_28;
+					@media (max-width: 859px) {
+						white-space: nowrap;
+					}
+					@media (max-width: 320px) {
+						white-space: normal;
+					}
+				}
+			}
+			// пагинация слайдера
+			.pagin-slider {
+				position: absolute;
+				left: 0;
+				right: 0;
+				max-width: 44rem;
+				height: 5rem;
+				margin: 0 auto;
+				bottom: 5rem;
+				z-index: 2;
+				@media (max-width: 859px) {
+					bottom: 0rem;
+				}
+				@media (max-width: 639px) {
+					bottom: -0.5rem;
+				}
+
+				.swiper-pagination-bullet {
+					&::after {
+						display: block;
+						width: 1.875rem;
+						height: 0.0625rem;
+						transform: translate(6.4rem, -2.2rem);
+					}
+					&:hover {
+						.swiper-pagination-bullet {
+							&__img {
+								transform: scale(2.5);
+							}
+						}
+					}
+					&__img {
+						width: 1.5rem;
+						height: 1.7rem;
+					}
+					&:nth-child(3) {
+						.swiper-pagination-bullet {
+							&__img {
+								width: 2rem;
+								height: 2.3rem;
+								transition: transform 0.5s ease-in-out;
+							}
+						}
+					}
+					&:nth-last-child(-n + 2) {
+						.swiper-pagination-bullet {
+							&__img {
+								width: 1.7rem;
+								height: 1.5rem;
+							}
+						}
+					}
+				}
+				.swiper-pagination-bullet-active {
+					.swiper-pagination-bullet {
+						&__img {
+							width: 1.5rem;
+							height: 1.7rem;
+							transform: scale(2.7);
+							&:hover {
+								transform: scale(2.7);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// ========================= Секция "Нация" ========================= //
+	.nation {
+		margin-bottom: 3.75rem;
+		@media (max-width: 639px) {
+			margin-bottom: 0.75rem;
+		}
+		&__info {
+			position: absolute;
+			top: 15%;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -50%);
+			padding: 4.375rem 1.75rem 0;
+			margin-bottom: 2rem;
+			z-index: 2;
+			@media (max-width: 859px) {
+				padding: 0;
+			}
+			@media (max-width: 320px) {
+				top: 18%;
+				width: 95%;
+			}
+		}
+		.slider-nation {
+			.slider-nation-slide {
+				.picture-slide {
+					position: relative;
+					top: -2.4rem;
+					left: 0;
+					margin-top: 16.5rem;
+					@media (max-width: 320px) {
+						top: -0.8rem;
+						margin-top: 14.5rem;
+					}
+					.img {
+						@extend %absolute-top0-left0;
+					}
+					.img-flag {
+						top: -6rem;
+						left: 100%;
+						opacity: 0;
+						z-index: -1;
+						transition: 1s opacity ease, 1s left ease;
+						@media (max-width: 320px) {
+							top: -2rem;
+							height: 12rem;
+						}
+					}
+					.img-tanks {
+						width: 100%;
+						z-index: 1;
+					}
+				}
+				.title-slide {
+					font-size: $fs_7;
+					font-weight: 700;
+					line-height: $lh_17;
+					text-transform: uppercase;
+					margin-bottom: 9rem;
+					@media (max-width: 859px) {
+						font-size: $fs_20;
+						line-height: $lh_33;
+					}
+					@media (max-width: 639px) {
+						font-size: $fs_21;
+						line-height: $lh_19;
+						margin-bottom: 5rem;
+					}
+					@media (max-width: 320px) {
+						font-size: $fs_22;
+						margin-bottom: 4rem;
+					}
+				}
+
+				&.swiper-slide-duplicate-active,
+				&.swiper-slide-active {
+					.picture-slide {
+						.img-flag {
+							left: 0;
+							opacity: 0.8;
+							transition: 1s opacity ease, 1s left ease;
+						}
+					}
+				}
+
+				&.swiper-slide-duplicate-next,
+				&.swiper-slide-next {
+					.picture-slide {
+						.img-flag {
+							left: 100%;
+							opacity: 0;
+						}
+					}
+				}
+
+				&.swiper-slide-duplicate-prev,
+				&.swiper-slide-prev {
+					.picture-slide {
+						.img-flag {
+							left: -100%;
+							opacity: 0;
+						}
+					}
+				}
+			}
+			.pagin-slider {
+				position: relative;
+				max-width: 78rem;
+				margin: 0 auto;
+				@media (max-width: 1099px) {
+					max-width: 63rem;
+				}
+				@media (max-width: 859px) {
+					max-width: 47rem;
+				}
+				@media (max-width: 320px) {
+					max-width: 18rem;
+					bottom: 1rem;
+				}
+				&::after {
+					top: 50%;
+					left: 92%;
+					max-width: 1.875rem;
+					width: 23%;
+					height: 0.0625rem;
+					z-index: -1;
+				}
+				.swiper-pagination-bullet {
+					position: relative;
+					&:hover {
+						.swiper-pagination-bullet {
+							&__img {
+								transform: scale(2);
+								position: relative;
+								z-index: 1;
+							}
+						}
+					}
+					&__img {
+						width: 4.125rem;
+						height: 3.188rem;
+						@media (max-width: 859px) {
+							width: 3.625rem;
+							height: 2.688rem;
+						}
+					}
+				}
+				.swiper-pagination-bullet-active {
+					.swiper-pagination-bullet {
+						&__img {
+							transform: scale(2);
+						}
+					}
+				}
+			}
+			.nav-slider {
+				@media (max-width: 320px) {
+					top: 65%;
+				}
+			}
+		}
+	}
+
+	// ========================= Секция "Режим" ========================= //
+	.regime {
+		text-align: center;
+		padding-bottom: 8.75rem;
+		z-index: 1;
+		@media (max-width: 1099px) {
+			& .wrap {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+		@media (max-width: 859px) {
+			padding-bottom: 2.75rem;
+		}
+		@media (max-width: 639px) {
+			padding-bottom: 1.75rem;
+		}
+		@media (max-width: 320px) {
+			padding-bottom: 1rem;
+		}
+		&__info {
+			padding: 4.438rem 0rem 5.938rem;
+			@media (max-width: 859px) {
+				padding: 0rem 0rem 3.938rem;
+			}
+			@media (max-width: 639px) {
+				padding: 0rem 0rem 1.938rem;
+			}
+		}
+		&__title {
+			font-size: $fs_4;
+			font-weight: 700;
+			line-height: $lh_11;
+			margin-bottom: 1.438rem;
+			@media (max-width: 320px) {
+				font-size: $fs_23;
+				line-height: $lh_0;
+			}
+		}
+		&__text {
+			@extend %ff_Roboto-Regular;
+			font-size: $fs_5;
+			line-height: $lh_10;
+			color: $col_28;
+			padding: 0 7rem;
+			@media (max-width: 639px) {
+				padding: 0;
+			}
+			@media (max-width: 320px) {
+				font-size: $fs_10;
+				line-height: $lh_base;
+			}
+		}
+		&__cards {
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+			gap: 2.6rem;
+			@media (max-width: 1099px) {
+				width: 65%;
+			}
+			@media (max-width: 859px) {
+				width: 75%;
+			}
+			@media (max-width: 639px) {
+				grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+				gap: 1rem;
+				width: 100%;
+			}
+			@media (max-width: 320px) {
+				width: 85%;
+			}
+		}
+	}
+
+	// ======================== Секция "Приглашаем" ===================== //
+	.invite {
+		&__btn {
+			@extend %btn-bg-glare;
+			@extend %btn_size_big;
+			@extend %btn-bg_orange_1;
+		}
+	}
+
+	// ================= Нижний колонтитул ================ //
+	.footer {
+		.lang-panel {
+			@media (max-width: 320px) {
+				bottom: 21%;
+			}
+		}
+	}
+}
+
+// ========================= WebP ========================= //
+.webp {
+	.game {
+		&::before {
+			background: url(../../assets/img/sparkles-page_bg.webp) 50% 0;
+		}
+		.release {
+			.video-trailer {
+				&::after {
+					background: url(/assets/img/game-page/release/sparkles_left.webp) 0 100% no-repeat, url(/assets/img/game-page/release/sparkles_right.webp) 100% 0 no-repeat,
+						url(/assets/img/game-page/release/corner_left-top.webp) 0 0 no-repeat, url(/assets/img/game-page/release/corner_right-top.webp) 100% 0 no-repeat,
+						url(/assets/img/game-page/release/corner_left-bottom.webp) 0 100% no-repeat, url(/assets/img/game-page/release/corner_right-bottom.webp) 100% 100% no-repeat;
+				}
+			}
+			.btn-scroll {
+				&__arrow {
+					background-image: url(/assets/img/game-page/release/arrow-down.webp);
+				}
+			}
+		}
+		.concept {
+			background: url(/assets/img/game-page/concept/concept_bg.webp) no-repeat;
+			@media (max-width: 859px) {
+				background-position: center 0;
+				background-size: 100% auto;
+				overflow: hidden;
+				position: relative;
+			}
+			&::before {
+				background: url(/assets/img/game-page/concept/sparkles_left.webp) 0 0 / auto 100% no-repeat, url(/assets/img/game-page/concept/sparkles_right.webp) right 0 / auto 100% no-repeat;
+			}
+			&::after {
+				background: url(/assets/img/game-page/concept/overlap-concept_bg.webp) center 0 no-repeat;
+			}
+			&__slider {
+				background: url(/assets/img/game-page/concept/ribbon.webp) center no-repeat;
+				&::after {
+					background: url(/assets/img/game-page/concept/prize.webp) center/contain no-repeat;
+				}
+			}
+			.slider-concept {
+				&__content {
+					&::after {
+						background: url(/assets/img/game-page/concept/ear-right.webp) center/cover no-repeat;
+					}
+					&::before {
+						background: url(/assets/img/game-page/concept/ear-left.webp) center/cover no-repeat;
+					}
+				}
+			}
+		}
+		.nation {
+			background: url(/assets/img/game-page/nation/nation_bg.jpg) center 0.625rem / 90rem auto no-repeat;
+			@media (max-width: 639px) {
+				background-position: center 13.13rem;
+				background-size: contain;
+			}
+			@media (max-width: 320px) {
+				background-position: center 10.63rem;
+			}
+		}
+		.regime {
+			background: url(/assets/img/game-page/regime/regime_bg.webp) center 0 / auto 100% no-repeat;
+			@media (max-width: 859px) {
+				background-size: auto 48%;
+				background-repeat: repeat;
+			}
+		}
+		.invite {
+			background: url(/assets/img/game-page/invite/invite_bg.webp) center/cover no-repeat;
+			&:before {
+				background: url(/assets/img/game-page/concept/sparkles_left.webp) 0 0 / auto 100% no-repeat, url(/assets/img/game-page/concept/sparkles_right.webp) right 0 / auto 100% no-repeat;
+			}
+		}
+	}
+}
+
+// ========================= No WebP ========================= //
+.no-webp {
+	.game {
+		&::before {
+			background: url(../../assets/img/sparkles-page_bg.png) 50% 0;
+		}
+		.release {
+			.video-trailer {
+				&::after {
+					background: url(/assets/img/game-page/release/sparkles_left.png) 0 100% no-repeat, url(/assets/img/game-page/release/sparkles_right.png) no-repeat 100% 0,
+						url(/assets/img/game-page/release/corner_left-top.png) 0 0 no-repeat, url(/assets/img/game-page/release/corner_right-top.png) 100% 0 no-repeat,
+						url(/assets/img/game-page/release/corner_left-bottom.png) 0 100% no-repeat, url(/assets/img/game-page/release/corner_right-bottom.png) 100% 100% no-repeat;
+				}
+			}
+			.btn-scroll {
+				&__arrow {
+					background-image: url(/assets/img/game-page/release/arrow-down.png);
+				}
+			}
+		}
+		.concept {
+			background: url(/assets/img/game-page/concept/concept_bg.jpg) no-repeat;
+			&:before {
+				background: url(/assets/img/game-page/concept/sparkles_left.png) 0 0 / auto 100% no-repeat, url(/assets/img/game-page/concept/sparkles_right.png) right 0 / auto 100% no-repeat;
+			}
+			&::after {
+				background: url(/assets/img/game-page/concept/overlap-concept_bg.png) center 0 no-repeat;
+			}
+			&__slider {
+				background: url(/assets/img/game-page/concept/ribbon.png) center no-repeat;
+				&::after {
+					background: url(/assets/img/game-page/concept/prize.png) center/contain no-repeat;
+				}
+			}
+			.slider-concept {
+				&__content {
+					&::after {
+						background: url(/assets/img/game-page/concept/ear-right.png) center/cover no-repeat;
+					}
+					&::before {
+						background: url(/assets/img/game-page/concept/ear-left.png) center/cover no-repeat;
+					}
+				}
+			}
+		}
+		.nation {
+			background: url(/assets/img/game-page/nation/nation_bg.webp) center 0.625rem / 90rem auto no-repeat;
+		}
+		.regime {
+			background: url(/assets/img/game-page/regime/regime_bg.jpg) center 0 / auto 100% no-repeat;
+		}
+		.invite {
+			background: url(/assets/img/game-page/invite/invite_bg.jpg) center/cover no-repeat;
+			&:before {
+				background: url(/assets/img/game-page/concept/sparkles_left.png) 0 0 / auto 100% no-repeat, url(/assets/img/game-page/concept/sparkles_right.png) right 0 / auto 100% no-repeat;
+			}
+		}
+	}
+}

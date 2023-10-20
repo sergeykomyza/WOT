@@ -1,0 +1,210 @@
+//* =============== SCSS Миксин "Кнопки" =============== //
+
+@import '../../styles/variables';
+@import '../../styles/mixins/mixin-media';
+
+%btn {
+	position: relative;
+	white-space: nowrap;
+	text-transform: uppercase;
+	& span {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+%btn-bg {
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	text-transform: uppercase;
+	& span {
+		position: relative;
+		z-index: 2;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		opacity: 0;
+		transition: opacity 0.15s ease-out;
+		will-change: opacity;
+		z-index: 1;
+	}
+	&:hover {
+		&::after {
+			opacity: 1;
+		}
+	}
+}
+
+%btn-bg-glare {
+	position: relative;
+	white-space: nowrap;
+	text-transform: uppercase;
+	overflow: hidden;
+	& span {
+		position: relative;
+		z-index: 2;
+	}
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+	}
+	&::before {
+		left: 3rem;
+		width: 100%;
+		height: 100%;
+		border-left: 3.625rem solid $col_29;
+		will-change: transform;
+		animation: blink-button 3s infinite ease;
+	}
+	&::after {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		transition: opacity 0.15s ease-out;
+		will-change: opacity;
+		z-index: 1;
+	}
+	&:hover::after {
+		opacity: 1;
+	}
+}
+
+%btn_size_big {
+	font-weight: 700;
+	font-size: $fs_3;
+	line-height: 1;
+	padding: 1.32rem 2.65rem;
+	border-radius: 0.0625rem;
+	box-sizing: border-box;
+	@media (max-width: 639px) {
+		padding: 1rem 1.65rem;
+	}
+
+}
+
+%btn_size_medium {
+	font-weight: 700;
+	font-size: $fs_1;
+	line-height: $lh_2;
+	padding: 0.6875rem 1.75rem;
+	border: 0.125rem solid;
+}
+
+%btn_size_small {
+	font-weight: 700;
+	font-size: $fs_1;
+	line-height: $lh_25;
+	padding: 0.5625rem 1.25rem;
+	min-width: 5.375rem;
+}
+
+%btn-old {
+	@extend %ff_WarHeliosCond-Bold;
+	font-size: $fs_16;
+	line-height: $lh_0;
+	color: $col_9;
+	text-shadow: $ts_btn-old;
+	padding: 0.9063rem 1.938rem;
+	border-radius: 0.1875rem;
+	border: none;
+	@media (max-width: 639px) {
+		padding: 0.82rem 1.937rem;
+	}
+	@media (max-width: 320px) {
+		padding: 1.04rem 1.637rem;
+	}
+	&::before {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 4.688rem;
+		height: 100%;
+		top: 0;
+		right: -0.125rem;
+		border-radius: 0.1875rem;
+	}
+	&:hover {
+		box-shadow: $bs_btn-old;
+	}
+}
+
+%btn-grey-fill {
+	background: $col_88;
+	background-size: 300%;
+	transition: all .5s;
+	&:hover {
+		background-position: 100% 0;
+		transition: all .5s ease-in-out;
+	}
+}
+
+%btn-black-fill {
+	background: $col-lg_91;
+	background-size: 300%;
+	transition: all .5s;
+	&:hover {
+		background-position: 100% 0;
+		transition: all .5s ease-in-out;
+	}
+	@media (max-width: 639px) {
+		background: none;
+	}
+}
+
+%btn-bg_orange_1 {
+	color: $col_12;
+	box-shadow: $bs_btn-big;
+	background: $col-lg_17 no-repeat 0, $col-lg_17 no-repeat 100%, $col_11 $col-lg_18 no-repeat;
+	background-size: 0.0625rem 100%, 0.0625rem 100%, cover;
+	text-shadow: $ts_btn;
+	transition: all 0.3s ease-in-out;
+	&::after {
+		box-shadow: $bs_btn;
+		background: $col-lg_14 no-repeat 0, $col-lg_14 no-repeat 100%, $col_15 $col-lg_16 no-repeat;
+		background-size: 0.0625rem 100%, 0.0625rem 100%, cover;
+	}
+}
+
+%btn-bg_orange_2 {
+	color: $col_11;
+	border-color: $col_11;
+	text-shadow: $ts_btn;
+	transition: color 0.15s ease-in-out;
+	&:hover {
+		color: $col_12;
+		border-color: $col_11;
+	}
+	&::after {
+		box-shadow: $bs_btn-big;
+		background: $col-lg_17 no-repeat 0, $col-lg_17 no-repeat 100%, $col_11 $col-lg_18 no-repeat;
+		background-size: 0.0625rem 100%, 0.0625rem 100%, cover;
+	}
+}
+
+%btn_white {
+	border-color: $col_12;
+	color: $col_12;
+	transition: background 0.15s ease-out, color 0.15s ease-out;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+	&:hover {
+		color: $col_22;
+		background: $col_12;
+	}
+}

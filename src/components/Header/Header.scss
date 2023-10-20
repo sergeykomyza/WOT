@@ -1,0 +1,218 @@
+//*========================== Стили компонента "Верхний колонтитул" ============================*//
+
+@import '../../styles/variables.scss';
+@import '../../styles/mixins/_mixin-media.scss';
+@import '../../styles/mixins/mixin-buttons.scss';
+
+.header {
+	@extend %ff_RobotoCondensed-Bold;
+	font-size: $fs_1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	min-height: 4.188rem;
+	@extend %flex-cent;
+	background-color: $col_8;
+	z-index: 3;
+	.wrap {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width: 1099px) {
+			justify-content: flex-start;
+		}
+		@media (max-width: 859px) {
+			justify-content: center;
+		}
+		.link-logo {
+			width: 8rem;
+			height: 4.125rem;
+			margin-right: 1.375rem;
+			@media (max-width: 859px) {
+				width: 10rem;
+				margin-right: 0;
+			}
+		}
+	}
+	&__nav {
+		@media (max-width: 859px) {
+			display: none;
+		}
+	}
+	&__btn {
+		@extend %btn-bg;
+		@extend %btn_size_medium;
+		@extend %btn-bg_orange_2;
+		padding: 0.63rem 1.4rem;
+		margin-left: 16.8rem;
+		left: 1.5rem;
+		&::before {
+			display: none;
+		}
+		&::after {
+			left: -0.125rem;
+			right: -0.125rem;
+			top: -0.125rem;
+			bottom: -0.125rem;
+		}
+		@media (max-width: 1099px) {
+			display: none;
+		}
+	}
+	&__burger {
+		width: 5rem;
+		height: 5rem;
+		border: 0.0625rem solid $col_61;
+	}
+	@media (min-width: 859px) {
+		&.fixed {
+			position: fixed;
+			opacity: 0;
+			transform: translateY(-4.188rem);
+			transition: transform 0.5s ease;
+		}
+		&.scroll-up {
+			opacity: 1;
+			transform: translateY(0);
+			transition: transform 0.3s ease;
+		}
+	}
+}
+.nav {
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+		position: relative;
+		line-height: $lh_1;
+		text-transform: uppercase;
+		color: $col_3;
+		margin: 0 1.375rem;
+		@media (max-width: 320px) {
+			margin: 0;
+		}
+		& svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 0.55rem;
+			height: 0.55rem;
+			fill: $col_3;
+			&#up-arrow {
+				fill: $col_4;
+			}
+		}
+		&.submenu-open {
+			& .item__list {
+				visibility: visible;
+				opacity: 1;
+				transition: opacity 0.3s ease-in-out;
+			}
+		}
+		&.active {
+			& > .nav {
+				&__link {
+					color: $col_4;
+					&.active {
+						color: $col_9;
+					}
+				}
+			}
+		}
+	}
+	&__link {
+		display: block;
+		color: inherit;
+		transition: color 0.3s ease-in-out;
+		&:hover {
+			color: $col_4;
+			transition: color 0.3s ease-in-out;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 0.125rem;
+			background-color: $col_0;
+		}
+		&.active {
+			color: $col_9;
+		}
+		&.active::after {
+			background-color: $col_4;
+		}
+	}
+}
+.link-nav {
+	display: inline-block;
+	&__btn {
+		display: inline-block;
+		width: 1.75rem;
+		height: 1.75rem;
+		background-color: $col_0;
+		vertical-align: middle;
+		position: relative;
+		margin: 0rem -0.625rem 0rem 0.625rem;
+		transition: background-color 0.3s ease-in-out;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0.5rem;
+			height: 0.625rem;
+			width: 0.0625rem;
+			background-color: $col_3;
+		}
+		&:hover,
+		&:hover::before {
+			background-color: $col_4;
+			transition: background-color 0.3s ease-in-out;
+		}
+		&:hover > svg {
+			fill: $col_10;
+			transition: fill 0.3s ease-in-out;
+		}
+		&:hover svg#up-arrow {
+			fill: $col_10;
+			transition: fill 0.3s ease-in-out;
+		}
+		&::after {
+			content: none;
+		}
+	}
+}
+.item {
+	&__list {
+		@extend %ff_RobotoCondensed-Regular;
+		position: absolute;
+		top: 4.2rem;
+		left: -1.2rem;
+		background-color: $col_8;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 0.3s ease-in-out, visibility 0.2s ease-in-out;
+		& a {
+			text-transform: none;
+			display: block;
+			padding: 0.875rem 1rem;
+			white-space: nowrap;
+			line-height: $lh_base;
+			transition: color 0.3s ease-in-out;
+		}
+		& a:hover {
+			color: $col_4;
+			transition: color 0.3s ease-in-out;
+		}
+		&.active {
+			visibility: visible;
+			opacity: 1;
+			transition: opacity 0.7s ease-in-out, visibility 0.2s ease-in-out;
+		}
+	}
+}

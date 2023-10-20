@@ -1,0 +1,86 @@
+//*======================================= Стили компонента "Переворачивающаяся карточка" ========================================*//
+
+@import '../../styles/variables';
+@import '../../styles/mixins/mixin-media';
+
+.flip-card {
+	position: relative;
+	height: 25.5rem;
+	perspective: 62.5rem;
+	@media (max-width: 639px) {
+		height: 24.5rem;
+	}
+	@media (max-width: 320px) {
+		height: 22.5rem;
+	}
+	.flip-card-front,
+	.flip-card-back {
+		@extend %absolute-full;
+		background-color: $col_54;
+		padding-top: 2rem;
+		backface-visibility: hidden;
+		@media (max-width: 639px) {
+			padding-top: 1.5rem;
+		}
+		&__title {
+			font-size: $fs_5;
+			font-weight: 700;
+			line-height: $lh_13;
+		}
+		&__side {
+			font-size: $fs_1;
+			font-weight: 700;
+			line-height: normal;
+			height: 1.063rem;
+			& > span {
+				color: $col_27;
+			}
+		}
+		&__img {
+			width: 15rem;
+			height: auto;
+			margin: -2.5rem 0rem -3rem;
+			@media (max-width: 320px) {
+				width: 14rem;
+			}
+		}
+		& .icon {
+			width: 1rem;
+			height: 1rem;
+		}
+		&__subtitle {
+			line-height: normal;
+			text-transform: uppercase;
+			color: $col_28;
+			margin-bottom: 1rem;
+		}
+		&__text {
+			@extend %ff_Roboto-Regular;
+			font-size: $fs_14;
+			line-height: $lh_22;
+			color: $col_7;
+			margin: 0 2rem;
+		}
+	}
+	.flip-card-front-nav,
+	.flip-card-back-nav {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 1rem;
+		&__btn-left,
+		&__btn-right {
+			width: 3rem;
+			height: 3rem;
+			@extend %flex-cent;
+			transition: opacity 0.15s ease-out;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+//* =============================== CSS Animations  ================================== *//
+
+@keyframes blink-button {
+	0% {
+		transform: translateX(-60px) skew(35deg);
+	}
+	50%,
+	to {
+		transform: translateX(100%) skew(35deg);
+	}
+}
+
+@keyframes frame {
+	0% {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@keyframes fade {
+	0%,
+	60%,
+	to {
+		opacity: 0.15;
+	}
+	30% {
+		opacity: 1;
+	}
+}
+
+@keyframes spinner {
+	0% {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
