@@ -1,0 +1,2779 @@
+{
+	"createAccount": "Зарегистрироваться",
+	"back": "назад",
+	"menu": "Меню",
+	"close": "Закрыть",
+	"up": "Наверх",
+	"wot": "Мир танков",
+	"breadcrumbs_link": "Главная",
+	"doubleArrow": "двойная стрелка",
+	"toTheMainPage": "на главную",
+	"latestNews": "Последние новости",
+	"allNews": "Все новости",
+	"WOTpartnersLogo": "Логотип «Партнеры WOT»",
+	"declensHours": ["час", "часа", "часов"],
+	"declensDeys": ["день", "дня", "дней"],
+	"learnMore": "Подробнее",
+	"showAll": "Показать все",
+	"rollUp": "Cвернуть",
+	"prevSlide": "Предыдущий слайд",
+	"nextSlide": "Следующий слайд",
+	"guides": "Руководствa",
+	"contents": "Содержание",
+	"pageNotFound": "Страница не найдена",
+	"premiumShop": "Премиум магазин",
+	"flip": "Перевернуть",
+	"header": {
+		"routesApp": [
+			{
+				"name": "Главная",
+				"path": "/",
+				"Element": "HomePage"
+			},
+			{
+				"name": "Игра",
+				"path": "/game",
+				"Element": "GamePage",
+				"submenu": [
+					{
+						"name": "Скачать игру",
+						"path": "https://worldoftanks.eu/ru/game/download/"
+					},
+					{
+						"name": "Активировать бонус-код",
+						"path": "https://eu.wargaming.net/shop/redeem/?utm_content=bonus-code&link_place=wotp_link_main-menu"
+					},
+					{
+						"name": "Новости",
+						"path": "https://worldoftanks.eu/ru/news/"
+					},
+					{
+						"name": "Рейтинги",
+						"path": "https://worldoftanks.eu/ru/ratings/"
+					},
+					{
+						"name": "Последние изменения",
+						"path": "https://worldoftanks.eu/ru/content/docs/release_notes/"
+					},
+					{
+						"name": "Танковедение",
+						"path": "https://worldoftanks.eu/ru/tankopedia/"
+					},
+					{
+						"name": "Музыка",
+						"path": "https://worldoftanks.eu/ru/content/music/"
+					}
+				]
+			},
+			{
+				"name": "Руководства",
+				"path": "/guide",
+				"Element": "GuidePage",
+				"submenu": [
+					{
+						"name": "Новичку",
+						"path": "https://worldoftanks.eu/ru/content/guide/newcomers-guide/"
+					},
+					{
+						"name": "Основное",
+						"path": "https://worldoftanks.eu/ru/content/guide/general/"
+					},
+					{
+						"name": "Игровая экономика",
+						"path": "https://worldoftanks.eu/ru/content/guide/wot_economy/"
+					},
+					{
+						"name": "Безопасность",
+						"path": "https://worldoftanks.eu/ru/content/guide/account_security/"
+					},
+					{
+						"name": "Достижения",
+						"path": "https://worldoftanks.eu/ru/content/guide/general/achievements/"
+					},
+					{
+						"name": "Играем по правилам",
+						"path": "https://worldoftanks.eu/ru/content/guide/fair_play/"
+					},
+					{
+						"name": "Wargaming.net Game Center",
+						"path": "https://worldoftanks.eu/ru/content/guide/general/wgc_guide/"
+					},
+					{
+						"name": "Руководства по танкам",
+						"path": "https://worldoftanks.eu/ru/content/guide/tank-manuals/"
+					},
+					{
+						"name": "Руководство по Twitch Drops",
+						"path": "https://worldoftanks.eu/ru/content/guide/twitch-drops/"
+					}
+				]
+			},
+			{
+				"name": "Кланы",
+				"path": "/clans",
+				"Element": "ClansPage",
+				"submenu": [
+					{
+						"name": "Укрепрайон",
+						"path": "https://worldoftanks.eu/ru/clanwars/strongholds/"
+					},
+					{
+						"name": "Глобальная карта",
+						"path": "https://eu.wargaming.net/globalmap/?link_place=wotp_link_main-menu"
+					},
+					{
+						"name": "Рейтинг кланов",
+						"path": "https://eu.wargaming.net/clans/wot/leaderboards/?link_place=wotp_link_main-menu"
+					},
+					{
+						"name": "Клановый портал",
+						"path": "https://eu.wargaming.net/clans/wot/?link_place=wotp_link_main-menu"
+					}
+				]
+			},
+			{
+				"name": "Турниры",
+				"path": "/tourney",
+				"Element": "TourneyPage"
+
+			},
+			{
+				"name": "Сообщество",
+				"path": "/community",
+				"Element": "СommunityPage",
+				"submenu": [
+					{
+						"name": "Мой профиль",
+						"path": "https://worldoftanks.eu/ru/community/accounts/show/me/"
+					},
+					{
+						"name": "Поиск игроков",
+						"path": "https://worldoftanks.eu/ru/community/accounts/"
+					},
+					{
+						"name": "Пригласить друга",
+						"path": "https://worldoftanks.eu/content/docs/referral-program-regulations/"
+					},
+					{
+						"name": "Форум",
+						"path": "http://forum.worldoftanks.eu/index.php?/forum/3162-ru-forum//&link_place=wotp_link_main-menu"
+					},
+					{
+						"name": "Портал модов",
+						"path": "https://wgmods.net/?link_place=wotp_link_main-menu"
+					},
+					{
+						"name": "Медиа",
+						"path": "https://worldoftanks.eu/ru/media/"
+					},
+					{
+						"name": "Полезный софт",
+						"path": "https://worldoftanks.eu/ru/content/soft/"
+					}
+				]
+			},
+			{
+				"name": "Not Found",
+				"path": "*",
+				"Element": "ErrorPage"
+			}
+		]
+	},
+	"home": {
+		"listSlidesVitrine": [
+			{
+				"img": "assets/img/home-page/home_wz-111-5a+progetto-m40-mod.65_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_wz-111-5a+progetto-m40-mod.65_615x346.webp",
+				"title": "В бой на WZ-111 model 5A и Progetto M40 mod. 65",
+				"url": "https://worldoftanks.eu/ru/news/specials/top-of-the-tree-october-2022/"
+			},
+			{
+				"img": "assets/img/home-page/home_monthly-rundown-november_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_monthly-rundown-november_615x346.webp",
+				"title": "Обзор месяца: играем на час дольше!",
+				"url": "https://worldoftanks.eu/ru/news/general-news/november-2022-sneak-peek/"
+			},
+			{
+				"img": "assets/img/home-page/vitrine/replay_roundup_ep_8_615x346.jpg",
+				"imgWebP": "assets/img/home-page/vitrine/replay_roundup_ep_8_615x346.webp",
+				"title": "Лучшие реплеи, выпуск 8: Объект 277 задаёт тон",
+				"url": "https://worldoftanks.eu/ru/news/guides-reviews/replay-roundup-episode-8/"
+			},
+			{
+				"img": "assets/img/home-page/vitrine/home_vitrine_personal_reserves_2.0_615x346.jpg",
+				"imgWebP": "assets/img/home-page/vitrine/home_vitrine_personal_reserves_2.0_615x346.webp",
+				"title": "Новые личные резервы: просто и эффективно",
+				"url": "https://worldoftanks.eu/ru/news/general-news/1-18-1-improved-personal-reserves/"
+			},
+			{
+				"img": "assets/img/home-page/home_battle-pass_s9_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_battle-pass_s9_615x346.webp",
+				"title": "Девятый сезон Боевого пропуска уже здесь!",
+				"url": "https://worldoftanks.eu/ru/news/general-news/battle-pass-season-9-redir/"
+			},
+			{
+				"img": "assets/img/home-page/home_monthly-drops-commander-edition_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_monthly-drops-commander-edition_615x346.webp",
+				"title": "Новые ежемесячные Twitch Drops: командирское издание",
+				"url": "https://worldoftanks.eu/ru/news/live-streams/monthly-twitch-drops-october-22-commander-edition/"
+			},
+			{
+				"img": "assets/img/home-page/vitrine/home_vitrine_eu-na-merge-banner_615x346.jpg",
+				"imgWebP": "assets/img/home-page/vitrine/home_vitrine_eu-na-merge-banner_615x346.webp",
+				"title": "ВАЖНАЯ ИНФОРМАЦИЯ О СТРАНИЦАХ В СОЦСЕТЯХ",
+				"url": "https://worldoftanks.eu/b4r/4571/go?to=https://worldoftanks.eu/ru/news/general-news/social-media-na-en-merge-1122/"
+			}
+		],
+		"listLatestNews": [
+			{
+				"widthImg": 394,
+				"heightImg": 270,
+				"img": "assets/img/home-page/latest-news/home_latest-news_bourrasque+isu152k+cromwell_b_615x346.jpg",
+				"imgWebP": "assets/img/home-page/latest-news/home_latest-news_bourrasque+isu152k+cromwell_b_615x346.webp",
+				"title": "Bourrasque, ИСУ-152K и Cromwell B: всеобщие любимцы",
+				"text": "В Премиум магазине появились просто отличные предложения с техникой. Убедитесь сами!",
+				"url": "https://worldoftanks.eu/ru/news/specials/bourrasque-isu-152k-cromwell-b-sale-nov2022/",
+				"link1Title": "акции",
+				"url1": "https://worldoftanks.eu/ru/news/specials/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/790776-&_gl=1*12t53od*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2NzI5NDQ4NS43LjEuMTY2NzI5NDU1MC41Ny4wLjA.&_ga=2.227656597.924806489.1667294485-244111480.1667294485",
+				"link2IconSVGid": "discuss",
+				"date": "сегодня"
+			},
+			{
+				"widthImg": 177,
+				"heightImg": 99,
+				"img": "assets/img/home-page/home_monthly-rundown-november_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_monthly-rundown-november_615x346.webp",
+				"title": "Обзор месяца: играем на час дольше!",
+				"text": "Не терпится посоревноваться с другими игроками? А может, предпочитаете несложные боевые задачи? В ноябре будут...",
+				"url": "https://worldoftanks.eu/ru/news/general-news/november-2022-sneak-peek/",
+				"link1Title": "Общие новости",
+				"url1": "https://worldoftanks.eu/ru/news/general-news/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/790751-",
+				"link2IconSVGid": "discuss",
+				"date": "вчера"
+			},
+			{
+				"widthImg": 177,
+				"heightImg": 99,
+				"img": "assets/img/home-page/home_monthly-drops-commander-edition_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_monthly-drops-commander-edition_615x346.webp",
+				"title": "Новые ежемесячные Twitch Drops: командирское издание",
+				"text": "В специальном выпуске ежемесячных Drops вы найдёте награды от блогеров, больше возможностей заработать жетоны и...",
+				"url": "https://worldoftanks.eu/ru/news/live-streams/monthly-twitch-drops-october-22-commander-edition/",
+				"link1Title": "Трансляции",
+				"url1": "https://worldoftanks.eu/ru/news/live-streams/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/790137-",
+				"link2IconSVGid": "discuss",
+				"date": "вчера"
+			},
+			{
+				"widthImg": 177,
+				"heightImg": 99,
+				"img": "assets/img/home-page/home_battle-pass_s9_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_battle-pass_s9_615x346.webp",
+				"title": "Пройдите первое испытание в рамках IX сезона Боевого пропуска",
+				"text": "Выбирайте свою команду, сейте хаос на поле боя и зарабатывайте золото!",
+				"url": "https://worldoftanks.eu/ru/news/specials/battle-pass-season-9-challenge-1-oct2022/",
+				"link1Title": "акции",
+				"url1": "https://worldoftanks.eu/ru/news/specials/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/790440-",
+				"link2IconSVGid": "discuss",
+				"date": "28.10.2022"
+			},
+			{
+				"widthImg": 177,
+				"heightImg": 99,
+				"img": "assets/img/home-page/latest-news/home_latest-news_millionpugs-2022_615x346.jpg",
+				"imgWebP": "assets/img/home-page/latest-news/home_latest-news_millionpugs-2022_615x346.webp",
+				"title": "MillionPugs: больше наград в World of Tanks",
+				"text": "Обновлён выбор наград за «мопсов»™. Посмотрите сами!",
+				"url": "https://worldoftanks.eu/ru/news/general-news/millionpugs-new-rewards-oct2022/",
+				"link1Title": "Общие новости",
+				"url1": "https://worldoftanks.eu/ru/news/general-news/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/790668-",
+				"link2IconSVGid": "discuss",
+				"date": "28.10.2022"
+			},
+			{
+				"widthImg": 177,
+				"heightImg": 99,
+				"img": "assets/img/home-page/latest-news/home_latest-news_skorpiong+vk168.01p_615x346.jpg",
+				"imgWebP": "assets/img/home-page/latest-news/home_latest-news_skorpiong+vk168.01p_615x346.webp",
+				"title": "Skorpion G и VK 168.01 (P): мощный немецкий дуэт",
+				"text": "Скажите «Гутен таг!» двум великолепным немецким машинам. Время продажи ограничено!",
+				"url": "https://worldoftanks.eu/ru/news/specials/skorpion-g-vk-168-p-sale-oct2022/",
+				"link1Title": "акции",
+				"url1": "https://worldoftanks.eu/ru/news/specials/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/790661-",
+				"link2IconSVGid": "discuss",
+				"date": "28.10.2022"
+			},
+			{
+				"widthImg": 177,
+				"heightImg": 99,
+				"img": "assets/img/home-page/latest-news/home_latest-news_1.18.1-update_615x346.jpg",
+				"imgWebP": "assets/img/home-page/latest-news/home_latest-news_1.18.1-update_615x346.webp",
+				"title": "Обновление 1.18.1: пятый Общий тест ждёт вас!",
+				"text": "Оцените новые особенности и изменения версии 1.18.1.",
+				"url": "https://worldoftanks.eu/ru/news/updates/1-18-1-CT5/",
+				"link1Title": "обновления",
+				"url1": "https://worldoftanks.eu/ru/news/updates/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/788867-&_gl=1*intmmk*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2NzI5NDQ4NS43LjEuMTY2NzI5NDU1MC41Ny4wLjA.&_ga=2.121605888.924806489.1667294485-244111480.1667294485",
+				"link2IconSVGid": "discuss",
+				"date": "27.10.2022"
+			}
+		],
+		"stocks_title": "Акции",
+		"listStocks": [
+			{
+				"img": "assets/img/home-page/stocks/home_stocks_t44-100+t28e_615x346.jpg",
+				"imgWebP": "assets/img/home-page/stocks/home_stocks_t44-100+t28e_615x346.webp",
+				"title": "T-44-100 и Т-28Э с Ф-30: универсальность и мощь",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-04-20T00:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/news/specials/t-44-100-t-28e-sale-oct2022/"
+			},
+			{
+				"img": "assets/img/home-page/stocks/home_stocks_displate-clan-showdown-615x346.jpg",
+				"imgWebP": "assets/img/home-page/stocks/home_stocks_displate-clan-showdown-615x346.webp",
+				"title": "«Противостояние»: сражайтесь за эпичные награды",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-04-20T10:15:56+03:00",
+				"url": "https://worldoftanks.eu/ru/news/competitive-gaming/clan-showdown-november-2022/"
+			},
+			{
+				"img": "assets/img/home-page/stocks/home_stocks_commander-edition-bundles_615x346.jpg",
+				"imgWebP": "assets/img/home-page/stocks/home_stocks_commander-edition-bundles_615x346.webp",
+				"title": "Наборы «Командирское издание» уже в продаже",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-04-21T10:15:56+03:00",
+				"url": "https://worldoftanks.eu/ru/news/specials/commander-edition-bundles-sale-oct2022/"
+			},
+			{
+				"img": "assets/img/home-page/home_battle-pass_s9_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_battle-pass_s9_615x346.webp",
+				"title": "IX сезон Боевого пропуска: первое испытание",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-04-22T10:15:56+03:00",
+				"url": "https://worldoftanks.eu/ru/news/specials/battle-pass-season-9-challenge-1-oct2022/"
+			},
+			{
+				"img": "assets/img/home-page/stocks/home_stocks_lansenc+tiger131_615x346.jpg",
+				"imgWebP": "assets/img/home-page/stocks/home_stocks_lansenc+tiger131_615x346.webp",
+				"title": "Легенда Второй мировой и закалённый викинг",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-05-15T07:00:56+03:00",
+				"url": "https://worldoftanks.eu/ru/news/specials/tiger-131-lansen-c-sale-oct22/"
+			},
+			{
+				"img": "assets/img/home-page/stocks/home_stocks_hw22.jpg",
+				"imgWebP": "assets/img/home-page/stocks/home_stocks_hw22.webp",
+				"title": "Тыквенный переполох: тематические наборы",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-05-19T09:20:00+03:00",
+				"url": "https://worldoftanks.eu/ru/news/specials/halloween-2022-bundles/"
+			},
+			{
+				"img": "assets/img/home-page/stocks/home_stocks_halloween-2022_615x346.jpg",
+				"imgWebP": "assets/img/home-page/stocks/home_stocks_halloween-2022_615x346.webp",
+				"title": "Встречайте «Тыквенный переполох»... Если посмеете!",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-06-07T10:00:06+03:00",
+				"url": "https://worldoftanks.eu/ru/news/general-news/halloween-2022-event-guide/"
+			},
+			{
+				"img": "assets/img/home-page/home_wz-111-5a+progetto-m40-mod.65_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_wz-111-5a+progetto-m40-mod.65_615x346.webp",
+				"title": "В бой на WZ-111 model 5A и Progetto M40 mod. 65",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-06-21T07:00:56+03:00",
+				"url": "https://worldoftanks.eu/ru/news/specials/top-of-the-tree-october-2022/"
+			},
+			{
+				"img": "assets/img/home-page/home_onslaught_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_onslaught_615x346.webp",
+				"title": "«Натиск»: новый режим, чтоб проверить своё мастерство",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-07-10T08:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/news/general-news/onslaught-announcement-2022/"
+			},
+			{
+				"img": "assets/img/home-page/home_monthly-drops-commander-edition_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_monthly-drops-commander-edition_615x346.webp",
+				"title": "Ежемесячные награды Drops: получите командиров блогеров",
+				"textTimer": "до завершения:",
+				"dateStart": "2023-07-23T13:10:00+03:00",
+				"url": "https://worldoftanks.eu/ru/news/live-streams/monthly-twitch-drops-october-22-commander-edition/"
+			}
+		],
+		"video_title": "Видео",
+		"video_link": "Все медиа",
+		"listVideo": [
+			{
+				"id": "video-1",
+				"img": "assets/img/home-page/video/home_video_replays.jpg",
+				"imgWebP": "assets/img/home-page/video/home_video_replays.webp",
+				"iconSVGid": "play",
+				"title": "Лучшие реплеи, выпуск 7: бешеный ДПМ на STB-1!",
+				"linkTitle": "видео",
+				"url": "https://worldoftanks.eu/ru/media/4/",
+				"date": "19.10.2022"
+			},
+			{
+				"id": "video-2",
+				"img": "assets/img/home-page/video/home_video_halloween.jpg",
+				"imgWebP": "assets/img/home-page/video/home_video_halloween.webp",
+				"iconSVGid": "play",
+				"title": "Хэллоуин 2022. Подробности",
+				"linkTitle": "видео",
+				"url": "https://worldoftanks.eu/ru/media/4/",
+				"date": "18.10.2022"
+			},
+
+			{
+				"id": "video-3",
+				"img": "assets/img/home-page/video/home_video_onslaught.jpg",
+				"imgWebP": "assets/img/home-page/video/home_video_onslaught.webp",
+				"iconSVGid": "play",
+				"title": "Натиск. Саундтрек",
+				"linkTitle": "видео",
+				"url": "https://worldoftanks.eu/ru/media/4/",
+				"date": "18.10.2022"
+			},
+			{
+				"id": "video-4",
+				"img": "assets/img/home-page/video/home_video_baronesses.jpg",
+				"imgWebP": "assets/img/home-page/video/home_video_baronesses.webp",
+				"iconSVGid": "play",
+				"title": "G.I. Joe: Девушка с обложки против Баронессы",
+				"linkTitle": "видео",
+				"url": "https://worldoftanks.eu/ru/media/4/",
+				"date": "14.10.22"
+			},
+			{
+				"id": "video-5",
+				"img": "assets/img/home-page/video/home_video_halloween2022.jpg",
+				"imgWebP": "assets/img/home-page/video/home_video_halloween2022.webp",
+				"iconSVGid": "play",
+				"title": "Хэллоуин 2022 в World of Tanks",
+				"linkTitle": "видео",
+				"url": "https://worldoftanks.eu/ru/media/4/",
+				"date": "14.10.22"
+			}
+		],
+		"listInteresting": [
+			{
+				"img": "assets/img/home-page/interesting/home_interesting_wot-pc-stream_615x346.jpg",
+				"imgWebP": "assets/img/home-page/interesting/home_interesting_wot-pc-stream_615x346.webp",
+				"title": "Расписание трансляций",
+				"url": "https://worldoftanks.eu/b4r/4512/go?to=https://tanks.ly/3xBLcOK"
+			},
+			{
+				"img": "assets/img/home-page/interesting/home_interesting_twitch-container_615x346.jpg",
+				"imgWebP": "assets/img/home-page/interesting/home_interesting_twitch-container_615x346.webp",
+				"title": "Руководство по Twitch Drops",
+				"url": "https://worldoftanks.eu/b4r/4515/go?to=https://tanks.ly/3LrgMnU"
+			},
+			{
+				"img": "assets/img/home-page/interesting/home_interesting_discord_615x346.jpg",
+				"imgWebP": "assets/img/home-page/interesting/home_interesting_discord_615x346.webp",
+				"title": "Присоединяйтесь к Discord",
+				"url": "https://worldoftanks.eu/b4r/4518/go?to=https://tanks.ly/3DHo2dB"
+			},
+			{
+				"img": "assets/img/home-page/interesting/home_interesting_sandbox-test-portal_615x346.jpg",
+				"imgWebP": "assets/img/home-page/interesting/home_interesting_sandbox-test-portal_615x346.webp",
+				"title": "Общий тест, «Песочница» и Супертест: полное руководство",
+				"url": "https://worldoftanks.eu/b4r/4548/go?to=https://tanks.ly/3RQumDT"
+			},
+			{
+				"img": "assets/img/home-page/interesting/home_interesting_updates_615x346.jpg",
+				"imgWebP": "assets/img/home-page/interesting/home_interesting_updates_615x346.webp",
+				"title": "Последние изменения",
+				"url": "https://worldoftanks.eu/b4r/4536/go?to=https://tanks.ly/3RQu4gh"
+			},
+			{
+				"img": "assets/img/home-page/interesting/home_interesting_newcomers-guide_615x346.jpg",
+				"imgWebP": "assets/img/home-page/interesting/home_interesting_newcomers-guide_615x346.webp",
+				"title": "Новичку",
+				"url": "https://worldoftanks.eu/b4r/4521/go?to=https://tanks.ly/3LqaoNT"
+			},
+			{
+				"img": "assets/img/home-page/home_battle-pass_s9_615x346.jpg",
+				"imgWebP": "assets/img/home-page/home_battle-pass_s9_615x346.webp",
+				"title": "Боевой пропуск: руководство",
+				"url": "https://worldoftanks.eu/b4r/4545/go?to=https://tanks.ly/3BVsggC"
+			},
+			{
+				"img": "assets/img/home-page/interesting/home_interesting_tankopedia_615x346.jpg",
+				"imgWebP": "assets/img/home-page/interesting/home_interesting_tankopedia_615x346.webp",
+				"title": "Танковедение",
+				"url": "https://worldoftanks.eu/b4r/4530/go?to=https://tanks.ly/3RQt7EJ"
+			}
+		],
+		"invite_title": "Пригласи друга!",
+		"invite_text": "Зови друзей в игру, играйте вместе и получайте награды!",
+		"invite__btn": "Как это сделать?"
+	},
+	"game": {
+		"releaseBreadcrumbs_text": "Вернуться на главную",
+		"release_title": "Легендарная танковая онлайн-игра",
+		"listVideo": [
+			{
+				"id": "video-6",
+				"img": "assets/img/game-page/release/preview-btn1_bg.jpg",
+				"imgWebP": "assets/img/game-page/release/preview-btn1_bg.webp",
+				"iconSVGid": "play",
+				"title": "промовидео"
+			},
+			{
+				"id": "video-7",
+				"img": "assets/img/game-page/release/preview-btn2_bg.jpg",
+				"imgWebP": "assets/img/game-page/release/preview-btn2_bg.webp",
+				"iconSVGid": "play",
+				"title": "игровой процесс"
+			}
+		],
+		"concept_title": "ИГРА С ИСТОРИЕЙ",
+		"listConcept": [
+			{
+				"title": "Четыре награды Golden Joystick",
+				"text": "«Лучшая MMO» (2012), «Лучшая онлайн-игра» (2013), «По-прежнему в тренде» (2017, 2018)"
+			},
+			{
+				"title": "Два мировых рекорда гиннесса",
+				"text": "За наибольшее количество игроков, одновременно пребывающих на игровом сервере"
+			},
+			{
+				"title": "КРИ 2011",
+				"text": "Звание лучшей игры года и приз зрительских симпатий"
+			}
+		],
+		"concept_text": "Мир танков — это более 600 бронированных машин середины ХХ века. В ваших руках окажутся лучшие танки эпохи - от легендарных Т-34 и ИС, ковавших победу Красной армии, до безумных идей гениев инженерной мысли, так и не добравшихся до конвейерной ленты. Это несколько десятков уникальных боевых локаций, гарантирующих тактическое разнообразие геймплея. Это 160-миллионная армия поклонников по всему миру. Присоединяйтесь!",
+		"gallery_title": "Скриншоты",
+		"gallery_text": "Реалистичная графика и звук дают возможность почувствовать себя частью настоящего танкового боя",
+		"technic_title": "Пять уникальных классов техники",
+		"technic_text": "Огромное разнообразие боевой техники позволит найти машины, наиболее подходящие вашему стилю игры",
+		"listTechnic": [
+			{
+				"id": "slide-1",
+				"title": "Лёгкие танки",
+				"description": "Самый мобильный, скоростной, компактный и одновременно уязвимый класс в игре. Лёгкие танки — прирождённые разведчики, и их роль — раскрывать позиции техники противника, как можно дольше оставаясь в живых.",
+				"quantity": "149",
+				"type": "лёгких танков в игре",
+				"technic": "Т-54 обл., AMX 13 90, M41, Rheinmetall Panzerwagen",
+				"properties": [
+					{
+						"id": "1",
+						"name": "Скорость",
+						"icon": "assets/img/game-page/technic/light-tank/light-tank_speed.png",
+						"iconWebP": "assets/img/game-page/technic/light-tank/light-tank_speed.webp"
+					},
+					{
+						"id": "2",
+						"name": "Мобильность",
+						"icon": "assets/img/game-page/technic/light-tank/light-tank_mobility.png",
+						"iconWebP": "assets/img/game-page/technic/light-tank/light-tank_mobility.webp"
+					},
+					{
+						"id": "3",
+						"name": "Незаметность",
+						"icon": "assets/img/game-page/technic/light-tank/light-tank_obscurity.png",
+						"iconWebP": "assets/img/game-page/technic/light-tank/light-tank_obscurity.webp"
+					}
+				],
+				"imgBg": "assets/img/game-page/technic/light-tank/light-tank_bg.jpg",
+				"imgBgLayer": "assets/img/game-page/technic/light-tank/light-tank_layer.png",
+				"imgBgLayerWebP": "assets/img/game-page/technic/light-tank/light-tank_layer.webp",
+				"imgPagin": "assets/img/game-page/technic/light-tank/light-tank_pag.png",
+				"imgPaginWebP": "assets/img/game-page/technic/light-tank/light-tank_pag.webp"
+			},
+			{
+				"id": "slide-2",
+				"title": "Средние танки",
+				"description": "«Универсальные солдаты» мира танков. Достаточно скоростные и манёвренные для эффективных действий на средней дистанции, при этом обладающие хорошим запасом прочности, чтобы выдержать серьёзные попадания от крупнокалиберных орудий.",
+				"quantity": "206",
+				"type": "средних танков в игре",
+				"technic": "Т-54, E 50, M48 Patton, Bat.-Châtillon 25 t",
+				"properties": [
+					{
+						"id": "1",
+						"name": "Универсальность",
+						"icon": "assets/img/game-page/technic/medium-tank/medium-tank_versatility.png",
+						"iconWebP": "assets/img/game-page/technic/medium-tank/medium-tank_versatility.webp"
+					},
+					{
+						"id": "2",
+						"name": "Работа в группе",
+						"icon": "assets/img/game-page/technic/medium-tank/medium-tank_group-work.png",
+						"iconWebP": "assets/img/game-page/technic/medium-tank/medium-tank_group-work.webp"
+					},
+					{
+						"id": "3",
+						"name": "Атака со второй линии",
+						"icon": "assets/img/game-page/technic/medium-tank/medium-tank_second-line.png",
+						"iconWebP": "assets/img/game-page/technic/medium-tank/medium-tank_second-line.webp"
+					}
+				],
+				"imgBg": "assets/img/game-page/technic/medium-tank/medium-tank_bg.jpg",
+				"imgBgLayer": "assets/img/game-page/technic/medium-tank/medium-tank_layer.png",
+				"imgBgLayerWebP": "assets/img/game-page/technic/medium-tank/medium-tank_layer.webp",
+				"imgPagin": "assets/img/game-page/technic/medium-tank/medium-tank_pag.png",
+				"imgPaginWebP": "assets/img/game-page/technic/medium-tank/medium-tank_pag.webp"
+			},
+			{
+				"id": "slide-3",
+				"title": "Тяжёлые танки",
+				"description": "Огромные размеры, тяжёлая броня и высочайшая огневая мощь. Если вам нужен танк прорыва или машина, способная эффективно сдерживать атакующего противника — это ваш выбор.",
+				"quantity": "169",
+				"type": "тяжёлых танков в игре",
+				"technic": "ИС - 7, КВ-1, Maus, AMX 50 B",
+				"properties": [
+					{
+						"id": "1",
+						"name": "Бронирование",
+						"icon": "assets/img/game-page/technic/heavy-tank/heavy-tank_armor.png",
+						"iconWebP": "assets/img/game-page/technic/heavy-tank/heavy-tank_armor.webp"
+					},
+					{
+						"id": "2",
+						"name": "Огневая мощь",
+						"icon": "assets/img/game-page/technic/heavy-tank/heavy-tank_firepower.png",
+						"iconWebP": "assets/img/game-page/technic/heavy-tank/heavy-tank_firepower.webp"
+					},
+					{
+						"id": "3",
+						"name": "Живучесть",
+						"icon": "assets/img/game-page/technic/heavy-tank/heavy-tank_viability.png",
+						"iconWebP": "assets/img/game-page/technic/heavy-tank/heavy-tank_viability.webp"
+					}
+				],
+				"imgBg": "assets/img/game-page/technic/heavy-tank/heavy-tank_dg.jpg",
+				"imgBgLayer": "assets/img/game-page/technic/heavy-tank/heavy-tank_layer.png",
+				"imgBgLayerWebP": "assets/img/game-page/technic/heavy-tank/heavy-tank_layer.webp",
+				"imgPagin": "assets/img/game-page/technic/heavy-tank/heavy-tank_pag.png",
+				"imgPaginWebP": "assets/img/game-page/technic/heavy-tank/heavy-tank_pag.webp"
+			},
+			{
+				"id": "slide-4",
+				"title": "ПТ-САУ",
+				"description": "Дальнобойные снайперы и охотники за теми, кого успели обнаружить лёгкие танки. Обладают наибольшим уроном в игре. Первостепенная задача ПТ-САУ — выбрать наиболее выгодную позицию с максимально широким сектором обстрела и вести огонь по позициям противника с дальней дистанции, оставаясь незамеченными.",
+				"quantity": "137",
+				"type": "ПТ-САУ в игре",
+				"technic": "T95, Jagdtiger, ИСУ-152, Strv 103B",
+				"properties": [
+					{
+						"id": "1",
+						"name": "Колоссальный урон",
+						"icon": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_damage.png",
+						"iconWebP": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_damage.webp"
+					},
+					{
+						"id": "2",
+						"name": "Точность",
+						"icon": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_accuracy.png",
+						"iconWebP": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_accuracy.webp"
+					},
+					{
+						"id": "3",
+						"name": "Маскировка",
+						"icon": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_disguise.png",
+						"iconWebP": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_disguise.webp"
+					}
+				],
+				"imgBg": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_bg.jpg",
+				"imgBgLayer": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_layer.png",
+				"imgBgLayerWebP": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_layer.webp",
+				"imgPagin": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_pag.png",
+				"imgPaginWebP": "assets/img/game-page/technic/destroyer-tank/destroyer-tank_pag.webp"
+			},
+			{
+				"id": "slide-5",
+				"title": "САУ",
+				"description": "Класс поддержки, наименее мобильный и живучий, но обладающий уникальной ролью в игре. Задача артиллерии — вести огонь по обнаруженной технике противника, оглушая её экипаж и выводя из строя ключевые узлы машин.",
+				"quantity": "52",
+				"type": "САУ в игре",
+				"technic": "СУ-14, T92 HMC, G.W. Tiger, Bat.-Châtillon 155 58",
+				"properties": [
+					{
+						"id": "1",
+						"name": "Поддержка",
+						"icon": "assets/img/game-page/technic/spg-tank/spg-tank_support.png",
+						"iconWebP": "assets/img/game-page/technic/spg-tank/spg-tank_support.webp"
+					},
+					{
+						"id": "2",
+						"name": "Оглушение",
+						"icon": "assets/img/game-page/technic/spg-tank/spg-tank_stun.png",
+						"iconWebP": "assets/img/game-page/technic/spg-tank/spg-tank_stun.webp"
+					},
+					{
+						"id": "3",
+						"name": "Альтернативный геймплей",
+						"icon": "assets/img/game-page/technic/spg-tank/spg-tank_gameplay.png",
+						"iconWebP": "assets/img/game-page/technic/spg-tank/spg-tank_gameplay.webp"
+					}
+				],
+				"imgBg": "assets/img/game-page/technic/spg-tank/spg-tank_bg.jpg",
+				"imgBgLayer": "assets/img/game-page/technic/spg-tank/spg-tank_layer.png",
+				"imgBgLayerWebP": "assets/img/game-page/technic/spg-tank/spg-tank_layer.webp",
+				"imgPagin": "assets/img/game-page/technic/spg-tank/spg-tank_pag.png",
+				"imgPaginWebP": "assets/img/game-page/technic/spg-tank/spg-tank_pag.webp"
+			}
+		],
+		"nation_title": "Более 600 боевых машин от крупнейших танкостроительных держав",
+		"nation_text": "Каждая модель воссоздана до мельчайших деталей",
+		"listNation": [
+			{
+				"id": "slide-1",
+				"nation": "CCCP",
+				"quantity": "141",
+				"type": "советская машина в игре",
+				"technic": "Т-34, ИС, ИС-7, КВ-1, ИСУ-152",
+				"imgFlag": "assets/img/game-page/nation/USSR/ussr-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/USSR/ussr-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/USSR/ussr-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/USSR/ussr-tanks.webp",
+				"altTanks": "советские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/USSR/ussr-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/USSR/ussr-flag_pag.webp"
+			},
+			{
+				"id": "slide-2",
+				"nation": "Германия",
+				"quantity": "127",
+				"type": "немецких машин в игре",
+				"technic": "StuG III, Panther, Maus, Tiger, Pz. III",
+				"imgFlag": "assets/img/game-page/nation/Germany/germany-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/Germany/germany-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/Germany/germany-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/Germany/germany-tanks.webp",
+				"altTanks": "немецкие машины в игре",
+				"imgPagin": "assets/img/game-page/nation/Germany/germany-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/Germany/germany-flag_pag.webp"
+			},
+			{
+				"id": "slide-3",
+				"nation": "США",
+				"quantity": "109",
+				"type": "американских машин в игре",
+				"technic": "Sherman, Pershing, Patton, T32, Hellcat",
+				"imgFlag": "assets/img/game-page/nation/USA/usa-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/USA/usa-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/USA/usa-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/USA/usa-tanks.webp",
+				"altTanks": "американские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/USA/usa-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/USA/usa-flag_pag.webp"
+			},
+			{
+				"id": "slide-4",
+				"nation": "Франция",
+				"quantity": "78",
+				"type": "французских машин в игре",
+				"technic": "AMX 13 75, AMX 30 B, Bat.-Châtillon 25 t, Lorraine 40 t, Foch B",
+				"imgFlag": "assets/img/game-page/nation/France/france-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/France/france-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/France/france-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/France/france-tanks.webp",
+				"altTanks": "французские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/France/france-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/France/france-flag_pag.webp"
+			},
+			{
+				"id": "slide-5",
+				"nation": "Великобритания",
+				"quantity": "88",
+				"type": "британских машин в игре",
+				"technic": "Churchill VII, Centurion Mk. I, Super Conqueror, Tortoise, FV304",
+				"imgFlag": "assets/img/game-page/nation/GreatBritain/greatBritain-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/GreatBritain/greatBritain-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/GreatBritain/greatBritain-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/GreatBritain/greatBritain-tanks.webp",
+				"altTanks": "британские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/GreatBritain/greatBritain-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/GreatBritain/greatBritain-flag_pag.webp"
+			},
+			{
+				"id": "slide-6",
+				"nation": "Чехословакия",
+				"quantity": "19",
+				"type": "чехословацких машин в игре",
+				"technic": "Škoda T 25, Konštrukta T-34/100, TVP T 50/51, TVP VTU Koncept, LT vz. 38",
+				"imgFlag": "assets/img/game-page/nation/Сzechoslovakia/czech-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/Сzechoslovakia/czech-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/Сzechoslovakia/czech-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/Сzechoslovakia/czech-tanks.webp",
+				"altTanks": "чехословацкие машины в игре",
+				"imgPagin": "assets/img/game-page/nation/Сzechoslovakia/czech-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/Сzechoslovakia/czech-flag_pag.webp"
+			},
+			{
+				"id": "slide-7",
+				"nation": "Китай",
+				"quantity": "47",
+				"type": "китайских машин в игре",
+				"technic": "WZ-132, WZ-111, WZ-111 model 5A, T-34-1, WZ-111-1G FT",
+				"imgFlag": "assets/img/game-page/nation/China/china-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/China/china-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/China/china-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/China/china-tanks.webp",
+				"altTanks": "китайские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/China/china-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/China/china-flag_pag.webp"
+			},
+			{
+				"id": "slide-8",
+				"nation": "Япония",
+				"quantity": "26",
+				"type": "японских машин в игре",
+				"technic": "Type 61, O-I, Type 5 Heavy, Type 5 Chi-Ri, STB-1",
+				"imgFlag": "assets/img/game-page/nation/Japan/japan-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/Japan/japan-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/Japan/japan-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/Japan/japan-tanks.webp",
+				"altTanks": "японские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/Japan/japan-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/Japan/japan-flag_pag.webp"
+			},
+			{
+				"id": "slide-9",
+				"nation": "Швеция",
+				"quantity": "32",
+				"type": "шведские машины в игре",
+				"technic": "Emil II, UDES 03, Kranvagn, Strv 103B, Strv 74",
+				"imgFlag": "assets/img/game-page/nation/Sweden/sweden-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/Sweden/sweden-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/Sweden/sweden-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/Sweden/sweden-tanks.webp",
+				"altTanks": "шведские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/Sweden/sweden-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/Sweden/sweden-flag_pag.webp"
+			},
+			{
+				"id": "slide-10",
+				"nation": "Польша",
+				"quantity": "21",
+				"type": "польская машина в игре",
+				"technic": "Pudel, 45TP Habicha, 60TP Lewandowskiego, 50TP prototyp, 50TP Tyszkiewicza",
+				"imgFlag": "assets/img/game-page/nation/Poland/Poland-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/Poland/Poland-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/Poland/poland-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/Poland/poland-tanks.webp",
+				"altTanks": "польские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/Poland/poland-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/Poland/poland-flag_pag.webp"
+			},
+			{
+				"id": "slide-11",
+				"nation": "Италия",
+				"quantity": "25",
+				"type": "итальянских машин в игре",
+				"technic": "P26/40, Prototipo Standard B, Progetto M40 mod. 65, P.44 Pantera, P.43 bis",
+				"imgFlag": "assets/img/game-page/nation/Italy/Italy-flag.png",
+				"imgFlagWebP": "assets/img/game-page/nation/Italy/Italy-flag.webp",
+				"imgTanks": "assets/img/game-page/nation/Italy/italy-tanks.png",
+				"imgTanksWebP": "assets/img/game-page/nation/Italy/italy-tanks.webp",
+				"altTanks": "итальянские машины в игре",
+				"imgPagin": "assets/img/game-page/nation/Italy/italy-flag_pag.png",
+				"imgPaginWebP": "assets/img/game-page/nation/Italy/italy-flag_pag.webp"
+			}
+		],
+		"regime_title": "Множество игровых режимов",
+		"regime_text": "Играйте соло или во взводе с друзьями, сражайтесь за звание лучшего танкиста или создавайте собственный клан для борьбы на Глобальной карте — каждому найдётся режим по душе",
+		"listFlipCards": [
+			{
+				"id": "card-1",
+				"title": "Одиночкам",
+				"backTitle": "Одиночкам",
+				"side": "1 ",
+				"totalSide": "/ 2",
+				"backSide": "2 ",
+				"img": "/assets/img/game-page/regime/card1_img1.png",
+				"backImg": "/assets/img/game-page/regime/card1_img2.png",
+				"imgWebP": "/assets/img/game-page/regime/card1_img1.webp",
+				"backImgWebP": "/assets/img/game-page/regime/card1_img2.webp",
+				"subtitle": "Случайные бои",
+				"backSubtitle": "Обучение и тренировки",
+				"text": "Сражайтесь в составе случайно подобранной команды из 15 человек и добивайтесь максимальной эффективности в каждом бою",
+				"backText": "Начните свой путь в игре с занятий на Учебном полигоне. Изучайте особенности техники и тактику боёв на разных локациях"
+			},
+			{
+				"id": "card-2",
+				"title": "Сезонные режимы",
+				"backTitle": "Сезонные режимы",
+				"side": "1 ",
+				"totalSide": "/ 2",
+				"backSide": "2 ",
+				"img": "/assets/img/game-page/regime/card2_img1.png",
+				"backImg": "/assets/img/game-page/regime/card2_img2.png",
+				"imgWebP": "/assets/img/game-page/regime/card2_img1.webp",
+				"backImgWebP": "/assets/img/game-page/regime/card2_img2.webp",
+				"subtitle": "Линия фронта",
+				"backSubtitle": "Ранговые бои",
+				"text": "Примите участие в масштабных сражениях 30 на 30 на огромной карте",
+				"backText": "Выходите на новый уровень борьбы, где сражаются только лучшие из лучших"
+			},
+			{
+				"id": "card-3",
+				"title": "Регулярные состязания",
+				"side": "",
+				"totalSide": "",
+				"img": "/assets/img/game-page/regime/card3_img1.png",
+				"imgWebP": "/assets/img/game-page/regime/card3_img1.webp",
+				"subtitle": "Турниры",
+				"text": "Сражайтесь в одиночку или в команде за звание сильнейшего и зарабатывайте золото, премиум технику и другие специальные награды"
+			},
+			{
+				"id": "card-4",
+				"title": "Клановым игрокам",
+				"backTitle": "Клановым игрокам",
+				"side": "1 ",
+				"totalSide": "/ 2",
+				"backSide": "2 ",
+				"img": "/assets/img/game-page/regime/card4_img1.png",
+				"backImg": "/assets/img/game-page/regime/card4_img2.png",
+				"imgWebP": "/assets/img/game-page/regime/card4_img1.webp",
+				"backImgWebP": "/assets/img/game-page/regime/card4_img2.webp",
+				"subtitle": "Укрепрайон",
+				"backSubtitle": "Глобальная карта",
+				"text": "Создавайте собственный клан и вступайте в борьбу за стратегические ресурсы",
+				"backText": "Поднимайтесь на новый уровень, где вас ждут сражения за территории на Глобальной карте"
+			}
+		],
+		"invite_title": "Удачи в бою!",
+		"invite_text": "Присоединяйтесь, скучно не будет"
+	},
+	"guide": {
+		"listGuide": [
+			{
+				"title": "Краткое руководство",
+				"text": "Краткий инструктаж перед боем.",
+				"imgBg": "assets/img/guide-page/guide_briefly_bg.jpg",
+				"url": "http://worldoftanks.ru/ru/content/guide/qs_guide/"
+			},
+			{
+				"title": "Основное",
+				"text": "В данном разделе вы найдёте наиболее важные руководства по игре и ответы на часто задаваемые вопросы.",
+				"imgBg": "assets/img/guide-page/guide_basic_bg.jpg",
+				"url": "http://worldoftanks.ru/ru/content/guide/general/"
+			},
+			{
+				"title": "Платежи",
+				"text": "В разделе вы найдёте инструкции по совершению платежей, правила Премиум магазина, а также узнаете, зачем нужно игровое золото.",
+				"imgBg": "assets/img/guide-page/guide_pay_bg.jpg",
+				"url": "http://worldoftanks.ru/ru/content/guide/payments_instruction/"
+			},
+			{
+				"title": "Турниры",
+				"text": "Здесь вы найдёте руководство по участию в регулярных соревнованиях.",
+				"imgBg": "assets/img/guide-page/guide_tournament_bg.jpg",
+				"url": "https://worldoftanks.ru/ru/content/guide/tournament-guide/"
+			},
+			{
+				"title": "Руководство для новичков",
+				"text": "В руководстве для новичков вы познакомитесь с основными моментами игры.",
+				"imgBg": "assets/img/guide-page/guide_recruit_bg.jpg",
+				"url": "http://worldoftanks.ru/ru/content/guide/newcomers-guide/"
+			},
+			{
+				"title": "Играем по правилам",
+				"text": "Нарушения Правил игры и способы борьбы с ними.",
+				"imgBg": "assets/img/guide-page/guide_ban_bg.jpg",
+				"url": "http://worldoftanks.ru/ru/content/guide/ban/"
+			},
+			{
+				"title": "Безопасность",
+				"text": "Узнайте, как защитить учётную запись от несанкционированного доступа и что делать, если аккаунт был похищен.",
+				"imgBg": "assets/img/guide-page/guide_safety_bg.jpg",
+				"url": "http://worldoftanks.ru/ru/content/guide/account_security/"
+			},
+			{
+				"title": "Обучающее видео",
+				"text": "Этот раздел содержит видеоматериалы, которые помогут разобраться в игре.",
+				"imgBg": "assets/img/guide-page/guide_study_bg.jpg",
+				"url": "http://worldoftanks.ru/ru/content/guide/video_guides/"
+			},
+			{
+				"title": "Вопросы и ответы",
+				"text": "Этот раздел содержит ответы на наиболее часто задаваемые вопросы.",
+				"imgBg": "assets/img/guide-page/guide_faq_bg.jpg",
+				"url": "http://worldoftanks.ru/ru/content/guide/general/frequently_asked_questions/"
+			}
+		],
+		"listAccordion": [
+			{
+				"title": "Краткое руководство",
+				"url": "https://tanki.su/ru/content/guide/qs_guide/",
+				"content": []
+			},
+			{
+				"title": "Руководство для новичков",
+				"url": "https://tanki.su/ru/content/guide/newcomers-guide/",
+				"content": [
+					{
+						"title": "Знакомство с игрой",
+						"url": "https://tanki.su/ru/content/guide/newcomers-guide/getting_started/"
+					},
+					{
+						"title": "Управление и стрельба",
+						"url": "https://tanki.su/ru/content/guide/newcomers-guide/game_controls/"
+					},
+					{
+						"title": "Тактические советы",
+						"url": "https://tanki.su/ru/content/guide/newcomers-guide/how_to_survive/"
+					},
+					{
+						"title": "Игровая экономика",
+						"url": "https://tanki.su/ru/content/guide/newcomers-guide/game_economy/"
+					},
+					{
+						"title": "Улучшение и приобретение техники",
+						"url": "https://tanki.su/ru/content/guide/newcomers-guide/upgrading_vehicles/"
+					},
+					{
+						"title": "Общение в игре",
+						"url": "https://tanki.su/ru/content/guide/newcomers-guide/communication/"
+					},
+					{
+						"title": "Танковая академия",
+						"url": "https://tanki.su/ru/content/guide/newcomers-guide/tank_academy/"
+					},
+					{
+						"title": "Вперёд, к победам!",
+						"url": "https://tanki.su/ru/content/guide/newcomers-guide/victories_ahead/"
+					}
+				]
+			},
+			{
+				"title": "Основное",
+				"url": "https://tanki.su/ru/content/guide/general/",
+				"content": [
+					{
+						"title": "Вопросы и ответы",
+						"url": "https://tanki.su/ru/content/guide/general/frequently_asked_questions/"
+					},
+					{
+						"title": "Руководство по Lesta Game Center",
+						"url": "https://tanki.su/ru/content/guide/general/wgc_guide/"
+					},
+					{
+						"title": "Активация инвайт- и бонус- кода",
+						"url": "https://tanki.su/ru/content/guide/general/invite_and_bonus_codes/"
+					},
+					{
+						"title": "Типы и назначение техники",
+						"url": "https://tanki.su/ru/content/guide/general/vehicle_types/"
+					},
+					{
+						"title": "Исследование и покупка техники",
+						"url": "https://tanki.su/ru/content/guide/general/purchase_research_vehicles/"
+					},
+					{
+						"title": "Установка модулей, оборудования и снаряжения",
+						"url": "https://tanki.su/ru/content/guide/general/modules-equipment-consumables/"
+					},
+					{
+						"title": "Оборудование",
+						"url": "https://tanki.su/ru/content/guide/general/equipment/"
+					},
+					{
+						"title": "Снаряжение",
+						"url": "https://tanki.su/ru/content/guide/general/Consumablest_guide/"
+					},
+					{
+						"title": "Предбоевые инструкции",
+						"url": "https://tanki.su/ru/content/guide/general/predboyevye-instruktsii/"
+					},
+					{
+						"title": "Ежедневные задачи",
+						"url": "https://tanki.su/ru/content/guide/general/daily_missions/"
+					},
+					{
+						"title": "Взводы",
+						"url": "https://tanki.su/ru/content/guide/general/platoons/"
+					},
+					{
+						"title": "Магазин и Склад",
+						"url": "https://tanki.su/ru/content/guide/general/store_depot_guide/"
+					},
+					{
+						"title": "Чертежи техники",
+						"url": "https://tanki.su/ru/content/guide/general/blueprints/"
+					},
+					{
+						"title": "Внешний вид техники ",
+						"url": "https://tanki.su/ru/content/guide/general/appearance-of-tanks/"
+					},
+					{
+						"title": "Экипаж боевой машины",
+						"url": "https://tanki.su/ru/content/guide/general/vehicle_crew/"
+					},
+					{
+						"title": "Обучение экипажа",
+						"url": "https://tanki.su/ru/content/guide/general/crew_training/"
+					},
+					{
+						"title": "Личные резервы",
+						"url": "https://tanki.su/ru/content/guide/general/personal_reserves/"
+					},
+					{
+						"title": "Голосовой чат",
+						"url": "https://tanki.su/ru/content/guide/general/voice_chat/"
+					},
+					{
+						"title": "Личные боевые задачи",
+						"url": "https://tanki.su/ru/content/guide/general/personal_missions/"
+					},
+					{
+						"title": "Достижения и медали",
+						"url": "https://tanki.su/ru/content/guide/general/achievements/"
+					},
+					{
+						"title": "Ранговые бои",
+						"url": "https://tanki.su/ru/content/guide/general/ranked_battles_guide/"
+					},
+					{
+						"title": "Боевой пропуск",
+						"url": "https://tanki.su/ru/content/guide/general/battle_pass/"
+					},
+					{
+						"title": "Линия фронта",
+						"url": "https://tanki.su/ru/content/guide/general/frontline/"
+					},
+					{
+						"title": "Боевые походы",
+						"url": "https://tanki.su/ru/content/guide/general/tours_of_duty/"
+					},
+					{
+						"title": "Купоны",
+						"url": "https://tanki.su/ru/content/guide/general/coupons/"
+					},
+					{
+						"title": "Изменение имени пользователя",
+						"url": "https://tanki.su/ru/content/guide/general/username_change/"
+					}
+				]
+			},
+			{
+				"title": "Играем по правилам",
+				"url": "https://tanki.su/ru/content/guide/ban/",
+				"content": [
+					{
+						"title": "Запрещённые моды",
+						"url": "https://tanki.su/ru/content/guide/ban/nonusefulmods/"
+					},
+					{
+						"title": "Токсичность",
+						"url": "https://tanki.su/ru/content/guide/ban/toxicity/"
+					},
+					{
+						"title": "Договорные бои",
+						"url": "https://tanki.su/ru/content/guide/ban/battles/"
+					},
+					{
+						"title": "Ботоводство",
+						"url": "https://tanki.su/ru/content/guide/ban/bot/"
+					},
+					{
+						"title": "Тимкилл",
+						"url": "https://tanki.su/ru/content/guide/ban/teamkill/"
+					},
+					{
+						"title": "Жалобы о нарушениях",
+						"url": "https://tanki.su/ru/content/guide/ban/complaints/"
+					},
+					{
+						"title": "Модераторы",
+						"url": "https://tanki.su/ru/content/guide/ban/moderators/"
+					},
+					{
+						"title": "Остерегайтесь мошенников",
+						"url": "https://tanki.su/ru/content/guide/ban/osteregaites-moshennikov/"
+					}
+				]
+			},
+			{
+				"title": "Экономика «Мира танков»",
+				"url": "https://tanki.su/ru/content/guide/wot_economy/",
+				"content": [
+					{
+						"title": "Премиум аккаунт",
+						"url": "https://tanki.su/ru/content/guide/wot_economy/going_premium/"
+					},
+					{
+						"title": "Перевод валюты и ресурсов",
+						"url": "https://tanki.su/ru/content/guide/wot_economy/conversion/"
+					}
+				]
+			},
+			{
+				"title": "Покупки и платежи",
+				"url": "https://tanki.su/ru/content/guide/payments_instruction/",
+				"content": [
+					{
+						"title": "О Премиум магазине",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/about-gift-shop/"
+					},
+					{
+						"title": "Правила Премиум магазина",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/gifts/"
+					},
+					{
+						"title": "Оплата в Премиум магазине (Россия)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/shop-payment-ru/"
+					},
+					{
+						"title": "Банковская карта",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/visamastercard/"
+					},
+					{
+						"title": "Карта Wargaming",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/wot-card/"
+					},
+					{
+						"title": "QIWI Wallet",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/qiwi_pay/"
+					},
+					{
+						"title": "ЮMoney",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/yoomoney/"
+					},
+					{
+						"title": "PayPal",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/paypal/"
+					},
+					{
+						"title": "WebMoney",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/webmoney/"
+					},
+					{
+						"title": "Сбербанк",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/sber/"
+					},
+					{
+						"title": "Терминалы ОСМП (QIWI) (Россия)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/terminals-osmp-qiwi-russia/"
+					},
+					{
+						"title": "Оплата Visa Qiwi Wallet, терминалы ОСМП (QIWI)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/qiwi/"
+					},
+					{
+						"title": "Терминалы «Кассира.нет» (Россия)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/kassira_net/"
+					},
+					{
+						"title": "Терминалы «Новоплат» (Россия)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/terminaly-novoplat/"
+					},
+					{
+						"title": "Интернет-банк АО «Банк Русский Стандарт»",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/internet-bank-russkij-standart/"
+					},
+					{
+						"title": "Сеть терминалов банка «Балтика»",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/payments-bank-baltika/"
+					},
+					{
+						"title": "Оплата в Премиум магазине (Украина)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/shop-payment-ua/"
+					},
+					{
+						"title": "Терминалы City-Pay (Украина)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/citypay/"
+					},
+					{
+						"title": "Терминалы EasySoft и EasyPay (Украина)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/easysoft_easypay/"
+					},
+					{
+						"title": "Терминалы ОСМП (QIWI) (Беларусь)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/terminals-osmp-qiwi-belarus/"
+					},
+					{
+						"title": "Терминалы Agava",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/agava/"
+					},
+					{
+						"title": "Терминалы ОАО «АСБ Беларусбанк»",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/terminals-belarusbank/"
+					},
+					{
+						"title": "SMS-платёж",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/gold-for-sms/"
+					},
+					{
+						"title": "Терминалы «Касса24»",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/terminals-kassa24/"
+					},
+					{
+						"title": "Мобильное приложение «Личная касса»",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/personal-kassa-kz/"
+					},
+					{
+						"title": "Интернет-портал «Касса24»",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/personal-kassa-online-kz/"
+					},
+					{
+						"title": "Терминалы CyberPlat",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/terminals-cyberplat/"
+					},
+					{
+						"title": "Wooppay",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/wooppay/"
+					},
+					{
+						"title": "Терминалы PayBox",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/paybox/"
+					},
+					{
+						"title": "Smartivi",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/smartivi/"
+					},
+					{
+						"title": "Терминалы TBCpay",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/tbc-pay/"
+					},
+					{
+						"title": "Терминалы MultiPay",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/multipay/"
+					},
+					{
+						"title": "Терминалы IPS",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/ips/"
+					},
+					{
+						"title": "Электронный кошелёк Emoney",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/emoney/"
+					},
+					{
+						"title": "Оплата в Премиум магазине (Узбекистан)",
+						"url": "https://tanki.su/ru/content/guide/payments_instruction/shop-payment-uz/"
+					}
+				]
+			},
+			{
+				"title": "Безопасность",
+				"url": "https://tanki.su/ru/content/guide/account_security/",
+				"content": [
+					{
+						"title": "Привязка аккаунта к телефону",
+						"url": "https://tanki.su/ru/content/guide/account_security/account_to_mobile/"
+					},
+					{
+						"title": "Второй фактор защиты аккаунта: как подключить и отключить",
+						"url": "https://tanki.su/ru/content/guide/account_security/second-factor/"
+					},
+					{
+						"title": "Не можете войти в игру?",
+						"url": "https://tanki.su/ru/content/guide/account_security/not_enter_game/"
+					},
+					{
+						"title": "Как защитить свой аккаунт?",
+						"url": "https://tanki.su/ru/content/guide/account_security/breaking_protection/"
+					},
+					{
+						"title": "Что делать, если аккаунт взломан",
+						"url": "https://tanki.su/ru/content/guide/account_security/if_account_broken/"
+					},
+					{
+						"title": "Финансовые махинации — «продажа» золота",
+						"url": "https://tanki.su/ru/content/guide/account_security/financial-fraud/"
+					},
+					{
+						"title": "Мошенничество «сервисов прокачки»",
+						"url": "https://tanki.su/ru/content/guide/account_security/research-scumming-schemes/"
+					},
+					{
+						"title": "Мошенники в социальных сетях",
+						"url": "https://tanki.su/ru/content/guide/account_security/fraudsters_in_social_networks_sec/"
+					}
+				]
+			},
+			{
+				"title": "Обучающие видео",
+				"url": "https://tanki.su/ru/content/guide/video_guides/",
+				"content": [
+					{
+						"title": "Опыт",
+						"url": "https://tanki.su/ru/content/guide/video_guides/experience/"
+					},
+					{
+						"title": "Исследования",
+						"url": "https://tanki.su/ru/content/guide/video_guides/research/"
+					},
+					{
+						"title": "Опыт экипажа",
+						"url": "https://tanki.su/ru/content/guide/video_guides/crew_experience/"
+					},
+					{
+						"title": "Модули техники",
+						"url": "https://tanki.su/ru/content/guide/video_guides/modules/"
+					},
+					{
+						"title": "Настройки графики: повышаем FPS!",
+						"url": "https://tanki.su/ru/content/guide/video_guides/fps_how_to/"
+					}
+				]
+			},
+			{
+				"title": "Руководство по турнирам",
+				"url": "https://tanki.su/ru/content/guide/tournament-guide/",
+				"content": []
+			}
+		],
+		"navGuide_link": "Краткое руководство"
+	},
+	"clans": {
+		"vitrine_title": "Кланы",
+		"vitrine_subtitle": "Объединяйтесь для участия в сражениях за уникальные награды!",
+		"vitrine_btnPickup": "Подобрать клан",
+		"vitrine_btnCreate": "Создать клан",
+		"vitrine_linkPortal": "Перейти на клановый портал",
+		"searhClans_placeholder": "Поиск клана",
+		"formSearch_iconСlear": "Очистить",
+		"formSearch_btn": "Поиск",
+		"resourcesClans": [
+			{
+				"id": "res-1",
+				"title": "Укрепрайон",
+				"img": "assets/img/clans-page/resources/resources_stronghold.png",
+				"imgWebP": "assets/img/clans-page/resources/resources_stronghold.webp",
+				"alt": "Подробнее про Укрепрайон",
+				"linkTitle": "Про Укрепрайон",
+				"link": "https://tanki.su/ru/clanwars/strongholds/",
+				"features": ["Развивай клановую собственность", "Сражайся за ресурсы", "Получай бонусы к результатам боёв"]
+			},
+			{
+				"id": "res-2",
+				"title": "Глобальная карта",
+				"img": "assets/img/clans-page/resources/resources_global-map.png",
+				"imgWebP": "assets/img/clans-page/resources/resources_global-map.webp",
+				"alt": "Подробнее о Глобальной карте",
+				"linkTitle": "О Глобальной карте",
+				"link": "https://tanki.su/ru/clanwars/globalmap/",
+				"features": ["Захватывай территории", "Борись за мировое господство", "Получай игровое золото и уникальную технику"]
+			}
+		],
+		"resources_link": "Перейти к карте",
+		"bestClans_title": "Лучшие кланы",
+		"listBestClans": [
+			{
+				"id": "col-1",
+				"property": "CR",
+				"title": "Рейтинг кланов",
+				"icon": "assets/img/clans-page/best/clans_best_reating-ico.png",
+				"iconWebP": "assets/img/clans-page/best/clans_best_reating-ico.webp",
+				"alt": "Рейтинг кланов",
+				"url": "https://eu.wargaming.net/clans/wot/leaderboards/?utm_campaign=wot-portal&utm_medium=link&utm_source=clan-landing&_gl=1*1q1xes2*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2OTY0ODgxMC4xMzIuMC4xNjY5NjQ4ODEwLjYwLjAuMA..#ratingssearch&order=-cr&timeframe=all",
+				"isDescending": true
+			},
+			{
+				"id": "col-2",
+				"property": "aBD",
+				"title": "Бои в день",
+				"icon": "assets/img/clans-page/best/clans_best_fightsDay-ico.png",
+				"iconWebP": "assets/img/clans-page/best/clans_best_fightsDay-ico.webp",
+				"alt": "Среднее количество боев в день во всех режимах на одного игрока",
+				"url": "https://eu.wargaming.net/clans/wot/leaderboards/?utm_campaign=wot-portal&utm_medium=link&utm_source=clan-landing&_gl=1*lnkc63*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2OTY0ODgxMC4xMzIuMC4xNjY5NjQ4ODEwLjYwLjAuMA..#ratingssearch&order=-abd&timeframe=all",
+				"isDescending": true
+			},
+			{
+				"id": "col-3",
+				"property": "wGM",
+				"title": "Рейтинг на Глобальной карте",
+				"icon": "assets/img/clans-page/best/clans_best_reating-globalMap-ico.png",
+				"iconWebP": "assets/img/clans-page/best/clans_best_reating-globalMap-ico.webp",
+				"alt": "Средний Эло-рейтинг кланов на глобальной карте",
+				"url": "https://eu.wargaming.net/clans/wot/leaderboards/?utm_campaign=wot-portal&utm_medium=link&utm_source=clan-landing&_gl=1*lnkc63*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2OTY0ODgxMC4xMzIuMC4xNjY5NjQ4ODEwLjYwLjAuMA..#ratingssearch&order=-egm&timeframe=all",
+				"isDescending": true
+			}
+		],
+		"bestClans_itemError": "Не удалось загрузить данные.",
+		"clans": [
+			{
+				"id": "1",
+				"img": "/assets/img/clans-page/[CH3SS]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[CH3SS]_195x195.webp",
+				"acronym": "[CH3SS] ",
+				"name": "Chessgenies Communityclan",
+				"gamer": "99",
+				"CR": "14144",
+				"wPR": "8389",
+				"aBD": "11,94",
+				"aVL10": "43",
+				"fSH": "3618",
+				"wGM": "2079",
+				"wSH": "1831",
+				"url": "https://eu.wargaming.net/clans/wot/500161393/"
+			},
+			{
+				"id": "2",
+				"img": "/assets/img/clans-page/[EDITS]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[EDITS]_195x195.webp",
+				"acronym": "[EDITS] ",
+				"name": "Energy Drink Infused TriHard Sessions",
+				"gamer": "98",
+				"CR": "14458",
+				"wPR": "9361",
+				"aBD": "11,24",
+				"aVL10": "42",
+				"fSH": "3697",
+				"wGM": "2360",
+				"wSH": "1899",
+				"url": "https://eu.wargaming.net/clans/wot/500152606/"
+			},
+			{
+				"id": "3",
+				"img": "/assets/img/clans-page/[ALL1N]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[ALL1N]_195x195.webp",
+				"acronym": "[ALL1N] ",
+				"name": "All in or Nothing",
+				"gamer": "87",
+				"CR": "14408",
+				"wPR": "7790",
+				"aBD": "12,15",
+				"aVL10": "45",
+				"fSH": "4052",
+				"wGM": "2094",
+				"wSH": "2258",
+				"url": "https://eu.wargaming.net/clans/wot/500073119/"
+			},
+			{
+				"id": "4",
+				"img": "/assets/img/clans-page/[LS-TM]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[LS-TM]_195x195.webp",
+				"acronym": "[LS-TM] ",
+				"name": "LiFe-StyLe",
+				"gamer": "99",
+				"CR": "14259",
+				"wPR": "8077",
+				"aBD": "15,54",
+				"aVL10": "40",
+				"fSH": "3672",
+				"wGM": "1761",
+				"wSH": "1877",
+				"url": "https://eu.wargaming.net/clans/wot/500230318/"
+			},
+			{
+				"id": "5",
+				"img": "/assets/img/clans-page/[RDDT]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[RDDT]_195x195.webp",
+				"acronym": "[RDDT] ",
+				"name": "Reddit: The Front Lines of the Internet",
+				"gamer": "89",
+				"CR": "14043",
+				"wPR": "8030",
+				"aBD": "11,60",
+				"aVL10": "40",
+				"fSH": "3615",
+				"wGM": "2322",
+				"wSH": "1828",
+				"url": "https://eu.wargaming.net/clans/wot/500003668/"
+			},
+			{
+				"id": "6",
+				"img": "/assets/img/clans-page/[D_DOS]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[D_DOS]_195x195.webp",
+				"acronym": "[D_DOS] ",
+				"name": "DDoS Attack",
+				"gamer": "99",
+				"CR": "13956",
+				"wPR": "9074",
+				"aBD": "13,49",
+				"aVL10": "30",
+				"fSH": "3453",
+				"wGM": "1740",
+				"wSH": "1698",
+				"url": "https://eu.wargaming.net/clans/wot/500160244/"
+			},
+			{
+				"id": "7",
+				"img": "/assets/img/clans-page/[R_QR]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[R_QR]_195x195.webp",
+				"acronym": "[R_QR] ",
+				"name": "READ QR",
+				"gamer": "98",
+				"CR": "13876",
+				"wPR": "7326",
+				"aBD": "11,59",
+				"aVL10": "32",
+				"fSH": "3688",
+				"wGM": "2268",
+				"wSH": "1891",
+				"url": "https://eu.wargaming.net/clans/wot/500069750/"
+			},
+			{
+				"id": "8",
+				"img": "/assets/img/clans-page/[6H0ST]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[6H0ST]_195x195.webp",
+				"acronym": "[6H0ST] ",
+				"name": "GHOSTS_OF_THE_BALKANS",
+				"gamer": "90",
+				"CR": "13753",
+				"wPR": "6218",
+				"aBD": "15,10",
+				"aVL10": "36",
+				"fSH": "3477",
+				"wGM": "1869",
+				"wSH": "1717",
+				"url": "https://eu.wargaming.net/clans/wot/500069074/"
+			},
+			{
+				"id": "9",
+				"img": "/assets/img/clans-page/[3PX]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[3PX]_195x195.webp",
+				"acronym": "[3PX] ",
+				"name": "Pixel Shot!",
+				"gamer": "78",
+				"CR": "13626",
+				"wPR": "6848",
+				"aBD": "11,14",
+				"aVL10": "30",
+				"fSH": "3645",
+				"wGM": "2445",
+				"wSH": "1854",
+				"url": "https://eu.wargaming.net/clans/wot/500027942/"
+			},
+			{
+				"id": "10",
+				"img": "/assets/img/clans-page/[MUNJE]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[MUNJE]_195x195.webp",
+				"acronym": "[MUNJE] ",
+				"name": "MUNJE",
+				"gamer": "100",
+				"CR": "13555",
+				"wPR": "6942",
+				"aBD": "16,98",
+				"aVL10": "41",
+				"fSH": "2991",
+				"wGM": "1745",
+				"wSH": "1381",
+				"url": "https://eu.wargaming.net/clans/wot/500030894/"
+			},
+			{
+				"id": "11",
+				"img": "/assets/img/clans-page/[GE-AC]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[GE-AC]_195x195.webp",
+				"acronym": "[GE-AC] ",
+				"name": "Georgian Elite - Academy",
+				"gamer": "23",
+				"CR": "3692",
+				"wPR": "152",
+				"aBD": "22,00",
+				"aVL10": "0",
+				"fSH": "0",
+				"wGM": "1000",
+				"wSH": "1000",
+				"url": "https://eu.wargaming.net/clans/wot/500056167/"
+			},
+			{
+				"id": "12",
+				"img": "/assets/img/clans-page/default_195x195.png",
+				"imgWebP": "/assets/img/clans-page/default_195x195.webp",
+				"acronym": "[SVSVS] ",
+				"name": "S.V.D",
+				"gamer": "16",
+				"CR": "8358",
+				"wPR": "901",
+				"aBD": "19,27",
+				"aVL10": "39",
+				"fSH": "2312",
+				"wGM": "1000",
+				"wSH": "1001",
+				"url": "https://eu.wargaming.net/clans/wot/500226361/"
+			},
+			{
+				"id": "13",
+				"img": "/assets/img/clans-page/default_195x195.png",
+				"imgWebP": "/assets/img/clans-page/default_195x195.webp",
+				"acronym": "[_AZE_] ",
+				"name": "Железный кулак",
+				"gamer": "10",
+				"CR": "5697",
+				"wPR": "757",
+				"aBD": "18,65",
+				"aVL10": "42",
+				"fSH": "0",
+				"wGM": "1000",
+				"wSH": "1000",
+				"url": "https://eu.wargaming.net/clans/wot/500244845/"
+			},
+			{
+				"id": "14",
+				"img": "/assets/img/clans-page/[MNGCT]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[MNGCT]_195x195.webp",
+				"acronym": "[MNGCT] ",
+				"name": "Мангу́ста (Herpestes)",
+				"gamer": "11",
+				"CR": "5717",
+				"wPR": "866",
+				"aBD": "18,52",
+				"aVL10": "39",
+				"fSH": "0",
+				"wGM": "1000",
+				"wSH": "1000",
+				"url": "https://eu.wargaming.net/clans/wot/500239559/"
+			},
+			{
+				"id": "15",
+				"img": "/assets/img/clans-page/default_195x195.png",
+				"imgWebP": "/assets/img/clans-page/default_195x195.webp",
+				"acronym": "[WHTG] ",
+				"name": "White Tigers Clan",
+				"gamer": "11",
+				"CR": "5577",
+				"wPR": "801",
+				"aBD": "18,41",
+				"aVL10": "31",
+				"fSH": "0",
+				"wGM": "1000",
+				"wSH": "1000",
+				"url": "https://eu.wargaming.net/clans/wot/500232121/"
+			},
+			{
+				"id": "16",
+				"img": "/assets/img/clans-page/[MEPCI]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[MEPCI]_195x195.webp",
+				"acronym": "[MEPCI] ",
+				"name": "no_ MERCY",
+				"gamer": "99",
+				"CR": "10989",
+				"wPR": "7079",
+				"aBD": "18,08",
+				"aVL10": "35",
+				"fSH": "2615",
+				"wGM": "1000",
+				"wSH": "1161",
+				"url": "https://eu.wargaming.net/clans/wot/500233280/"
+			},
+			{
+				"id": "17",
+				"img": "/assets/img/clans-page/[SRBI]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[SRBI]_195x195.webp",
+				"acronym": "[SRBI] ",
+				"name": "С Р Б И",
+				"gamer": "86",
+				"CR": "13287",
+				"wPR": "5509",
+				"aBD": "17,55",
+				"aVL10": "36",
+				"fSH": "2969",
+				"wGM": "1730",
+				"wSH": " 1368",
+				"url": "https://eu.wargaming.net/clans/wot/500059964/"
+			},
+			{
+				"id": "18",
+				"img": "/assets/img/clans-page/[GRICZ]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[GRICZ]_195x195.webp",
+				"acronym": "[GRICZ] ",
+				"name": "Grinch cz",
+				"gamer": "10",
+				"CR": "4609",
+				"wPR": "399",
+				"aBD": "17,26",
+				"aVL10": "15",
+				"fSH": "0",
+				"wGM": "1000",
+				"wSH": "1000",
+				"url": "https://eu.wargaming.net/clans/wot/500195158/"
+			},
+			{
+				"id": "19",
+				"img": "/assets/img/clans-page/[GRAZA]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[GRAZA]_195x195.webp",
+				"acronym": "[GRAZA] ",
+				"name": "Golden Azerbaijan",
+				"gamer": "13",
+				"CR": "5235",
+				"wPR": "564",
+				"aBD": "17,12",
+				"aVL10": "22",
+				"fSH": "0",
+				"wGM": "1000",
+				"wSH": "1000",
+				"url": "https://eu.wargaming.net/clans/wot/500225433/"
+			},
+			{
+				"id": "20",
+				"img": "/assets/img/clans-page/[MAXGO]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[MAXGO]_195x195.webp",
+				"acronym": "[MAXGO] ",
+				"name": "Maxigra Go",
+				"gamer": "18",
+				"CR": "3287",
+				"wPR": "426",
+				"aBD": "16,62",
+				"aVL10": "1",
+				"fSH": "0",
+				"wGM": "1000",
+				"wSH": "1000",
+				"url": "https://eu.wargaming.net/clans/wot/500198030/"
+			},
+			{
+				"id": "21",
+				"img": "/assets/img/clans-page/[ANWAY]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[ANWAY]_195x195.webp",
+				"acronym": "[ANWAY] ",
+				"name": "Do it Anyway!",
+				"gamer": "77",
+				"CR": "12795",
+				"wPR": "8815",
+				"aBD": "10,13",
+				"aVL10": "29",
+				"fSH": "3148",
+				"wGM": "2187",
+				"wSH": "1482",
+				"url": "https://eu.wargaming.net/clans/wot/500062046/"
+			},
+			{
+				"id": "22",
+				"img": "/assets/img/clans-page/[IC0H]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[IC0H]_195x195.webp",
+				"acronym": "[IC0H] ",
+				"name": "INTERNATI0NAL C0MPANY 0F HER0ES",
+				"gamer": "99",
+				"CR": "12590",
+				"wPR": " 7415",
+				"aBD": "12,34",
+				"aVL10": "38",
+				"fSH": "2108",
+				"wGM": "2181",
+				"wSH": "900",
+				"url": "https://eu.wargaming.net/clans/wot/500075872/"
+			},
+			{
+				"id": "23",
+				"img": "/assets/img/clans-page/[OM]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[OM]_195x195.webp",
+				"acronym": "[OM] ",
+				"name": "Odem Mortis",
+				"gamer": "87",
+				"CR": "13328",
+				"wPR": "7759",
+				"aBD": "11,80",
+				"aVL10": "39",
+				"fSH": "2952",
+				"wGM": "2160",
+				"wSH": "1357",
+				"url": "https://eu.wargaming.net/clans/wot/500000923/"
+			},
+			{
+				"id": "24",
+				"img": "/assets/img/clans-page/[3IQ]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[3IQ]_195x195.webp",
+				"acronym": "[3IQ] ",
+				"name": "Bad Play Is A Good Play!",
+				"gamer": "88",
+				"CR": "12295",
+				"wPR": "6451",
+				"aBD": "12,68",
+				"aVL10": "29",
+				"fSH": "2234",
+				"wGM": "2066",
+				"wSH": "962",
+				"url": "https://eu.wargaming.net/clans/wot/500178971/"
+			},
+			{
+				"id": "25",
+				"img": "/assets/img/clans-page/[TUROK]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[TUROK]_195x195.webp",
+				"acronym": "[TUROK] ",
+				"name": "TURKISH ALLIANCE",
+				"gamer": "80",
+				"CR": "12494",
+				"wPR": "5805",
+				"aBD": "13,57",
+				"aVL10": "28",
+				"fSH": "2549",
+				"wGM": "2045",
+				"wSH": "1125",
+				"url": "https://eu.wargaming.net/clans/wot/500236120/"
+			},
+			{
+				"id": "26",
+				"img": "/assets/img/clans-page/[XAK]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[XAK]_195x195.webp",
+				"acronym": "[XAK] ",
+				"name": "LET'S HACK EVERYONE",
+				"gamer": "100",
+				"CR": "13017",
+				"wPR": "6215",
+				"aBD": "13,53",
+				"aVL10": "27",
+				"fSH": "2961",
+				"wGM": "2039",
+				"wSH": "1474",
+				"url": "https://eu.wargaming.net/clans/wot/500230654/"
+			},
+			{
+				"id": "27",
+				"img": "/assets/img/clans-page/[USKIL]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[USKIL]_195x195.webp",
+				"acronym": "[USKIL] ",
+				"name": "Unskilled Community Players",
+				"gamer": "97",
+				"CR": "12663",
+				"wPR": "5923",
+				"aBD": "8,97",
+				"aVL10": "19",
+				"fSH": "3486",
+				"wGM": "2006",
+				"wSH": "1821",
+				"url": "https://eu.wargaming.net/clans/wot/500173225/"
+			},
+			{
+				"id": "28",
+				"img": "/assets/img/clans-page/[FIORD]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[FIORD]_195x195.webp",
+				"acronym": "[FIORD] ",
+				"name": "FIRST ORDER",
+				"gamer": "99",
+				"CR": "13458",
+				"wPR": "7173",
+				"aBD": "11,22",
+				"aVL10": "34",
+				"fSH": "3366",
+				"wGM": "1985",
+				"wSH": "1634",
+				"url": "https://eu.wargaming.net/clans/wot/500157042/"
+			},
+			{
+				"id": "29",
+				"img": "/assets/img/clans-page/[CR0KS]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[CR0KS]_195x195.webp",
+				"acronym": "[CR0KS] ",
+				"name": "Evil_Crocodiles",
+				"gamer": "98",
+				"CR": "13168",
+				"wPR": "7736",
+				"aBD": "11,75",
+				"aVL10": "26",
+				"fSH": "3110",
+				"wGM": "1970",
+				"wSH": "1528",
+				"url": "https://eu.wargaming.net/clans/wot/500223479/"
+			},
+			{
+				"id": "30",
+				"img": "/assets/img/clans-page/[KEKC]_195x195.png",
+				"imgWebP": "/assets/img/clans-page/[KEKC]_195x195.webp",
+				"acronym": "[KEKC] ",
+				"name": "KEKC",
+				"gamer": "90",
+				"CR": "13413",
+				"wPR": "6295",
+				"aBD": "12,35",
+				"aVL10": "27",
+				"fSH": "3563",
+				"wGM": "1937",
+				"wSH": "1818",
+				"url": "https://eu.wargaming.net/clans/wot/500223469/"
+			}
+		],
+		"bestClans_link": "Полный список",
+		"invite_text": "Вступай в клан — стань участником великих сражений!",
+		"invite_btn": "Подобрать клан"
+	},
+	"tourney": {
+		"vitrine_subtitle": "Ежедневные турниры",
+		"vitrine_text": "Узнайте, как проходят соревновательные бои в World of Tanks!",
+		"vitrine_btn": "Подробности",
+		"tournaments": "Турниры",
+		"current_title": "Актуальные",
+		"current_link": "Поиск турниров",
+		"listCurrentTourneys": [
+			{
+				"label": "Важный",
+				"img": "assets/img/tourney-page/current/tournay_current_img1.png",
+				"imgWebP": "assets/img/tourney-page/current/tournay_current_img1.webp",
+				"title": "[Clans] Displate Clan Showdown - Qualifier 1",
+				"periodEvent": "26 Окт - 27 Окт",
+				"features": [
+					{
+						"iconSVGid": "players",
+						"feature": "15х15"
+					},
+					{
+						"iconSVGid": "tank",
+						"feature": "Х уровень"
+					}
+				],
+				"status": "завершен",
+				"featuresHidden": [
+					{
+						"iconSVGid": "horse",
+						"title": "Режим боя",
+						"feature": "Атака/Оборона"
+					},
+					{
+						"iconSVGid": "cup",
+						"title": "Призовой фонд",
+						"feature": "Gold + Bonds + Cash"
+					},
+					{
+						"iconSVGid": "teams",
+						"title": "Подтвержденные команды",
+						"feature": "32"
+					},
+					{
+						"iconSVGid": "flags-start",
+						"title": "Начало",
+						"feature": "EU 2 ‐ 19:00, 26 Окт"
+					}
+				],
+				"dateStart": "2024-10-26T09:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/tournaments/5000008211/"
+			},
+			{
+				"label": "Важный",
+				"img": "assets/img/tourney-page/current/tournay_current_img1.png",
+				"imgWebP": "assets/img/tourney-page/current/tournay_current_img1.webp",
+				"title": "[Clans] Displate Clan Showdown - Qualifier 2",
+				"periodEvent": "29 Окт - 31 Окт",
+				"features": [
+					{
+						"iconSVGid": "players",
+						"feature": "15х15"
+					},
+					{
+						"iconSVGid": "tank",
+						"feature": "Х уровень"
+					}
+				],
+				"status": "завершен",
+				"featuresHidden": [
+					{
+						"iconSVGid": "horse",
+						"title": "Режим боя",
+						"feature": "Атака/Оборона"
+					},
+					{
+						"iconSVGid": "cup",
+						"title": "Призовой фонд",
+						"feature": "Gold + Bonds + Cash"
+					},
+					{
+						"iconSVGid": "teams",
+						"title": "Подтвержденные команды",
+						"feature": "36"
+					},
+
+					{
+						"iconSVGid": "flags-start",
+						"title": "Начало",
+						"feature": "EU 2 ‐ 17:00, 29 Окт"
+					}
+				],
+				"dateStart": "2024-10-29T07:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/tournaments/5000008212/"
+			},
+			{
+				"label": "",
+				"img": "assets/img/tourney-page/current/tournay_current_img2.png",
+				"imgWebP": "assets/img/tourney-page/current/tournay_current_img2.webp",
+				"title": "5v5 Tier X - 21:00 CET - N°1 [TECH TREE ONLY]",
+				"periodEvent": "4 Ноя - 7 Ноя",
+				"features": [
+					{
+						"iconSVGid": "players",
+						"feature": "5х5"
+					},
+					{
+						"iconSVGid": "tank",
+						"feature": "I-X уровень"
+					}
+				],
+				"status": "завершен",
+				"featuresHidden": [
+					{
+						"iconSVGid": "horse",
+						"title": "Режим боя",
+						"feature": "Встречный бой"
+					},
+					{
+						"iconSVGid": "cup",
+						"title": "Призовой фонд",
+						"feature": "Gold"
+					},
+					{
+						"iconSVGid": "teams",
+						"title": "Подтвержденные команды",
+						"feature": "0"
+					},
+
+					{
+						"iconSVGid": "flags-start",
+						"title": "Начало",
+						"feature": "EU 2 ‐ 23:00, 6 Ноя"
+					}
+				],
+				"dateStart": "2022-11-04T21:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/tournaments/5000008347/"
+			},
+			{
+				"label": "",
+				"img": "assets/img/tourney-page/current/tournay_current_img3.png",
+				"imgWebP": "assets/img/tourney-page/current/tournay_current_img3.webp",
+				"title": "1v1 Tier VIII - 17:00 CET - N°1",
+				"periodEvent": "5 Ноя",
+				"features": [
+					{
+						"iconSVGid": "players",
+						"feature": "1х1"
+					},
+					{
+						"iconSVGid": "tank",
+						"feature": "VIII уровень"
+					}
+				],
+				"status": "завершен",
+				"featuresHidden": [
+					{
+						"iconSVGid": "horse",
+						"title": "Режим боя",
+						"feature": "Встречный бой"
+					},
+					{
+						"iconSVGid": "cup",
+						"title": "Призовой фонд",
+						"feature": "Gold"
+					},
+					{
+						"iconSVGid": "teams",
+						"title": "Подтвержденные команды",
+						"feature": "34"
+					},
+					{
+						"iconSVGid": "flags-start",
+						"title": "Начало",
+						"feature": "EU 2 ‐ 19:00, 5 Ноя"
+					}
+				],
+				"dateStart": "2022-11-05T17:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/tournaments/5000008351/"
+			},
+			{
+				"label": "",
+				"img": "assets/img/tourney-page/current/tournay_current_img4.png",
+				"imgWebP": "assets/img/tourney-page/current/tournay_current_img4.webp",
+				"title": "3v3 Tier IX - 20:00 CET - N°1",
+				"periodEvent": "5 Ноя - 6 Ноя",
+				"features": [
+					{
+						"iconSVGid": "players",
+						"feature": "3х3"
+					},
+					{
+						"iconSVGid": "tank",
+						"feature": "I-IX уровень"
+					}
+				],
+				"status": "завершен",
+				"featuresHidden": [
+					{
+						"iconSVGid": "horse",
+						"title": "Режим боя",
+						"feature": "Встречный бой"
+					},
+					{
+						"iconSVGid": "cup",
+						"title": "Призовой фонд",
+						"feature": "Gold"
+					},
+					{
+						"iconSVGid": "teams",
+						"title": "Подтвержденные команды",
+						"feature": "0"
+					},
+					{
+						"iconSVGid": "flags-start",
+						"title": "Начало",
+						"feature": "EU 2 ‐ 22:00, 5 Ноя"
+					}
+				],
+				"dateStart": "2022-11-05T20:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/tournaments/5000008335/"
+			},
+			{
+				"label": "",
+				"img": "assets/img/tourney-page/current/tournay_current_img5.png",
+				"imgWebP": "assets/img/tourney-page/current/tournay_current_img5.webp",
+				"title": "5v5 Tier IX - 21:00 CET - N°1",
+				"periodEvent": "5 Ноя - 6 Ноя",
+				"features": [
+					{
+						"iconSVGid": "players",
+						"feature": "5х5"
+					},
+					{
+						"iconSVGid": "tank",
+						"feature": "IX уровень"
+					}
+				],
+				"status": "завершен",
+				"featuresHidden": [
+					{
+						"iconSVGid": "horse",
+						"title": "Режим боя",
+						"feature": "Встречный бой"
+					},
+					{
+						"iconSVGid": "cup",
+						"title": "Призовой фонд",
+						"feature": "Gold"
+					},
+					{
+						"iconSVGid": "teams",
+						"title": "Подтвержденные команды",
+						"feature": "0"
+					},
+					{
+						"iconSVGid": "flags-start",
+						"title": "Начало",
+						"feature": "EU 2 ‐ 23:00, 5 Ноя"
+					}
+				],
+				"dateStart": "2022-11-05T20:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/tournaments/5000008339/"
+			},
+			{
+				"label": "",
+				"img": "assets/img/tourney-page/current/tournay_current_img6.png",
+				"imgWebP": "assets/img/tourney-page/current/tournay_current_img6.webp",
+				"title": "2v2 Tier X - 17:00 CET - N°1 [TECH TREE ONLY]",
+				"periodEvent": "6 Ноя",
+				"features": [
+					{
+						"iconSVGid": "players",
+						"feature": "2х2"
+					},
+					{
+						"iconSVGid": "tank",
+						"feature": "X уровень"
+					}
+				],
+				"status": "завершен",
+				"featuresHidden": [
+					{
+						"iconSVGid": "horse",
+						"title": "Режим боя",
+						"feature": "Встречный бой"
+					},
+					{
+						"iconSVGid": "cup",
+						"title": "Призовой фонд",
+						"feature": "Gold"
+					},
+					{
+						"iconSVGid": "teams",
+						"title": "Подтвержденные команды",
+						"feature": "6"
+					},
+					{
+						"iconSVGid": "flags-start",
+						"title": "Начало",
+						"feature": "EU 2 ‐ 19:00, 6 Ноя"
+					}
+				],
+				"dateStart": "2022-11-06T17:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/tournaments/5000008325/"
+			},
+			{
+				"label": "",
+				"img": "assets/img/tourney-page/current/tournay_current_img7.png",
+				"imgWebP": "assets/img/tourney-page/current/tournay_current_img7.webp",
+				"title": "3v3 Tier X - 20:00 CET - N°1 [TECH TREE ONLY]",
+				"periodEvent": "6 Ноя - 7 Ноя",
+				"features": [
+					{
+						"iconSVGid": "players",
+						"feature": "3х3"
+					},
+					{
+						"iconSVGid": "tank",
+						"feature": "I-X уровень"
+					}
+				],
+				"status": "завершен",
+				"featuresHidden": [
+					{
+						"iconSVGid": "horse",
+						"title": "Режим боя",
+						"feature": "Встречный бой"
+					},
+					{
+						"iconSVGid": "cup",
+						"title": "Призовой фонд",
+						"feature": "Gold"
+					},
+					{
+						"iconSVGid": "teams",
+						"title": "Подтвержденные команды",
+						"feature": "0"
+					},
+					{
+						"iconSVGid": "flags-start",
+						"title": "Начало",
+						"feature": "EU 2 ‐ 22:00, 6 Ноя"
+					}
+				],
+				"dateStart": "2022-11-06T20:00:00+03:00",
+				"url": "https://worldoftanks.eu/ru/tournaments/5000008343/"
+			}
+		],
+		"infoCurrent_countdown": "До конца турнира:",
+		"infoCurrent_link": "Участвовать",
+		"infoCurrent_countdownOver": "Статус турнира:",
+		"listLatestNews": [
+			{
+				"img": "assets/img/tourney-page/latest-news/tourney_latest-news_portal-banner_615x346.jpg",
+				"imgWebP": "assets/img/tourney-page/latest-news/tourney_latest-news_portal-banner_615x346.webp",
+				"title": "[РУЗУЛЬТАТЫ] Смотрите лучший матч Европы в прямом эфире финала WoT 7 и претендуйте на дропы Twitch",
+				"url": "https://worldoftanks.eu/ru/news/esports/wot7-final-stream-jan2022/",
+				"link1Title": "киберспорт",
+				"url1": "https://worldoftanks.eu/ru/news/esports/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/780938-&_gl=1*1gqzxn1*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2NzU4OTY4Ny4xMy4xLjE2Njc1OTA1MTkuNjAuMC4w",
+				"link2IconSVGid": "discuss",
+				"date": "01.02.2022"
+			},
+			{
+				"img": "assets/img/tourney-page/latest-news/tourney_latest-news_portal-banner_615x346.jpg",
+				"imgWebP": "assets/img/tourney-page/latest-news/tourney_latest-news_portal-banner_615x346.webp",
+				"title": "Турнир WoT 7: Сила к победе с шестью свирепыми командирами на вашей стороне",
+				"url": "https://worldoftanks.eu/ru/news/esports/wot7-sign-up-jan2022/",
+				"link1Title": "киберспорт",
+				"url1": "https://worldoftanks.eu/ru/news/esports/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/779938-&_gl=1*1y5eqjq*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2NzU4OTY4Ny4xMy4xLjE2Njc1OTA1MTkuNjAuMC4w",
+				"link2IconSVGid": "discuss",
+				"date": "03.01.2022"
+			},
+			{
+				"img": "assets/img/tourney-page/latest-news/tourney_latest-news_clan-showdown_615x346.jpg",
+				"imgWebP": "assets/img/tourney-page/latest-news/tourney_latest-news_clan-showdown_615x346.webp",
+				"title": "[РУЗУЛЬТАТЫ] Финал клановых боев: Смотрите в прямом эфире на Twitch Drops без ограничений",
+				"url": "https://worldoftanks.eu/ru/news/esports/clan-showdown-live-november-2021/",
+				"link1Title": "киберспорт",
+				"url1": "https://worldoftanks.eu/ru/news/esports/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/778402-&_gl=1*18y80ye*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2NzU4OTY4Ny4xMy4xLjE2Njc1OTA1MTkuNjAuMC4w",
+				"link2IconSVGid": "discuss",
+				"date": "29.11.2021"
+			},
+			{
+				"img": "assets/img/tourney-page/latest-news/tourney_latest-news_clan-showdown_615x346.jpg",
+				"imgWebP": "assets/img/tourney-page/latest-news/tourney_latest-news_clan-showdown_615x346.webp",
+				"title": "Клановая бои: Регистрируйтесь, побеждайте, зарабатывайте награды и кредиты",
+				"url": "https://worldoftanks.eu/ru/news/esports/clan-showdown-sign-up-october-2021/",
+				"link1Title": "киберспорт",
+				"url1": "https://worldoftanks.eu/ru/news/esports/",
+				"link2Title": "обсудить",
+				"url2": "http://forum.worldoftanks.eu/index.php?/topic/777717-&_gl=1*1g0rcp8*local_ga*NDc2ODU0NDkyLjE2NjYyODk0Mjg.*local_ga_JXR7Q0F7EQ*MTY2NzU4OTY4Ny4xMy4xLjE2Njc1OTA1MTkuNjAuMC4w",
+				"link2IconSVGid": "discuss",
+				"date": "06.11.2021"
+			}
+		],
+		"contactUs_title": "Связаться с нами",
+		"contactUs_subtitle": "Хотите организовать соревнование по World of Tanks?",
+		"contactUs_text": "Пришлите нам своё предложение турнира на esportseu@wargaming.net, и мы поможем вам с его проведением."
+	},
+	"community": {
+		"listСommunities": [
+			{
+				"title": "Официальный форум",
+				"text": "Официальный форум всегда кипит обсуждениями всех без исключения игровых и околоигровых аспектов World of Tanks.",
+				"img": "/assets/img/community-page/com_forum.jpg",
+				"imgWebP": "/assets/img/community-page/com_forum.webp",
+				"url": "http://forum.worldoftanks.ru/"
+			},
+			{
+				"title": "Youtube-канал",
+				"text": "Официальный Youtube канал — это новости, акции, стримы, развлекательные передачи и многое другое!",
+				"img": "/assets/img/community-page/com_youtube.jpg",
+				"imgWebP": "/assets/img/community-page/com_youtube.webp",
+				"url": "https://www.youtube.com/user/WorldOfTanks"
+			},
+			{
+				"title": "Discord",
+				"text": "Заходи на наш сервер в Discord: общайся с друзьями, ищи союзников во взвод, координируй действия своей команды!",
+				"img": "/assets/img/community-page/com_discord.jpg",
+				"imgWebP": "/assets/img/community-page/com_discord.webp",
+				"url": "https://discord.gg/wotcis"
+			},
+			{
+				"title": "Фан-сайты",
+				"text": "Дружественные ресурсы, на которых вы узнаете много нового об околоигровых событиях и сообществе.",
+				"img": "/assets/img/community-page/com_fanres.jpg",
+				"imgWebP": "/assets/img/community-page/com_fanres.webp",
+				"url": "https://worldoftanks.ru/ru/soft/fan-pages/"
+			},
+			{
+				"title": "Wot replays",
+				"text": "Делитесь реплеями своих боёв и просматривать сражению других игроков ",
+				"img": "/assets/img/community-page/com_replays.jpg",
+				"imgWebP": "/assets/img/community-page/com_replays.webp",
+				"url": "http://wotreplays.ru/"
+			},
+			{
+				"title": "ПОРТАЛ МОДОВ",
+				"text": "Официальный каталог разрешенных модов World of Tanks. Тысячи способов сделать «Танки» еще комфортнее.",
+				"img": "/assets/img/community-page/com_mods.jpg",
+				"imgWebP": "/assets/img/community-page/com_mods.webp",
+				"url": "https://wgmods.net/"
+			},
+			{
+				"title": "Global Wiki",
+				"text": "Wiki-энциклопедия — глобальная база знаний c расширенной информация обо всех аспектах игры.",
+				"img": "/assets/img/community-page/com_wiki.jpg",
+				"imgWebP": "/assets/img/community-page/com_wiki.webp",
+				"url": "https://wiki.wargaming.net/ru/World_of_Tanks"
+			},
+			{
+				"title": "Портал волонтёров",
+				"text": "Для проектов wargaming требуются волонтёры. Присоединяйтесь!",
+				"img": "/assets/img/community-page/com_volunteers.jpg",
+				"imgWebP": "/assets/img/community-page/com_volunteers.webp",
+				"url": "http://wg-volunteers.ru/"
+			},
+			{
+				"title": "Клановые войны",
+				"text": "Объединяйтесь для участия в сражениях за уникальные награды.",
+				"img": "/assets/img/community-page/com_clans.jpg",
+				"imgWebP": "/assets/img/community-page/com_clans.webp",
+				"url": "https://worldoftanks.ru/ru/clanwars/"
+			}
+		],
+		"listSocialLinks": [
+			{
+				"idsymbol": "vk",
+				"name": "Vkontakte",
+				"title": "Читай нас в вконтакте",
+				"text": "3 330 000 участников",
+				"url": "https://vk.com/worldoftanks"
+			},
+			{
+				"idsymbol": "tg",
+				"name": "telegram",
+				"title": "Больше новостей в telegram",
+				"text": "20 000 участников",
+				"url": "https://t.me/worldoftanks_official"
+			},
+			{
+				"idsymbol": "ok",
+				"name": "Odnoklassniki",
+				"title": "Подпишись на нас в Однокласниках",
+				"text": "710 000 участников",
+				"url": "https://ok.ru/worldoftanks"
+			},
+			{
+				"idsymbol": "tiktok",
+				"name": "tiktok",
+				"title": "Смотри нас в tiktok",
+				"text": "400 000 подписчиков",
+				"url": "https://www.tiktok.com/@worldoftanks_ru"
+			}
+		]
+	},
+	"footer": {
+		"langPanel_title": "Выберите регион",
+		"langPanel_subtitle": "Выбор другого региона может привести к изменению содержимого сайта.",
+		"listLangs": [
+			{
+				"id": "lang-1",
+				"name": "Čeština",
+				"code": "cs",
+				"country_code": "CZ",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-2",
+				"name": "Français",
+				"code": "fr",
+				"country_code": "FR",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-3",
+				"name": "Русский",
+				"code": "ru",
+				"country_code": "RU",
+				"continent": "Европа:",
+				"disabled": false
+			},
+			{
+				"id": "lang-4",
+				"name": "Deutsch",
+				"code": "de",
+				"country_code": "DE",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-5",
+				"name": "Italiano",
+				"code": "it",
+				"country_code": "IT",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-6",
+				"name": "Türkçe",
+				"code": "tr",
+				"country_code": "TR",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-7",
+				"name": "English",
+				"code": "en-GB",
+				"country_code": "GB",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-8",
+				"name": "Magyar",
+				"code": "hu",
+				"country_code": "HU",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-9",
+				"name": "Українська",
+				"code": "uk",
+				"country_code": "UA",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-10",
+				"name": "Español",
+				"code": "es",
+				"country_code": "es",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-11",
+				"name": "Polski",
+				"code": "pl",
+				"country_code": "PL",
+				"continent": "Европа:",
+				"disabled": true
+			},
+			{
+				"id": "lang-12",
+				"name": "English",
+				"code": "en",
+				"country_code": "US",
+				"continent": "Северная и Южная Америка:",
+				"disabled": false
+			},
+			{
+				"id": "lang-13",
+				"name": "Español — América Latina",
+				"code": "es-US",
+				"country_code": "US",
+				"continent": "Северная и Южная Америка:",
+				"disabled": true
+			},
+			{
+				"id": "lang-14",
+				"name": "Português",
+				"code": "pt-br",
+				"country_code": "BR",
+				"continent": "Северная и Южная Америка:",
+				"disabled": true
+			},
+			{
+				"id": "lang-15",
+				"name": "English",
+				"code": "en-IN",
+				"country_code": "IN",
+				"continent": "Азия:",
+				"disabled": true
+			},
+			{
+				"id": "lang-16",
+				"name": "简体中文（新加坡)",
+				"code": "zh-SG",
+				"country_code": "SG",
+				"continent": "Азия:",
+				"disabled": true
+			},
+			{
+				"id": "lang-17",
+				"name": "日本語",
+				"code": "ja",
+				"country_code": "JP",
+				"continent": "Азия:",
+				"disabled": true
+			},
+			{
+				"id": "lang-18",
+				"name": "繁體中文",
+				"code": "zh-TW",
+				"country_code": "TW",
+				"continent": "Азия:",
+				"disabled": true
+			},
+			{
+				"id": "lang-19",
+				"name": "한국어",
+				"code": "ko",
+				"country_code": "KR",
+				"continent": "Азия:",
+				"disabled": true
+			},
+			{
+				"id": "lang-20",
+				"name": "TIẾNG VIỆT",
+				"code": "vi",
+				"country_code": "VN",
+				"continent": "Азия:",
+				"disabled": true
+			},
+			{
+				"id": "lang-21",
+				"name": "ไทย",
+				"code": "th",
+				"country_code": "TH",
+				"continent": "Азия:",
+				"disabled": true
+			}
+		],
+		"info_title": "World of Tanks в социальных сетях",
+		"info_subtitle": "Подписывайтесь, чтобы не пропустить всё самое интересное",
+		"listSocialLinksFooter": [
+			{
+				"idsymbol": "wot",
+				"name": "WoT",
+				"url": "http://forum.worldoftanks.ru/?link_place=wotp_link_footer",
+				"title": "Вступайте в сообщество",
+				"text": "Более 160 000 000 игроков"
+			},
+			{
+				"idsymbol": "facebook",
+				"name": "Facebook",
+				"url": "https://www.facebook.com/WorldOfTanks",
+				"title": "Присоединяйтесь к нам на Facebook",
+				"text": ""
+			},
+			{
+				"idsymbol": "vk",
+				"name": "Vkontakte",
+				"url": "https://vk.com/worldoftanks",
+				"title": "Читайте вконтакте",
+				"text": ""
+			},
+			{
+				"idsymbol": "youtube",
+				"name": "YouTube",
+				"url": "http://www.youtube.com/user/WorldOfTanks",
+				"title": "Смотрите на YouTube",
+				"text": "3 670 000 подписчиков"
+			}
+		],
+		"routesFooterNav": [
+			{
+				"name": "Центр поддержки",
+				"url": "https://eu.wargaming.net/support/products/wot/?link_place=wotp_link_footer"
+			},
+			{
+				"name": "Политика конфиденциальности",
+				"url": "https://legal.eu.wargaming.net/ru/privacy-policy/"
+			},
+
+			{
+				"name": "Партнёры",
+				"url": "https://wargaming.com/ru/partners/"
+			},
+			{
+				"name": "Правила игры",
+				"url": "https://legal.eu.wargaming.net/ru/game-rules/"
+			},
+			{
+				"name": "Лицензионное соглашение",
+				"url": "https://legal.eu.wargaming.net/ru/eula/"
+			},
+			{
+				"name": "Карьера",
+				"url": "http://wargaming.com/ru/careers/"
+			}
+		],
+		"copyright": "Все права защищены."
+	},
+	"error": {
+		"vitrine_text1": "Такой страницы не существует, или адрес введён неверно.",
+		"goToThe": "Перейдите на",
+		"mainPage": "главную страницу",
+		"orGo": "или вернитесь",
+		"listLatestNews": [
+			{
+				"img": "/assets/img/error-page/latest-news/error_latest-news_italians_615x346.jpg",
+				"imgWebP": "/assets/img/error-page/latest-news/error_latest-news_italians_615x346.webp",
+				"title": "Обновление 1.18. Актуальная версия игры",
+				"url": "https://tanki.su/ru/news/updates/update-1-18-release/",
+				"link1Title": "Обновление",
+				"url1": "https://tanki.su/ru/news/updates/",
+				"link2Title": "Обсудить",
+				"url2": "http://forum.worldoftanks.ru/index.php?/topic/2159413-",
+				"link2IconSVGid": "discuss",
+				"date": "02.09.2022"
+			},
+			{
+				"img": "/assets/img/error-page/latest-news/error_latest-news_muzyka_615x346.jpg",
+				"imgWebP": "/assets/img/error-page/latest-news/error_latest-news_muzyka_615x346.webp",
+				"title": "О возможности переноса аккаунта. Анонс",
+				"url": "https://tanki.su/ru/news/notifications/account-transfer/",
+				"link1Title": "Уведомления",
+				"url1": "https://tanki.su/ru/news/notifications/",
+				"link2Title": "Обсудить",
+				"url2": "http://forum.worldoftanks.ru/index.php?/topic/2158933-",
+				"link2IconSVGid": "discuss",
+				"date": "29.08.2022"
+			},
+			{
+				"img": "/assets/img/error-page/latest-news/error_latest-news_thumb_615x346.jpg",
+				"imgWebP": "/assets/img/error-page/latest-news/error_latest-news_thumb_615x346.webp",
+				"title": "Переход на 64-битные ОС и обновление системных требований",
+				"url": "https://tanki.su/ru/news/notifications/32-bit-support-stop/",
+				"link1Title": "Уведомления",
+				"url1": "https://tanki.su/ru/news/notifications/",
+				"link2Title": "Обсудить",
+				"url2": "http://forum.worldoftanks.ru/index.php?/topic/2155985-",
+				"link2IconSVGid": "discuss",
+				"date": "14.06.2022"
+			},
+			{
+				"img": "/assets/img/error-page/latest-news/error_latest-news_corevid-740-sh_615x346.jpg",
+				"imgWebP": "/assets/img/error-page/latest-news/error_latest-news_corevid-740-sh_615x346.webp",
+				"title": "Обновление 1.17. Актуальная версия игры",
+				"url": "https://tanki.su/ru/news/updates/update-1-17-release/",
+				"link1Title": "Обновление",
+				"url1": "https://tanki.su/ru/news/updates/",
+				"link2Title": "Обсудить",
+				"url2": "http://forum.worldoftanks.ru/index.php?/topic/2155497-",
+				"link2IconSVGid": "discuss",
+				"date": "02.06.2022"
+			}
+		]
+	}
+}
